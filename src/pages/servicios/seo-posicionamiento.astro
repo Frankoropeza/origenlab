@@ -1,0 +1,132 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+---
+
+<PageLayout
+  title="SEO y Posicionamiento Web"
+  description="Posicionamos tu sitio en los primeros resultados de Google con estrategias SEO técnico, on-page y local para México."
+  keywords="SEO México, posicionamiento web CDMX, SEO técnico, SEO local México, agencia SEO"
+>
+  <div class="service-content">
+    <p class="service-lead">
+      De nada sirve tener el mejor sitio del mundo si nadie lo encuentra.
+      Con nuestro servicio de SEO, apareces donde tus clientes te buscan.
+    </p>
+
+    <div class="seo-steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div>
+          <h3>Auditoría técnica</h3>
+          <p>Analizamos tu sitio actual: velocidad, errores, estructura de URLs, indexabilidad y más.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div>
+          <h3>Investigación de palabras clave</h3>
+          <p>Identificamos los términos que usan tus clientes potenciales en México para encontrar lo que ofreces.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div>
+          <h3>Optimización on-page</h3>
+          <p>Titles, meta descriptions, headings, schema.org, imágenes y contenido optimizado para posicionar.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div>
+          <h3>SEO local</h3>
+          <p>Google Business Profile optimizado, citas locales y señales de autoridad geográfica para CDMX y Estado de México.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div>
+          <h3>Reporte mensual</h3>
+          <p>Dashboard con posiciones, tráfico orgánico y conversiones. Sin letra pequeña, resultados reales.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-box">
+      <h2>SEO mensual desde</h2>
+      <div class="price">$4,500 <span>MXN/mes</span></div>
+      <p>Contrato mínimo 3 meses. Los resultados de SEO toman tiempo, pero son los más duraderos.</p>
+      <a href="/cotizar" class="btn-cta">Solicitar propuesta SEO →</a>
+    </div>
+  </div>
+</PageLayout>
+
+<style>
+  .service-lead {
+    font-size: 1.2rem;
+    color: var(--color-muted);
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+
+  .seo-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  .step-num {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    opacity: 0.4;
+    min-width: 2.5rem;
+    font-family: var(--font-mono);
+  }
+
+  .step h3 { font-weight: 700; margin-bottom: 0.5rem; }
+  .step p { color: var(--color-muted); font-size: 0.95rem; line-height: 1.6; }
+
+  .pricing-box {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-accent);
+    border-radius: 16px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .pricing-box h2 { color: var(--color-muted); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.5rem; }
+  .price { font-size: 2.5rem; font-weight: 900; color: var(--color-accent); }
+  .price span { font-size: 1rem; color: var(--color-muted); }
+  .pricing-box p { color: var(--color-muted); margin: 1rem 0 2rem; font-size: 0.9rem; }
+
+  .btn-cta {
+    display: inline-block;
+    background: var(--color-accent);
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .btn-cta:hover { opacity: 0.85; }
+</style>

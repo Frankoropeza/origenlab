@@ -1,0 +1,164 @@
+---
+const year = new Date().getFullYear();
+
+const services = [
+  { href: "/servicios/desarrollo-web/", label: "Desarrollo Web" },
+  { href: "/servicios/tiendas-en-linea/", label: "Tiendas en Línea" },
+  { href: "/servicios/landing-pages/", label: "Landing Pages" },
+  { href: "/servicios/seo-posicionamiento/", label: "SEO" },
+];
+
+const links = [
+  { href: "/nosotros/", label: "Nosotros" },
+  { href: "/portafolio/", label: "Portafolio" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/contacto/", label: "Contacto" },
+  { href: "/cotizar/", label: "Cotizar" },
+];
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-text">Origen<span class="logo-accent">Lab</span></span>
+        <p class="footer-desc">Sitios web que generan resultados. Agencia de desarrollo web profesional en México.</p>
+        <div class="footer-contact">
+          <a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a>
+          <a href="tel:+5255XXXXXXXX">+52 55 XXXX XXXX</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Servicios</h4>
+        <ul>
+          {services.map((s) => (
+            <li><a href={s.href}>{s.label}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Empresa</h4>
+        <ul>
+          {links.map((l) => (
+            <li><a href={l.href}>{l.label}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Horario</h4>
+        <p class="footer-schedule">Lunes a Viernes<br />9:00 — 18:00 hrs (CST)</p>
+        <p class="footer-schedule">Respuesta en menos de 24 hrs</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {year} OrigenLab. Todos los derechos reservados.</p>
+      <p>Hecho con <span class="heart">♥</span> en México</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: 4rem 0 2rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  .logo-accent {
+    color: var(--color-accent);
+  }
+
+  .footer-desc {
+    margin-top: 1rem;
+    color: var(--color-muted);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+
+  .footer-contact {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-contact a {
+    color: var(--color-muted);
+    font-size: 0.875rem;
+  }
+
+  .footer-heading {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+    color: var(--color-secondary);
+  }
+
+  .footer-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-col a {
+    color: var(--color-muted);
+    font-size: 0.9375rem;
+    transition: color var(--transition);
+  }
+
+  .footer-col a:hover {
+    color: var(--color-accent);
+  }
+
+  .footer-schedule {
+    color: var(--color-muted);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--color-border);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-muted);
+    font-size: 0.8125rem;
+  }
+
+  .heart {
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .footer-bottom {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+  }
+</style>

@@ -1,0 +1,48 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const { title, description, keywords } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} keywords={keywords}>
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-title">{title}</h1>
+      {description && <p class="page-desc">{description}</p>}
+    </div>
+  </section>
+  <div class="container page-content">
+    <slot />
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    padding: calc(var(--topbar-height) + var(--header-height) + 4rem) 0 3rem;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .page-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .page-desc {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    color: var(--color-muted);
+    max-width: 600px;
+  }
+
+  .page-content {
+    padding: 4rem 0;
+  }
+</style>

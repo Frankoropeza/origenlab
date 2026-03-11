@@ -1,0 +1,205 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+
+const proyectos = [
+  {
+    nombre: "CADECA",
+    categoria: "Sitio corporativo B2B",
+    descripcion: "Sitio web completo para empresa de cajas de cartón. SEO local + catálogo de 30+ productos.",
+    tags: ["Astro", "SEO", "B2B"],
+    color: "#E05800"
+  },
+  {
+    nombre: "TiendaFlex",
+    categoria: "E-commerce",
+    descripcion: "Tienda en línea con integración Mercado Pago, gestión de inventario y panel de administración.",
+    tags: ["Next.js", "E-commerce", "MercadoPago"],
+    color: "#6C63FF"
+  },
+  {
+    nombre: "DrFreco",
+    categoria: "Landing page médica",
+    descripcion: "Landing page de alta conversión para consultorio médico. +40% en reservas de citas.",
+    tags: ["Astro", "CRO", "Salud"],
+    color: "#00D4FF"
+  },
+  {
+    nombre: "LogiTrack MX",
+    categoria: "Sistema web + landing",
+    descripcion: "Sitio informativo + dashboard para empresa de logística. Diseño oscuro y moderno.",
+    tags: ["React", "Dashboard", "Logística"],
+    color: "#22c55e"
+  },
+  {
+    nombre: "Brinca Park",
+    categoria: "Sitio de entretenimiento",
+    descripcion: "Sitio web para parque de brincolines con reservas en línea y galería de eventos.",
+    tags: ["Astro", "Reservas", "Entretenimiento"],
+    color: "#f59e0b"
+  },
+  {
+    nombre: "Estudio Mija",
+    categoria: "Portafolio creativo",
+    descripcion: "Portafolio visual para estudio de diseño. Animaciones suaves y galería interactiva.",
+    tags: ["Astro", "Animaciones", "Diseño"],
+    color: "#ec4899"
+  }
+];
+---
+
+<PageLayout
+  title="Portafolio"
+  description="Proyectos reales que hemos construido. Sitios web, tiendas en línea y landing pages con resultados medibles."
+  keywords="portafolio desarrollo web México, proyectos web, casos de éxito OrigenLab"
+>
+  <div class="portfolio-intro">
+    <p>Cada proyecto aquí tiene un objetivo: generar resultados. Sitios rápidos, bien diseñados y optimizados para SEO.</p>
+  </div>
+
+  <div class="projects-grid">
+    {proyectos.map(p => (
+      <div class="project-card">
+        <div class="project-thumb" style={`--accent: ${p.color}`}>
+          <div class="project-initial">{p.nombre[0]}</div>
+        </div>
+        <div class="project-info">
+          <span class="project-cat">{p.categoria}</span>
+          <h3>{p.nombre}</h3>
+          <p>{p.descripcion}</p>
+          <div class="project-tags">
+            {p.tags.map(t => <span class="tag">{t}</span>)}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div class="portfolio-cta">
+    <h2>¿Quieres un proyecto así?</h2>
+    <p>Platícanos tu idea y construyamos algo juntos.</p>
+    <a href="/cotizar" class="btn-primary">Solicitar cotización</a>
+  </div>
+</PageLayout>
+
+<style>
+  .portfolio-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: var(--color-muted);
+    font-size: 1.1rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .project-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-accent);
+  }
+
+  .project-thumb {
+    height: 140px;
+    background: color-mix(in srgb, var(--accent) 15%, var(--color-surface));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .project-initial {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--accent, var(--color-accent));
+    opacity: 0.4;
+    font-family: var(--font-mono);
+  }
+
+  .project-info {
+    padding: 1.5rem;
+  }
+
+  .project-cat {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-info p {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    font-size: 0.75rem;
+    color: var(--color-muted);
+  }
+
+  .portfolio-cta {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--color-surface);
+    border-radius: 16px;
+    border: 1px solid var(--color-border);
+  }
+
+  .portfolio-cta h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio-cta p {
+    color: var(--color-muted);
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--color-accent);
+    color: white;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.85;
+  }
+</style>
