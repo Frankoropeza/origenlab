@@ -130,10 +130,16 @@ const porqueElegirnos = [
   <!-- SECCIÓN 3: SERVICIOS -->
   <section class="services-section">
     <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Servicios</span>
-        <h2 class="section-title">Todo lo que tu negocio necesita en línea.</h2>
-        <p class="section-subtitle">Desde el diseño hasta el posicionamiento, construimos cada parte de tu presencia digital.</p>
+      <div class="sh">
+        <div class="sh__left">
+          <span class="eyebrow">Servicios</span>
+          <h2 class="section-title">Todo lo que tu negocio necesita en línea.</h2>
+          <p class="section-subtitle">Desde el diseño hasta el posicionamiento, construimos cada parte de tu presencia digital.</p>
+        </div>
+        <div class="sh__right">
+          <p class="sh__copy">Cada servicio que ofrecemos en OrigenLab está diseñado para resolver un problema real de negocio. No vendemos tecnología por sí misma — vendemos resultados: más visibilidad en Google, más ventas en línea, más clientes que llegan a ti sin que tengas que buscarlos. Nuestros proyectos integran diseño UX, código de producción y estrategia digital en un solo flujo de trabajo eficiente y transparente.</p>
+          <p class="sh__copy">Desde sitios corporativos que posicionan en búsquedas locales hasta tiendas en línea con integración a Mercado Pago, OXXO Pay y Stripe, pasando por landing pages de alta conversión y auditorías SEO técnicas — todo bajo un mismo equipo que conoce tu proyecto de principio a fin. Sin subcontrataciones, sin intermediarios, sin sorpresas.</p>
+        </div>
       </div>
       <div class="services-grid">
         {servicios.map(s => <ServiceCard {...s} />)}
@@ -144,9 +150,15 @@ const porqueElegirnos = [
   <!-- SECCIÓN 4: POR QUÉ ELEGIRNOS -->
   <section class="why-section">
     <div class="container">
-      <div class="section-header-dark">
-        <span class="eyebrow-dark">Diferencia</span>
-        <h2 class="section-title-dark">¿Por qué OrigenLab?</h2>
+      <div class="sh sh--dark">
+        <div class="sh__left">
+          <span class="eyebrow-dark">Diferencia</span>
+          <h2 class="section-title-dark">¿Por qué OrigenLab?</h2>
+        </div>
+        <div class="sh__right">
+          <p class="sh__copy sh__copy--dark">En un mercado saturado de agencias que prometen lo mismo, OrigenLab se diferencia por una razón simple: entregamos. Cada proyecto tiene un responsable técnico que lo conoce de principio a fin, un proceso de revisión con el cliente en cada etapa y métricas reales de resultado al mes de lanzar. No cobramos por mantenimiento sin sentido ni vendemos paquetes inflados — solo el trabajo necesario para alcanzar tus objetivos.</p>
+          <p class="sh__copy sh__copy--dark">Nuestro equipo trabaja exclusivamente con tecnologías modernas de alto rendimiento: Astro, Next.js y arquitecturas estáticas que garantizan velocidades de carga en el primer percentil de Google. Esto no es un diferencial cosmético — la velocidad es un factor de posicionamiento SEO y tiene impacto directo en tu tasa de conversión. Un segundo más de carga puede costarte el 7% de tus ventas.</p>
+        </div>
       </div>
       <div class="why-grid">
         {porqueElegirnos.map(item => (
@@ -163,9 +175,16 @@ const porqueElegirnos = [
   <!-- SECCIÓN 5: PROCESO -->
   <section class="process-section">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Cómo trabajamos</h2>
-        <p class="section-subtitle">Simple, transparente y sin sorpresas.</p>
+      <div class="sh">
+        <div class="sh__left">
+          <span class="eyebrow">Proceso</span>
+          <h2 class="section-title">Cómo trabajamos</h2>
+          <p class="section-subtitle">Simple, transparente y sin sorpresas.</p>
+        </div>
+        <div class="sh__right">
+          <p class="sh__copy">Nuestro proceso de 4 etapas está diseñado para eliminar la incertidumbre que suele rodear a los proyectos digitales. Antes de escribir una sola línea de código, dedicamos tiempo a entender tu mercado, analizar a tu competencia en Google y definir con precisión qué necesita tu sitio para convertir. Esta etapa de descubrimiento es lo que separa un proyecto exitoso de uno que hay que rehacer.</p>
+          <p class="sh__copy">Trabajamos con entregables claros en cada fase: wireframes aprobados antes del diseño, diseño aprobado antes del desarrollo, y staging completo antes del lanzamiento. Tú siempre sabes en qué etapa estamos, qué sigue y cuándo termina. Al lanzar, te capacitamos para gestionar tu propio contenido y te entregamos documentación técnica completa del proyecto.</p>
+        </div>
       </div>
       <div class="process-grid">
         <div class="process-step">
@@ -198,9 +217,15 @@ const porqueElegirnos = [
   <!-- SECCIÓN 6: TESTIMONIOS -->
   <section class="testimonials-section">
     <div class="container">
-      <div class="section-header">
-        <span class="eyebrow">Testimonios</span>
-        <h2 class="section-title">Lo que dicen nuestros clientes.</h2>
+      <div class="sh">
+        <div class="sh__left">
+          <span class="eyebrow">Testimonios</span>
+          <h2 class="section-title">Lo que dicen nuestros clientes.</h2>
+        </div>
+        <div class="sh__right">
+          <p class="sh__copy">Los mejores indicadores de calidad no son los que nosotros mismos decimos — son los resultados que nuestros clientes reportan semanas después de lanzar. Empresas mexicanas de sectores tan distintos como gastronomía, servicios profesionales, retail y manufactura han encontrado en OrigenLab un socio tecnológico confiable que entrega lo prometido en tiempo y forma.</p>
+          <p class="sh__copy">Más del 70% de nuestros proyectos provienen de referidos o de clientes que regresan para un segundo o tercer proyecto. Eso no ocurre por accidente — ocurre porque nuestro enfoque va más allá de entregar código: acompañamos el crecimiento digital de cada cliente con soporte, métricas y estrategia a largo plazo.</p>
+        </div>
       </div>
       <div class="testimonials-grid">
         {testimonios.map(t => <TestimonialCard {...t} />)}
@@ -213,6 +238,70 @@ const porqueElegirnos = [
 </BaseLayout>
 
 <style>
+  /* --- Section Header 2 columnas (sh) --- */
+  .sh {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-bottom: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sh--dark {
+    border-bottom-color: var(--border-dark);
+  }
+
+  .sh__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .sh__left .eyebrow,
+  .sh__left .eyebrow-dark {
+    margin-bottom: 1.25rem;
+  }
+
+  .sh__left .section-title,
+  .sh__left .section-title-dark {
+    text-align: left;
+    margin-bottom: .75rem;
+  }
+
+  .sh__left .section-subtitle {
+    text-align: left;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .sh__right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding-top: .25rem;
+  }
+
+  .sh__copy {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin: 0;
+  }
+
+  .sh__copy--dark {
+    color: rgba(255,255,255,0.55);
+  }
+
+  @media (max-width: 900px) {
+    .sh {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+
   /* --- Utilidades de sección --- */
   .section-header {
     text-align: center;
