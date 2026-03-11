@@ -10,13 +10,6 @@ const articulos = [
     categoria: "Tecnología"
   },
   {
-    slug: "seo-local-cdmx",
-    titulo: "SEO local para empresas en CDMX: guía práctica",
-    resumen: "Cómo posicionar tu negocio en Google Maps y búsquedas locales de Ciudad de México.",
-    fecha: "2025-01-28",
-    categoria: "SEO"
-  },
-  {
     slug: "velocidad-sitio-web-ventas",
     titulo: "Cómo la velocidad de tu sitio impacta directamente tus ventas",
     resumen: "Cada segundo de carga que ahorras puede significar un 7% más de conversiones. Te explicamos cómo.",
@@ -33,9 +26,9 @@ function formatDate(dateStr: string): string {
 <PageLayout
   title="Blog"
   eyebrow="Blog"
-  description="Artículos sobre desarrollo web, SEO y marketing digital para empresas mexicanas."
-  subtitle="Contenido práctico y sin tecnicismos, pensado para dueños de negocio que quieren entender cómo mejorar su presencia digital. Publicamos con frecuencia — guarda esta página o suscríbete para no perderte ningún artículo."
-  keywords="blog desarrollo web México, SEO para empresas, tips web, OrigenLab blog"
+  description="Artículos sobre desarrollo web y marketing digital para empresas mexicanas."
+  subtitle="Contenido práctico y sin tecnicismos, pensado para dueños de negocio que quieren entender cómo mejorar su presencia digital. Publicamos con frecuencia — guarda esta página o suscríbete para no perderte ninguna publicación."
+  keywords="blog desarrollo web México, tips web, marketing digital, OrigenLab blog"
 >
   <div class="blog-grid">
     {articulos.map(art => (
