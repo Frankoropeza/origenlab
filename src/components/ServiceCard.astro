@@ -16,7 +16,7 @@ const { title, description, href } = Astro.props;
   <div class="sc__body">
     <h3 class="sc__title">{title}</h3>
     <p class="sc__desc">{description}</p>
-    <a href={href} class="sc__btn">Más información</a>
+    <a href={href} class="sc__btn">{title}</a>
   </div>
 </div>
 
@@ -28,11 +28,6 @@ const { title, description, href } = Astro.props;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--border);
-    transition: box-shadow 0.2s, transform 0.2s;
-  }
-  .sc:hover {
-    box-shadow: 0 12px 32px rgba(0,0,0,0.09);
-    transform: translateY(-3px);
   }
 
   /* Placeholder imagen */
@@ -94,7 +89,6 @@ const { title, description, href } = Astro.props;
   }
   .sc__btn:hover {
     background: var(--accent-hover);
-    transform: translateY(-1px);
     color: #ffffff !important;
     text-decoration: none;
   }
