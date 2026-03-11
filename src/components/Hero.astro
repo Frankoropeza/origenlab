@@ -16,14 +16,27 @@
       </div>
     </div>
 
-    <!-- COLUMNA DERECHA: marketing copy -->
+    <!-- COLUMNA DERECHA: imagen hero -->
     <div class="hero-right">
-      <p class="hero-copy">
-        En <strong>OrigenLab</strong> diseñamos y desarrollamos sitios web que trabajan por tu negocio las 24 horas. No solo creamos páginas bonitas — construimos activos digitales optimizados técnicamente desde su arquitectura, con velocidad de carga en el primer percentil, código limpio y estructuras de datos que los motores de búsqueda entienden y premian. Cada proyecto parte de un diagnóstico real de tu mercado, tus competidores y tus objetivos de conversión.
-      </p>
-      <p class="hero-copy">
-        Trabajamos con empresas mexicanas de todos los sectores: desde despachos profesionales y tiendas en línea hasta marcas con presencia nacional. Nuestro enfoque combina diseño centrado en el usuario y desarrollo con tecnología de vanguardia — sin atajos, sin procesos inflados, con resultados medibles desde el primer mes.
-      </p>
+      <div class="hero-img-wrap">
+        <img
+          src="/img/hero/workspace-4.avif"
+          alt="Agencia de desarrollo web OrigenLab — workspace profesional"
+          width="600"
+          height="338"
+          loading="eager"
+          decoding="async"
+          class="hero-img"
+        />
+        <div class="hero-img-badge">
+          <span class="hero-img-badge__num">+15</span>
+          <span class="hero-img-badge__label">proyectos<br>entregados</span>
+        </div>
+        <div class="hero-img-stat">
+          <span>⚡</span>
+          <span>Sitios que cargan en &lt;1s</span>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -85,41 +98,72 @@
     flex-wrap: wrap;
   }
 
-  /* ── Columna derecha ── */
-  .hero-right {
+  /* ── Columna derecha — imagen ── */
+  .hero-right { position: relative; }
+
+  .hero-img-wrap {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.25);
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+  }
+
+  .hero-img-badge {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    background: rgba(10,10,20,0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 0.75rem 1.25rem;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding-left: 2rem;
-    border-left: 2px solid var(--border);
+    align-items: center;
+    gap: 0.75rem;
+    color: white;
   }
 
-  .hero-copy {
-    font-size: 15px;
-    line-height: 1.8;
-    color: var(--text-muted);
-    margin: 0;
+  .hero-img-badge__num {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
   }
 
-  .hero-copy strong {
-    color: var(--text);
+  .hero-img-badge__label {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.4;
+  }
+
+  .hero-img-stat {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: rgba(10,10,20,0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 12px;
     font-weight: 600;
+    color: rgba(255,255,255,0.85);
   }
 
   /* ── Responsive ── */
   @media (max-width: 900px) {
-    .hero-inner {
-      grid-template-columns: 1fr;
-      gap: 3rem;
-    }
-    .hero-right {
-      padding-left: 0;
-      border-left: none;
-      border-top: 1px solid var(--border);
-      padding-top: 2rem;
-    }
-    .hero-title {
-      font-size: clamp(2rem, 8vw, 48px);
-    }
+    .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .hero-title { font-size: clamp(2rem, 8vw, 48px); }
   }
 </style>

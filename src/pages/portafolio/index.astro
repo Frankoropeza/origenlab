@@ -4,45 +4,63 @@ import PageLayout from '../../layouts/PageLayout.astro';
 const proyectos = [
   {
     nombre: "CADECA",
-    categoria: "Sitio corporativo B2B",
-    descripcion: "Sitio web completo para empresa de cajas de cartón. Catálogo de 30+ productos y formulario de cotización.",
-    tags: ["Astro", "B2B", "Catálogo"],
-    color: "#E05800"
+    categoria: "Sitio Corporativo B2B",
+    descripcion: "Sitio web completo para fabricante de cajas de cartón en CDMX. 127 páginas, catálogo de 30+ SKUs, zonas de cobertura y cotizador integrado. Optimizado para búsquedas locales en CDMX y Estado de México.",
+    tags: ["Astro", "B2B", "SEO Local", "Catálogo"],
+    color: "#E05800",
+    img: "/img/portafolio/cadeca-1.avif",
+    url: "https://cajas-de-carton.com",
+    resultado: "127 páginas indexadas"
   },
   {
-    nombre: "TiendaFlex",
-    categoria: "E-commerce",
-    descripcion: "Tienda en línea con integración Mercado Pago, gestión de inventario y panel de administración.",
-    tags: ["Next.js", "E-commerce", "MercadoPago"],
-    color: "#6C63FF"
+    nombre: "REDEIL",
+    categoria: "Sitio de Servicios + Cotizador",
+    descripcion: "Rediseño web para empresa líder en renta de iluminación para eventos en CDMX. Catálogo de equipos, galería de eventos y formulario de cotización. Incremento real en solicitudes desde el lanzamiento.",
+    tags: ["Astro", "Servicios", "Cotizador", "SEO"],
+    color: "#7C3AED",
+    img: "/img/portafolio/redeil-2.avif",
+    url: "https://rentadeiluminacion.com",
+    resultado: "+contactos desde semana 1"
   },
   {
-    nombre: "DrFreco",
-    categoria: "Landing page médica",
-    descripcion: "Landing page de alta conversión para consultorio médico. +40% en reservas de citas.",
-    tags: ["Astro", "CRO", "Salud"],
-    color: "#00D4FF"
+    nombre: "BRINCOLINS",
+    categoria: "Directorio + Reservas",
+    descripcion: "Directorio web de renta de inflables para fiestas infantiles en CDMX y Estado de México. 14 inflables con páginas individuales, cotizador y directorio de proveedores locales con SEO geolocalizado.",
+    tags: ["Astro", "Directorio", "SEO Local", "Entretenimiento"],
+    color: "#F59E0B",
+    img: "/img/portafolio/brincolins-1.avif",
+    url: "https://brincolins.com",
+    resultado: "SEO local CDMX + EdoMex"
   },
   {
-    nombre: "LogiTrack MX",
-    categoria: "Sistema web + landing",
-    descripcion: "Sitio informativo + dashboard para empresa de logística. Diseño oscuro y moderno.",
-    tags: ["React", "Dashboard", "Logística"],
-    color: "#22c55e"
+    nombre: "Gama de México",
+    categoria: "Sitio Corporativo",
+    descripcion: "Sitio corporativo para empresa establecida en México. Rediseño completo con enfoque en transmitir experiencia, confianza y captura de leads B2B.",
+    tags: ["Desarrollo Web", "Corporativo", "B2B"],
+    color: "#0EA5E9",
+    img: null,
+    url: null,
+    resultado: "Presencia digital profesional"
   },
   {
-    nombre: "Brinca Park",
-    categoria: "Sitio de entretenimiento",
-    descripcion: "Sitio web para parque de brincolines con reservas en línea y galería de eventos.",
-    tags: ["Astro", "Reservas", "Entretenimiento"],
-    color: "#f59e0b"
+    nombre: "Eventech",
+    categoria: "Catálogo de Servicios",
+    descripcion: "Sitio web para empresa de renta de equipo para eventos. Catálogo completo de productos, galería de eventos realizados y sistema de cotización por WhatsApp.",
+    tags: ["Astro", "Catálogo", "Eventos"],
+    color: "#10B981",
+    img: null,
+    url: "https://eventech.mx",
+    resultado: "Catálogo digital completo"
   },
   {
-    nombre: "Estudio Mija",
-    categoria: "Portafolio creativo",
-    descripcion: "Portafolio visual para estudio de diseño. Animaciones suaves y galería interactiva.",
-    tags: ["Astro", "Animaciones", "Diseño"],
-    color: "#ec4899"
+    nombre: "Tu Empresa",
+    categoria: "Próximo Proyecto",
+    descripcion: "¿Tu negocio necesita presencia digital profesional? Diseñamos sitios rápidos, modernos y enfocados en resultados reales. Cotización sin costo en menos de 24 horas.",
+    tags: ["Diseño Web", "Desarrollo", "SEO"],
+    color: "#6366F1",
+    img: null,
+    url: "/cotizar/",
+    resultado: "¿Empezamos?"
   }
 ];
 ---
@@ -60,9 +78,14 @@ const proyectos = [
 
   <div class="projects-grid">
     {proyectos.map(p => (
-      <div class="project-card">
+      <article class="project-card">
         <div class="project-thumb" style={`--accent: ${p.color}`}>
-          <div class="project-initial">{p.nombre[0]}</div>
+          {p.img ? (
+            <img src={p.img} alt={`Proyecto ${p.nombre} — OrigenLab`} width="600" height="338" loading="lazy" class="project-img" />
+          ) : (
+            <div class="project-initial">{p.nombre[0]}</div>
+          )}
+          <span class="project-resultado">{p.resultado}</span>
         </div>
         <div class="project-info">
           <span class="project-cat">{p.categoria}</span>
@@ -71,8 +94,13 @@ const proyectos = [
           <div class="project-tags">
             {p.tags.map(t => <span class="tag">{t}</span>)}
           </div>
+          {p.url && (
+            <a href={p.url} class="project-link" target={p.url.startsWith('http') ? '_blank' : '_self'} rel={p.url.startsWith('http') ? 'noopener noreferrer' : ''}>
+              {p.url.startsWith('http') ? 'Ver sitio →' : 'Cotizar proyecto →'}
+            </a>
+          )}
         </div>
-      </div>
+      </article>
     ))}
   </div>
 
@@ -113,12 +141,38 @@ const proyectos = [
   }
 
   .project-thumb {
-    height: 140px;
+    height: 200px;
     background: color-mix(in srgb, var(--accent) 15%, var(--color-surface));
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid var(--color-border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+
+  .project-card:hover .project-img { transform: scale(1.04); }
+
+  .project-resultado {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(8px);
+    color: var(--accent, #0ea5e9);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.1);
   }
 
   .project-initial {
@@ -128,6 +182,19 @@ const proyectos = [
     opacity: 0.4;
     font-family: var(--font-mono);
   }
+
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-decoration: none;
+    margin-top: 0.75rem;
+    transition: gap 0.2s;
+  }
+  .project-link:hover { gap: 0.5rem; }
 
   .project-info {
     padding: 1.5rem;
