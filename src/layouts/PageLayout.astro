@@ -3,18 +3,22 @@ import BaseLayout from './BaseLayout.astro';
 
 interface Props {
   title: string;
+  eyebrow?: string;
   description?: string;
+  subtitle?: string;
   keywords?: string;
 }
 
-const { title, description, keywords } = Astro.props;
+const { title, eyebrow, description, subtitle, keywords } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description} keywords={keywords}>
   <section class="page-hero">
     <div class="container">
+      {eyebrow && <span class="eyebrow">{eyebrow}</span>}
       <h1 class="page-title">{title}</h1>
       {description && <p class="page-desc">{description}</p>}
+      {subtitle && <p class="page-subtitle">{subtitle}</p>}
     </div>
   </section>
   <div class="container page-content">
@@ -24,24 +28,46 @@ const { title, description, keywords } = Astro.props;
 
 <style>
   .page-hero {
-    padding: 80px 0 3rem;
+    padding: calc(var(--header-height) + 3.5rem) 0 3.5rem;
     background: var(--bg-alt);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .eyebrow {
+    display: inline-block;
+    padding: 0.3rem 0.875rem;
+    border: 1px solid var(--accent);
+    border-radius: 980px;
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
   }
 
   .page-title {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     letter-spacing: -0.02em;
-    line-height: 1.2;
+    line-height: 1.15;
     color: var(--text);
+    max-width: 780px;
+    margin-bottom: 1.25rem;
   }
 
   .page-desc {
-    margin-top: 1rem;
-    font-size: 1.125rem;
+    font-size: 17px;
     color: var(--text-muted);
-    max-width: 600px;
+    max-width: 680px;
+    line-height: 1.75;
+    margin: 0 0 1rem;
+  }
+
+  .page-subtitle {
+    font-size: 15px;
+    color: var(--text-muted);
+    max-width: 680px;
+    line-height: 1.8;
+    margin: 0;
+    opacity: 0.8;
   }
 
   .page-content {
