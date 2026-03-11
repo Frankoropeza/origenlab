@@ -25,15 +25,13 @@ const initials = name.split(" ").map(n => n[0]).slice(0, 2).join("");
   <div class="tc__footer">
     <div class="tc__avatar" aria-hidden="true">{initials}</div>
     <div class="tc__info">
-      <p class="tc__name">
-        {name}
-        {url && (
-          <a href={url} target="_blank" rel="noopener noreferrer" class="tc__link" title={`Ver sitio de ${company}`}>
-            ↗
-          </a>
-        )}
+      <p class="tc__name">{name}</p>
+      <p class="tc__role">{role} ·
+        {url
+          ? <a href={url} target="_blank" rel="noopener noreferrer" class="tc__link">{company}</a>
+          : company
+        }
       </p>
-      <p class="tc__role">{role} · {company}</p>
     </div>
   </div>
 
