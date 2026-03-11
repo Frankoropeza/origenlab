@@ -4,31 +4,35 @@ interface Props {
   company: string;
   text: string;
   role: string;
+  url?: string;
 }
 
-const { name, company, text, role } = Astro.props;
-
-// Iniciales para el placeholder circular
+const { name, company, text, role, url } = Astro.props;
 const initials = name.split(" ").map(n => n[0]).slice(0, 2).join("");
 ---
 
 <div class="tc">
 
-  <!-- Cuerpo: estrellas + texto -->
+  <!-- Estrellas + texto -->
   <div class="tc__body">
-    <div class="tc__stars">
+    <div class="tc__stars" aria-label="5 estrellas">
       <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
     </div>
     <p class="tc__text">{text}</p>
   </div>
 
-  <!-- Footer: avatar + nombre -->
+  <!-- Footer: avatar + info + enlace opcional -->
   <div class="tc__footer">
-    <div class="tc__avatar" aria-hidden="true">
-      {initials}
-    </div>
+    <div class="tc__avatar" aria-hidden="true">{initials}</div>
     <div class="tc__info">
-      <p class="tc__name">{name}</p>
+      <p class="tc__name">
+        {name}
+        {url && (
+          <a href={url} target="_blank" rel="noopener noreferrer" class="tc__link" title={`Ver sitio de ${company}`}>
+            ↗
+          </a>
+        )}
+      </p>
       <p class="tc__role">{role} · {company}</p>
     </div>
   </div>
@@ -47,7 +51,6 @@ const initials = name.split(" ").map(n => n[0]).slice(0, 2).join("");
     gap: 1.5rem;
   }
 
-  /* ── Estrellas ── */
   .tc__stars {
     display: flex;
     gap: 2px;
@@ -58,7 +61,6 @@ const initials = name.split(" ").map(n => n[0]).slice(0, 2).join("");
     font-size: 14px;
   }
 
-  /* ── Texto ── */
   .tc__text {
     font-size: 15px;
     color: var(--text);
@@ -66,7 +68,6 @@ const initials = name.split(" ").map(n => n[0]).slice(0, 2).join("");
     margin: 0;
   }
 
-  /* ── Footer ── */
   .tc__footer {
     display: flex;
     align-items: center;
@@ -75,7 +76,6 @@ const initials = name.split(" ").map(n => n[0]).slice(0, 2).join("");
     border-top: 1px solid var(--border);
   }
 
-  /* Avatar circular con iniciales */
   .tc__avatar {
     width: 44px;
     height: 44px;
@@ -89,7 +89,6 @@ const initials = name.split(" ").map(n => n[0]).slice(0, 2).join("");
     font-weight: 700;
     flex-shrink: 0;
     letter-spacing: 0.5px;
-    /* Cuando haya foto real: reemplazar background por <img> */
   }
 
   .tc__info {
@@ -103,6 +102,20 @@ const initials = name.split(" ").map(n => n[0]).slice(0, 2).join("");
     font-weight: 600;
     color: var(--text);
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .tc__link {
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .tc__link:hover {
+    text-decoration: underline;
   }
 
   .tc__role {
