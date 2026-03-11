@@ -1,11 +1,11 @@
 ---
 const waNumber = "5255XXXXXXXX";
-const message = encodeURIComponent("Hola, me interesa un sitio web profesional. ¿Podrían darme más información?");
+const message = encodeURIComponent("Hola, me interesa un proyecto web. ¿Podrían darme más información?");
 const waLink = `https://wa.me/${waNumber}?text=${message}`;
 ---
 
 <a href={waLink} target="_blank" rel="noopener noreferrer" class="wa-bubble" aria-label="Contáctanos por WhatsApp">
-  <svg viewBox="0 0 32 32" width="28" height="28" fill="#fff">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff">
     <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 0 0 2.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0 0 16.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
   </svg>
 </a>
@@ -15,27 +15,19 @@ const waLink = `https://wa.me/${waNumber}?text=${message}`;
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     background: #25D366;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
     z-index: 9999;
-    transition: all var(--transition);
-    animation: pulse-wa 2s infinite;
+    transition: transform 0.2s var(--ease);
   }
 
   .wa-bubble:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+    transform: scale(1.08);
     color: #fff;
-  }
-
-  @keyframes pulse-wa {
-    0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
-    50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6); }
   }
 </style>

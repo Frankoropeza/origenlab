@@ -10,71 +10,48 @@ const { name, company, text, role } = Astro.props;
 ---
 
 <div class="testimonial-card">
-  <div class="testimonial-stars">★★★★★</div>
-  <p class="testimonial-text">"{text}"</p>
+  <span class="testimonial-quote">"</span>
+  <p class="testimonial-text">{text}</p>
   <div class="testimonial-author">
-    <div class="testimonial-avatar">{name.charAt(0)}</div>
-    <div>
-      <p class="testimonial-name">{name}</p>
-      <p class="testimonial-role">{role}, {company}</p>
-    </div>
+    <p class="testimonial-name">{name}</p>
+    <p class="testimonial-role">{role}, {company}</p>
   </div>
 </div>
 
 <style>
   .testimonial-card {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius);
+    background: var(--bg-alt);
+    border-radius: 16px;
     padding: 2rem;
-    transition: all var(--transition);
+    position: relative;
   }
 
-  .testimonial-card:hover {
-    border-color: var(--color-accent);
-  }
-
-  .testimonial-stars {
-    color: #FFD93D;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
+  .testimonial-quote {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent);
+    opacity: 0.3;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0.5rem;
   }
 
   .testimonial-text {
-    font-size: 1rem;
-    color: var(--color-muted);
-    line-height: 1.8;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.7;
     margin-bottom: 1.5rem;
-    font-style: italic;
-  }
-
-  .testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .testimonial-avatar {
-    width: 44px;
-    height: 44px;
-    background: linear-gradient(135deg, var(--color-accent), var(--color-highlight));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1.125rem;
-    color: #fff;
   }
 
   .testimonial-name {
     font-weight: 600;
-    font-size: 0.9375rem;
+    font-size: 15px;
+    color: var(--text);
   }
 
   .testimonial-role {
-    font-size: 0.8125rem;
-    color: var(--color-muted);
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 2px;
   }
 </style>

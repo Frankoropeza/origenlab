@@ -1,25 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
-
 :root {
-  --color-primary: #0D0D0D;
-  --color-accent: #6C63FF;
-  --color-secondary: #F5F5F5;
-  --color-text: #1A1A2E;
-  --color-highlight: #00D4FF;
-  --color-surface: #141421;
-  --color-surface-light: #1E1E30;
-  --color-border: #2A2A3E;
-  --color-muted: #8888AA;
+  /* Fondos */
+  --bg: #FFFFFF;
+  --bg-alt: #F5F5F7;
+  --bg-dark: #000000;
+  --bg-card: #FBFBFD;
 
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  /* Texto */
+  --text: #1D1D1F;
+  --text-muted: #6E6E73;
+  --text-on-dark: #F5F5F7;
+  --text-on-dark-muted: rgba(255,255,255,0.6);
 
-  --max-width: 1200px;
-  --header-height: 80px;
-  --topbar-height: 40px;
-  --radius: 12px;
+  /* Acento */
+  --accent: #0A84FF;
+  --accent-hover: #0070D8;
+
+  /* Bordes */
+  --border: rgba(0,0,0,0.1);
+  --border-dark: rgba(255,255,255,0.15);
+
+  /* Tipografía */
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Inter, sans-serif;
+
+  /* Espaciado */
+  --container: 1400px;
+  --section-py: clamp(5rem, 10vw, 8rem);
+  --gap-cards: 2px;
+
+  /* Transiciones */
+  --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* Layout */
+  --topbar-height: 38px;
+  --header-height: 48px;
+
+  /* Aliases para páginas internas */
+  --color-primary: var(--bg);
+  --color-accent: var(--accent);
+  --color-secondary: var(--text);
+  --color-text: var(--text);
+  --color-highlight: var(--accent);
+  --color-surface: var(--bg-alt);
+  --color-surface-light: var(--bg-alt);
+  --color-border: var(--border);
+  --color-muted: var(--text-muted);
+  --color-bg: var(--bg);
+  --font-sans: var(--font);
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --max-width: var(--container);
+  --radius: 16px;
   --radius-sm: 8px;
-  --transition: 0.3s ease;
+  --transition: 0.2s var(--ease);
 }
 
 *,
@@ -37,9 +68,9 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -47,11 +78,7 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  transition: color var(--transition);
-}
-
-a:hover {
-  color: var(--color-accent);
+  transition: color 0.2s var(--ease);
 }
 
 img {
@@ -73,77 +100,58 @@ button {
 
 .container {
   width: 100%;
-  max-width: var(--max-width);
+  max-width: var(--container);
   margin: 0 auto;
   padding: 0 1.5rem;
-}
-
-.section {
-  padding: 5rem 0;
-}
-
-.section-title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.section-subtitle {
-  font-size: 1.125rem;
-  color: var(--color-muted);
-  max-width: 600px;
-  margin-bottom: 3rem;
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.875rem 2rem;
-  border-radius: var(--radius);
-  font-weight: 600;
-  font-size: 1rem;
-  transition: all var(--transition);
+  gap: 0.375rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 980px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  transition: all 0.2s var(--ease);
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .btn-primary {
-  background: var(--color-accent);
+  background: var(--accent);
   color: #fff;
 }
 
 .btn-primary:hover {
-  background: #5A52E0;
+  background: var(--accent-hover);
   color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(108, 99, 255, 0.3);
 }
 
 .btn-outline {
-  border: 2px solid var(--color-border);
-  color: var(--color-secondary);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
 }
 
 .btn-outline:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-  transform: translateY(-2px);
+  background: var(--accent);
+  color: #fff;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, var(--color-accent), var(--color-highlight));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.btn-outline-white {
+  border: 1px solid rgba(255,255,255,0.4);
+  color: var(--text-on-dark);
+  background: transparent;
+}
+
+.btn-outline-white:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
 }
 
 @media (max-width: 768px) {
-  .section {
-    padding: 3rem 0;
-  }
-
-  .section-title {
-    font-size: clamp(1.5rem, 5vw, 2.25rem);
+  .container {
+    padding: 0 1.25rem;
   }
 }

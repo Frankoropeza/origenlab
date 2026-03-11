@@ -8,30 +8,26 @@ import CTASection from '../components/CTASection.astro';
 const servicios = [
   {
     title: "Desarrollo Web",
-    description: "Sitios corporativos modernos, rápidos y optimizados para SEO. Construidos con Astro y las mejores prácticas.",
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>`,
-    price: "Desde $15,000 MXN",
+    description: "Sitios corporativos rápidos, modernos y optimizados para SEO. Construidos con tecnología de vanguardia.",
+    icon: "💻",
     href: "/servicios/desarrollo-web/"
   },
   {
     title: "Tiendas en Línea",
-    description: "E-commerce completo con carrito, pagos y gestión de inventario. Integración con Mercado Pago y Stripe.",
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>`,
-    price: "Desde $20,000 MXN",
+    description: "E-commerce completo con integración de Mercado Pago y Stripe. Tu tienda lista para vender.",
+    icon: "🛒",
     href: "/servicios/tiendas-en-linea/"
   },
   {
     title: "Landing Pages",
-    description: "Páginas de aterrizaje de alta conversión. Diseño persuasivo + copy estratégico + velocidad extrema.",
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
-    price: "Desde $8,500 MXN",
+    description: "Páginas de aterrizaje de alta conversión con copy estratégico y velocidad extrema.",
+    icon: "🚀",
     href: "/servicios/landing-pages/"
   },
   {
     title: "SEO y Posicionamiento",
-    description: "Aparece en los primeros resultados de Google. SEO técnico, on-page y local para empresas mexicanas.",
-    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>`,
-    price: "Desde $4,500 MXN/mes",
+    description: "Aparece en los primeros resultados de Google. SEO técnico y local para empresas en México.",
+    icon: "📈",
     href: "/servicios/seo-posicionamiento/"
   }
 ];
@@ -39,44 +35,72 @@ const servicios = [
 const testimonios = [
   {
     name: "Carlos Mendoza",
-    company: "CADECA México",
-    text: "OrigenLab transformó nuestra presencia digital. El sitio carga increíblemente rápido y nuestras cotizaciones en línea aumentaron un 60% en el primer mes.",
-    role: "Director Comercial"
+    company: "Restaurante La Capital",
+    text: "Desde que lanzamos el nuevo sitio, nuestras reservaciones en línea se triplicaron. El diseño es elegante y la velocidad impresionante.",
+    role: "Propietario"
   },
   {
     name: "Sofía Ramírez",
-    company: "TiendaFlex MX",
-    text: "Excelente trabajo en nuestra tienda en línea. El proceso fue claro desde el inicio y entregaron antes del plazo acordado. 100% recomendados.",
-    role: "Fundadora"
+    company: "Despacho Ramírez & Asociados",
+    text: "Profesionales y puntuales. Nos entregaron un sitio que transmite exactamente la seriedad y confianza que necesitábamos.",
+    role: "Socia fundadora"
   },
   {
     name: "Diego Torres",
-    company: "LogiTrack MX",
-    text: "Profesionales, creativos y muy responsables. El diseño superó nuestras expectativas y el SEO empezó a dar resultados desde la primera semana.",
-    role: "CEO"
+    company: "TiendaMX",
+    text: "Nuestra tienda en línea genera más ventas que la tienda física. La integración con Mercado Pago fue impecable.",
+    role: "Director General"
+  },
+  {
+    name: "Ana García",
+    company: "Estudio Creativo Mija",
+    text: "El portafolio que nos diseñaron es una obra de arte. Cada proyecto se presenta de forma espectacular y hemos conseguido clientes internacionales.",
+    role: "Directora Creativa"
+  },
+  {
+    name: "Roberto Sánchez",
+    company: "Clínica Dental Sonríe",
+    text: "Aparecemos en primer lugar en Google cuando buscan dentistas en nuestra zona. La inversión se pagó sola en dos meses.",
+    role: "Director Médico"
+  },
+  {
+    name: "María López",
+    company: "Constructora Horizonte",
+    text: "El sitio que nos hicieron refleja perfectamente la calidad de nuestros proyectos. Los clientes nos contactan más y con mayor confianza.",
+    role: "Gerente Comercial"
   }
 ];
 
-const faqs = [
+const porqueElegirnos = [
   {
-    pregunta: "¿Cuánto tiempo toma desarrollar un sitio web?",
-    respuesta: "Depende del proyecto: una landing page toma 5–7 días, un sitio corporativo 3–4 semanas, y una tienda en línea 4–6 semanas. Siempre acordamos tiempos antes de comenzar."
+    num: "#01",
+    title: "Velocidad extrema",
+    desc: "Sitios que cargan en menos de 1 segundo. Rendimiento real, no promesas."
   },
   {
-    pregunta: "¿Trabajan con empresas de toda la República?",
-    respuesta: "Sí. Aunque estamos basados en CDMX, trabajamos con clientes de todo México de forma 100% remota sin ningún problema."
+    num: "#02",
+    title: "SEO desde el código",
+    desc: "Arquitectura técnica optimizada. Estructura semántica y Core Web Vitals en verde."
   },
   {
-    pregunta: "¿El sitio incluye dominio y hosting?",
-    respuesta: "Entregamos el sitio listo para publicar. Te asesoramos con las mejores opciones de dominio y hosting según tu presupuesto, o lo configuramos directamente si lo prefieres."
+    num: "#03",
+    title: "Diseño que convierte",
+    desc: "UX/UI centrado en resultados. Cada elemento tiene un propósito: convertir."
   },
   {
-    pregunta: "¿Puedo actualizar el contenido yo mismo?",
-    respuesta: "Sí. Configuramos un panel de administración sencillo o te capacitamos para editar el contenido básico sin necesidad de saber programar."
+    num: "#04",
+    title: "Soporte continuo",
+    desc: "Acompañamiento post-lanzamiento. No desaparecemos después de entregar."
   },
   {
-    pregunta: "¿Ofrecen mantenimiento después de la entrega?",
-    respuesta: "Sí, tenemos planes de mantenimiento mensual que incluyen actualizaciones, backups, monitoreo y soporte prioritario."
+    num: "#05",
+    title: "Tecnología moderna",
+    desc: "Astro, Next.js y las mejores herramientas del mercado para tu proyecto."
+  },
+  {
+    num: "#06",
+    title: "Resultados medibles",
+    desc: "Reportes mensuales de métricas. Sabrás exactamente cómo rinde tu sitio."
   }
 ];
 ---
@@ -86,16 +110,30 @@ const faqs = [
   description="Agencia de desarrollo web profesional en México. Sitios rápidos, modernos y optimizados para SEO que generan resultados reales para tu negocio."
   keywords="desarrollo web México, agencia web CDMX, diseño web profesional, sitios web rápidos, SEO México, tiendas en línea"
 >
-  <!-- HERO -->
+  <!-- SECCIÓN 1: HERO -->
   <Hero />
 
-  <!-- SERVICIOS -->
-  <section class="section" id="servicios">
+  <!-- SECCIÓN 2: BARRA CTA -->
+  <section class="cta-bar">
+    <div class="container cta-bar__inner">
+      <div class="cta-bar__text">
+        <p class="cta-bar__headline">¿Tienes un proyecto en mente?</p>
+        <p class="cta-bar__sub">Cuéntanos tu idea — respondemos en menos de 24 horas con una propuesta personalizada.</p>
+      </div>
+      <div class="cta-bar__actions">
+        <a href="/cotizar/" class="btn btn-primary">Iniciar proyecto →</a>
+        <a href="mailto:hola@origenlab.mx" class="cta-bar__link">hola@origenlab.mx</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: SERVICIOS -->
+  <section class="services-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Servicios</span>
-        <h2 class="section-title">Todo lo que necesita tu negocio en línea</h2>
-        <p class="section-subtitle">Desde el diseño hasta el posicionamiento, manejamos cada parte de tu presencia digital.</p>
+        <span class="eyebrow">Servicios</span>
+        <h2 class="section-title">Todo lo que tu negocio necesita en línea.</h2>
+        <p class="section-subtitle">Desde el diseño hasta el posicionamiento, construimos cada parte de tu presencia digital.</p>
       </div>
       <div class="services-grid">
         {servicios.map(s => <ServiceCard {...s} />)}
@@ -103,80 +141,66 @@ const faqs = [
     </div>
   </section>
 
-  <!-- POR QUÉ ELEGIRNOS -->
-  <section class="section section-alt">
+  <!-- SECCIÓN 4: POR QUÉ ELEGIRNOS -->
+  <section class="why-section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-badge">Diferencia</span>
-        <h2 class="section-title">¿Por qué OrigenLab?</h2>
+      <div class="section-header-dark">
+        <span class="eyebrow-dark">Diferencia</span>
+        <h2 class="section-title-dark">¿Por qué OrigenLab?</h2>
       </div>
       <div class="why-grid">
-        <div class="why-card">
-          <div class="why-number">01</div>
-          <h3>Velocidad real</h3>
-          <p>Nuestros sitios cargan en menos de 1 segundo. No es marketing — es ingeniería. Usamos Astro, el framework más rápido del mercado.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">02</div>
-          <h3>SEO desde el código</h3>
-          <p>No agregamos SEO al final. Lo construimos desde cero: estructura semántica, Core Web Vitals en verde y schema.org completo.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">03</div>
-          <h3>Diseño que convierte</h3>
-          <p>Cada elemento tiene un propósito: llevar al visitante a la acción. No solo hacemos sitios bonitos, hacemos sitios que venden.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-number">04</div>
-          <h3>Comunicación directa</h3>
-          <p>Sin intermediarios. Hablas directo con quien construye tu sitio. Actualizaciones diarias y transparencia total en cada etapa.</p>
-        </div>
+        {porqueElegirnos.map(item => (
+          <div class="why-card">
+            <span class="why-number">{item.num}</span>
+            <h3 class="why-title">{item.title}</h3>
+            <p class="why-desc">{item.desc}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>
 
-  <!-- PROCESO -->
-  <section class="section">
+  <!-- SECCIÓN 5: PROCESO -->
+  <section class="process-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Proceso</span>
         <h2 class="section-title">Cómo trabajamos</h2>
         <p class="section-subtitle">Simple, transparente y sin sorpresas.</p>
       </div>
-      <div class="process-steps">
+      <div class="process-grid">
         <div class="process-step">
-          <div class="step-circle">1</div>
-          <div class="step-line"></div>
-          <h3>Descubrimiento</h3>
-          <p>Entendemos tu negocio, objetivos y competencia. Definimos el alcance y te damos un presupuesto claro.</p>
+          <div class="step-number">1</div>
+          <div class="step-connector"></div>
+          <h3 class="step-title">Descubrimiento</h3>
+          <p class="step-desc">Entendemos tu negocio, objetivos y competencia.</p>
         </div>
         <div class="process-step">
-          <div class="step-circle">2</div>
-          <div class="step-line"></div>
-          <h3>Diseño</h3>
-          <p>Creamos el diseño visual. Tú lo revisas, apruebas y ajustamos hasta que quede perfecto.</p>
+          <div class="step-number">2</div>
+          <div class="step-connector"></div>
+          <h3 class="step-title">Diseño</h3>
+          <p class="step-desc">Prototipo y aprobación visual antes de desarrollar.</p>
         </div>
         <div class="process-step">
-          <div class="step-circle">3</div>
-          <div class="step-line"></div>
-          <h3>Desarrollo</h3>
-          <p>Construimos el sitio con código limpio, rápido y escalable. Pruebas en todos los dispositivos.</p>
+          <div class="step-number">3</div>
+          <div class="step-connector"></div>
+          <h3 class="step-title">Desarrollo</h3>
+          <p class="step-desc">Código limpio, optimizado y listo para escalar.</p>
         </div>
         <div class="process-step">
-          <div class="step-circle">4</div>
-          <h3>Lanzamiento</h3>
-          <p>Publicamos, configuramos analítica y te entregamos todo listo para crecer.</p>
+          <div class="step-number">4</div>
+          <h3 class="step-title">Lanzamiento</h3>
+          <p class="step-desc">Deploy, SEO técnico y capacitación completa.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIOS -->
-  <section class="section section-alt">
+  <!-- SECCIÓN 6: TESTIMONIOS -->
+  <section class="testimonials-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge">Testimonios</span>
-        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <span class="eyebrow">Testimonios</span>
+        <h2 class="section-title">Lo que dicen nuestros clientes.</h2>
       </div>
       <div class="testimonials-grid">
         {testimonios.map(t => <TestimonialCard {...t} />)}
@@ -184,212 +208,286 @@ const faqs = [
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge">FAQ</span>
-        <h2 class="section-title">Preguntas frecuentes</h2>
-      </div>
-      <div class="faq-list">
-        {faqs.map(f => (
-          <details class="faq-item">
-            <summary>{f.pregunta}</summary>
-            <p>{f.respuesta}</p>
-          </details>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
+  <!-- SECCIÓN 7: CTA FINAL -->
   <CTASection />
 </BaseLayout>
 
 <style>
-  .section {
-    padding: 6rem 0;
-  }
-
-  .section-alt {
-    background: var(--color-surface);
-    border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
-  }
-
+  /* --- Utilidades de sección --- */
   .section-header {
     text-align: center;
     margin-bottom: 3.5rem;
   }
 
-  .section-badge {
+  .eyebrow {
     display: inline-block;
-    padding: 0.35rem 1rem;
-    background: color-mix(in srgb, var(--color-accent) 12%, transparent);
-    color: var(--color-accent);
-    border-radius: 100px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 1rem;
+    padding: 0.3rem 0.875rem;
+    border: 1px solid var(--accent);
+    border-radius: 980px;
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
   }
 
   .section-title {
-    font-size: clamp(1.75rem, 4vw, 2.75rem);
-    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 56px);
+    font-weight: 700;
     letter-spacing: -0.02em;
+    color: var(--text);
+    line-height: 1.1;
     margin-bottom: 1rem;
   }
 
   .section-subtitle {
-    font-size: 1.1rem;
-    color: var(--color-muted);
-    max-width: 560px;
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--text-muted);
+    max-width: 600px;
     margin: 0 auto;
-    line-height: 1.7;
+    line-height: 1.5;
   }
 
-  /* Servicios */
+  /* --- SECCIÓN 2: CTA BAR --- */
+  .cta-bar {
+    background: var(--text);
+    padding: 2.5rem 0;
+  }
+
+  .cta-bar__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .cta-bar__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .cta-bar__headline {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .cta-bar__sub {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    margin: 0;
+  }
+
+  .cta-bar__actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .cta-bar__link {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .cta-bar__link:hover {
+    color: #FFFFFF;
+  }
+
+  /* --- SECCIÓN 3: SERVICIOS --- */
+  .services-section {
+    background: var(--bg);
+    padding: var(--section-py) 0;
+  }
+
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-cards);
   }
 
-  /* Por qué */
+  /* --- SECCIÓN 4: POR QUÉ ELEGIRNOS --- */
+  .why-section {
+    background: var(--bg-dark);
+    padding: var(--section-py) 0;
+  }
+
+  .section-header-dark {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .eyebrow-dark {
+    display: inline-block;
+    padding: 0.3rem 0.875rem;
+    border: 1px solid var(--accent);
+    border-radius: 980px;
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+  }
+
+  .section-title-dark {
+    font-size: clamp(2rem, 5vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-on-dark);
+    line-height: 1.1;
+  }
+
   .why-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-cards);
   }
 
   .why-card {
-    padding: 2rem;
-    background: var(--color-bg);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    transition: border-color 0.3s;
-  }
-
-  .why-card:hover {
-    border-color: var(--color-accent);
+    background: #1C1C1E;
+    border-radius: 20px;
+    padding: 40px;
   }
 
   .why-number {
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: var(--color-accent);
-    opacity: 0.2;
-    font-family: var(--font-mono);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
     margin-bottom: 1rem;
   }
 
-  .why-card h3 {
-    font-size: 1.15rem;
+  .why-title {
+    font-size: 22px;
     font-weight: 700;
+    color: var(--text-on-dark);
     margin-bottom: 0.75rem;
   }
 
-  .why-card p {
-    color: var(--color-muted);
-    font-size: 0.9rem;
-    line-height: 1.7;
+  .why-desc {
+    font-size: 15px;
+    color: var(--text-on-dark-muted);
+    line-height: 1.6;
   }
 
-  /* Proceso */
-  .process-steps {
+  /* --- SECCIÓN 5: PROCESO --- */
+  .process-section {
+    background: var(--bg-alt);
+    padding: var(--section-py) 0;
+  }
+
+  .process-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    position: relative;
-  }
-
-  .process-step {
     text-align: center;
   }
 
-  .step-circle {
-    width: 56px;
-    height: 56px;
-    background: var(--color-accent);
-    color: white;
+  .process-step {
+    position: relative;
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+    background: var(--accent);
+    color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.25rem;
-    font-weight: 800;
-    margin: 0 auto 1.25rem;
-  }
-
-  .process-step h3 {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     font-weight: 700;
-    margin-bottom: 0.75rem;
+    margin: 0 auto 1.25rem;
+    position: relative;
+    z-index: 1;
   }
 
-  .process-step p {
-    color: var(--color-muted);
-    font-size: 0.9rem;
-    line-height: 1.6;
+  .step-connector {
+    position: absolute;
+    top: 24px;
+    left: calc(50% + 24px);
+    right: calc(-50% + 24px);
+    height: 2px;
+    background: var(--accent);
+    opacity: 0.3;
   }
 
-  /* Testimonios */
+  .process-step:last-child .step-connector {
+    display: none;
+  }
+
+  .step-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  .step-desc {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* --- SECCIÓN 6: TESTIMONIOS --- */
+  .testimonials-section {
+    background: var(--bg);
+    padding: var(--section-py) 0;
+  }
+
   .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
-
-  /* FAQ */
-  .faq-list {
-    max-width: 720px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
 
-  .faq-item {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: border-color 0.2s;
+  /* --- RESPONSIVE --- */
+  @media (max-width: 1024px) {
+    .why-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
-  .faq-item[open] {
-    border-color: var(--color-accent);
-  }
+  @media (max-width: 768px) {
+    .cta-bar__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .cta-bar__actions {
+      justify-content: center;
+    }
 
-  .faq-item summary {
-    padding: 1.25rem 1.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
-  }
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
 
-  .faq-item summary::after {
-    content: '+';
-    font-size: 1.5rem;
-    color: var(--color-accent);
-    transition: transform 0.2s;
-    line-height: 1;
-  }
+    .why-grid {
+      grid-template-columns: 1fr;
+    }
 
-  .faq-item[open] summary::after {
-    transform: rotate(45deg);
-  }
+    .process-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
 
-  .faq-item p {
-    padding: 0 1.5rem 1.25rem;
-    color: var(--color-muted);
-    line-height: 1.7;
-    font-size: 0.95rem;
+    .step-connector {
+      display: none;
+    }
+
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-subtitle {
+      font-size: 17px;
+    }
   }
 </style>
