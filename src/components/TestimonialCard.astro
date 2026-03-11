@@ -9,7 +9,7 @@ interface Props {
 const { name, company, text, role } = Astro.props;
 
 // Iniciales para el placeholder circular
-const initials = name.split(" ").map((n: string) => n[0]).slice(0, 2).join("");
+const initials = name.split(" ").map(n => n[0]).slice(0, 2).join("");
 ---
 
 <div class="tc">
