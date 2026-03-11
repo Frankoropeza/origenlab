@@ -71,6 +71,13 @@ const testimonios = [
   }
 ];
 
+const proceso = [
+  { title: "Descubrimiento", description: "Entendemos tu negocio, objetivos y competencia antes de escribir una sola línea de código.", icon: "", href: "/cotizar/" },
+  { title: "Diseño",         description: "Prototipo y aprobación visual completa antes de desarrollar. Tú apruebas antes de avanzar.",  icon: "", href: "/cotizar/" },
+  { title: "Desarrollo",     description: "Código limpio, optimizado y listo para escalar. Construido con tecnología de vanguardia.",    icon: "", href: "/cotizar/" },
+  { title: "Lanzamiento",    description: "Deploy profesional, capacitación completa y acompañamiento en las primeras semanas.",         icon: "", href: "/cotizar/" },
+];
+
 const porqueElegirnos = [
   { title: "Velocidad extrema",    description: "Sitios que cargan en menos de 1 segundo. Rendimiento real, no promesas.",                          icon: "", href: "/servicios/" },
   { title: "Diseño que convierte", description: "UX/UI centrado en resultados. Cada elemento tiene un propósito: convertir visitantes en clientes.", icon: "", href: "/servicios/" },
@@ -155,29 +162,7 @@ const porqueElegirnos = [
         </div>
       </div>
       <div class="process-grid">
-        <div class="process-step">
-          <div class="step-number">1</div>
-          <div class="step-connector"></div>
-          <h3 class="step-title">Descubrimiento</h3>
-          <p class="step-desc">Entendemos tu negocio, objetivos y competencia.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">2</div>
-          <div class="step-connector"></div>
-          <h3 class="step-title">Diseño</h3>
-          <p class="step-desc">Prototipo y aprobación visual antes de desarrollar.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">3</div>
-          <div class="step-connector"></div>
-          <h3 class="step-title">Desarrollo</h3>
-          <p class="step-desc">Código limpio, optimizado y listo para escalar.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-number">4</div>
-          <h3 class="step-title">Lanzamiento</h3>
-          <p class="step-desc">Deploy, SEO técnico y capacitación completa.</p>
-        </div>
+        {proceso.map(s => <ServiceCard {...s} />)}
       </div>
     </div>
   </section>
@@ -412,55 +397,7 @@ const porqueElegirnos = [
   .process-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .process-step {
-    position: relative;
-  }
-
-  .step-number {
-    width: 48px;
-    height: 48px;
-    background: var(--accent);
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.125rem;
-    font-weight: 700;
-    margin: 0 auto 1.25rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .step-connector {
-    position: absolute;
-    top: 24px;
-    left: calc(50% + 24px);
-    right: calc(-50% + 24px);
-    height: 2px;
-    background: var(--accent);
-    opacity: 0.3;
-  }
-
-  .process-step:last-child .step-connector {
-    display: none;
-  }
-
-  .step-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 0.5rem;
-  }
-
-  .step-desc {
-    font-size: 15px;
-    color: var(--text-muted);
-    line-height: 1.5;
+    gap: 1.5rem;
   }
 
   /* --- SECCIÓN 6: TESTIMONIOS --- */
@@ -504,12 +441,7 @@ const porqueElegirnos = [
     }
 
     .process-grid {
-      grid-template-columns: 1fr;
-      gap: 2.5rem;
-    }
-
-    .step-connector {
-      display: none;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .testimonials-grid {
