@@ -8,27 +8,27 @@ import CTASection from '../components/CTASection.astro';
 const servicios = [
   {
     title: "Desarrollo Web",
-    description: "Sitios corporativos rápidos, modernos y optimizados para SEO. Construidos con tecnología de vanguardia.",
+    description: "Sitios corporativos modernos, rápidos y a medida. Construidos con tecnología de vanguardia para negocios mexicanos.",
     icon: "💻",
     href: "/servicios/desarrollo-web/"
   },
   {
     title: "Tiendas en Línea",
-    description: "E-commerce completo con integración de Mercado Pago y Stripe. Tu tienda lista para vender.",
+    description: "E-commerce completo con integración de Mercado Pago, OXXO Pay y Stripe. Tu tienda lista para vender.",
     icon: "🛒",
     href: "/servicios/tiendas-en-linea/"
   },
   {
     title: "Landing Pages",
-    description: "Páginas de aterrizaje de alta conversión con copy estratégico y velocidad extrema.",
+    description: "Páginas de aterrizaje de alta conversión con copy estratégico, velocidad extrema y diseño centrado en resultados.",
     icon: "🚀",
     href: "/servicios/landing-pages/"
   },
   {
-    title: "SEO y Posicionamiento",
-    description: "Aparece en los primeros resultados de Google. SEO técnico y local para empresas en México.",
-    icon: "📈",
-    href: "/servicios/seo-posicionamiento/"
+    title: "Rediseño Web",
+    description: "Transforma tu sitio actual en una plataforma moderna, veloz y alineada con los estándares actuales de diseño.",
+    icon: "✦",
+    href: "/servicios/rediseno-web/"
   }
 ];
 
@@ -137,8 +137,8 @@ const porqueElegirnos = [
           <p class="section-subtitle">Desde el diseño hasta el posicionamiento, construimos cada parte de tu presencia digital.</p>
         </div>
         <div class="sh__right">
-          <p class="sh__copy">Cada servicio que ofrecemos en OrigenLab está diseñado para resolver un problema real de negocio. No vendemos tecnología por sí misma — vendemos resultados: más visibilidad en Google, más ventas en línea, más clientes que llegan a ti sin que tengas que buscarlos. Nuestros proyectos integran diseño UX, código de producción y estrategia digital en un solo flujo de trabajo eficiente y transparente.</p>
-          <p class="sh__copy">Desde sitios corporativos que posicionan en búsquedas locales hasta tiendas en línea con integración a Mercado Pago, OXXO Pay y Stripe, pasando por landing pages de alta conversión y auditorías SEO técnicas — todo bajo un mismo equipo que conoce tu proyecto de principio a fin. Sin subcontrataciones, sin intermediarios, sin sorpresas.</p>
+          <p class="sh__copy">Cada servicio que ofrecemos en OrigenLab está diseñado para resolver un problema real de negocio. No vendemos tecnología por sí misma — construimos sitios web que trabajan por ti: rápidos, bien diseñados, fáciles de administrar y listos para escalar con tu empresa. Nuestros proyectos integran diseño UX, código de producción limpio y arquitectura sólida en un solo flujo de trabajo eficiente y transparente.</p>
+          <p class="sh__copy">Desde sitios corporativos hasta tiendas en línea con integración a Mercado Pago, OXXO Pay y Stripe, pasando por landing pages de alta conversión y rediseños completos de plataformas existentes — todo bajo un mismo equipo que conoce tu proyecto de principio a fin. Sin subcontrataciones, sin intermediarios, sin sorpresas.</p>
         </div>
       </div>
       <div class="services-grid">
@@ -396,7 +396,7 @@ const porqueElegirnos = [
 
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--gap-cards);
   }
 
@@ -555,7 +555,7 @@ const porqueElegirnos = [
     }
 
     .services-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     .why-grid {
