@@ -72,36 +72,12 @@ const testimonios = [
 ];
 
 const porqueElegirnos = [
-  {
-    num: "#01",
-    title: "Velocidad extrema",
-    desc: "Sitios que cargan en menos de 1 segundo. Rendimiento real, no promesas."
-  },
-  {
-    num: "#02",
-    title: "SEO desde el código",
-    desc: "Arquitectura técnica optimizada. Estructura semántica y Core Web Vitals en verde."
-  },
-  {
-    num: "#03",
-    title: "Diseño que convierte",
-    desc: "UX/UI centrado en resultados. Cada elemento tiene un propósito: convertir."
-  },
-  {
-    num: "#04",
-    title: "Soporte continuo",
-    desc: "Acompañamiento post-lanzamiento. No desaparecemos después de entregar."
-  },
-  {
-    num: "#05",
-    title: "Tecnología moderna",
-    desc: "Astro, Next.js y las mejores herramientas del mercado para tu proyecto."
-  },
-  {
-    num: "#06",
-    title: "Resultados medibles",
-    desc: "Reportes mensuales de métricas. Sabrás exactamente cómo rinde tu sitio."
-  }
+  { title: "Velocidad extrema",    description: "Sitios que cargan en menos de 1 segundo. Rendimiento real, no promesas.",                           icon: "", href: "/servicios/" },
+  { title: "Código limpio",        description: "Arquitectura técnica sólida, semántica y escalable. Sin deuda técnica desde el primer día.",          icon: "", href: "/servicios/" },
+  { title: "Diseño que convierte", description: "UX/UI centrado en resultados. Cada elemento tiene un propósito: convertir visitantes en clientes.",  icon: "", href: "/servicios/" },
+  { title: "Soporte continuo",     description: "Acompañamiento post-lanzamiento. No desaparecemos después de entregar tu proyecto.",                  icon: "", href: "/nosotros/"  },
+  { title: "Tecnología moderna",   description: "Astro, Next.js y las mejores herramientas del mercado. Tu sitio listo para escalar.",                 icon: "", href: "/servicios/" },
+  { title: "Resultados medibles",  description: "Reportes mensuales de métricas. Sabrás exactamente cómo rinde tu sitio.",                            icon: "", href: "/nosotros/"  },
 ];
 ---
 
@@ -161,13 +137,7 @@ const porqueElegirnos = [
         </div>
       </div>
       <div class="why-grid">
-        {porqueElegirnos.map(item => (
-          <div class="why-card">
-            <span class="why-number">{item.num}</span>
-            <h3 class="why-title">{item.title}</h3>
-            <p class="why-desc">{item.desc}</p>
-          </div>
-        ))}
+        {porqueElegirnos.map(s => <ServiceCard {...s} />)}
       </div>
     </div>
   </section>
@@ -432,34 +402,7 @@ const porqueElegirnos = [
   .why-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap-cards);
-  }
-
-  .why-card {
-    background: #1C1C1E;
-    border-radius: 20px;
-    padding: 40px;
-  }
-
-  .why-number {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--accent);
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .why-title {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--text-on-dark);
-    margin-bottom: 0.75rem;
-  }
-
-  .why-desc {
-    font-size: 15px;
-    color: var(--text-on-dark-muted);
-    line-height: 1.6;
+    gap: 1.5rem;
   }
 
   /* --- SECCIÓN 5: PROCESO --- */
