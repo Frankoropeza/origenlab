@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://origenlab.mx/sitemap-index.xml
