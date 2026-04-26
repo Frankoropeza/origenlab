@@ -36,14 +36,11 @@
     .ol-art-hero::before { content: ''; position: absolute; top: -30%; left: -10%; width: 70%; height: 140%; background: radial-gradient(ellipse at center, rgba(129,140,248,0.07) 0%, transparent 60%); pointer-events: none; }
     .ol-art-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent); }
     .ol-art-hero-inner { width: 90%; max-width: 1600px; margin: 0 auto; position: relative; z-index: 1; }
-    .ol-art-hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 4rem; align-items: center; }
+    .ol-art-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
     @media (max-width: 1000px) { .ol-art-hero-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
 
-    .ol-art-breadcrumb { display: flex; align-items: center; gap: 0.5rem; font-size: 12.5px; color: rgba(240,240,245,0.35); margin-bottom: 1.5rem; }
-    .ol-art-breadcrumb a { color: rgba(240,240,245,0.5); text-decoration: none; transition: color 0.2s; }
-    .ol-art-breadcrumb a:hover { color: #C9A84C; }
-    .ol-art-breadcrumb span.sep { color: rgba(240,240,245,0.2); }
-    .ol-art-breadcrumb .current { color: rgba(240,240,245,0.45); }
+    .ol-art-hero-right { display: flex; flex-direction: column; gap: 1.25rem; padding-top: 0.25rem; }
+    .ol-art-hero-copy { font-size: 15px; color: rgba(240,240,245,0.48); line-height: 1.8; margin: 0; }
 
     .ol-art-badges { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
     .ol-art-cat { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 10.5px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.85rem; border-radius: 999px; border: 1px solid; }
@@ -66,18 +63,6 @@
     .ol-art-meta-item { font-size: 12.5px; color: rgba(240,240,245,0.45); display: inline-flex; align-items: center; gap: 0.35rem; }
     .ol-art-meta-item svg { opacity: 0.5; }
 
-    .ol-art-hero-card { position: relative; background: linear-gradient(135deg, #0D0D1E, #14142A, #0A0A18); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; aspect-ratio: 4/3; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-    .ol-art-hero-card::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(129,140,248,0.15) 0%, transparent 65%); }
-    .ol-art-hero-card::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(201,168,76,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.05) 1px, transparent 1px); background-size: 32px 32px; mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%); }
-    .ol-art-hero-card-inner { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 1rem; text-align: center; padding: 2rem; }
-    .ol-art-hero-gauge { position: relative; width: 160px; height: 160px; display: flex; align-items: center; justify-content: center; }
-    .ol-art-hero-gauge svg { transform: rotate(-90deg); }
-    .ol-art-hero-gauge .gauge-bg { stroke: rgba(255,255,255,0.08); }
-    .ol-art-hero-gauge .gauge-fg { stroke: #818CF8; stroke-dasharray: 440; stroke-dashoffset: 207; filter: drop-shadow(0 0 8px rgba(129,140,248,0.4)); }
-    .ol-art-hero-gauge-value { position: absolute; display: flex; flex-direction: column; align-items: center; }
-    .ol-art-hero-gauge-value .num { font-size: 2.5rem; font-weight: 900; color: #F0F0F5; letter-spacing: -0.03em; line-height: 1; }
-    .ol-art-hero-gauge-value .unit { font-size: 11px; font-weight: 700; color: rgba(129,140,248,0.8); letter-spacing: 0.12em; text-transform: uppercase; margin-top: 0.35rem; }
-    .ol-art-hero-card-caption { font-size: 11.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,240,245,0.4); max-width: 260px; }
 
     /* ============================================================ STATS BAND ============================================================ */
     .ol-art-stats { background: #04040A; padding: 2.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
@@ -95,7 +80,7 @@
     @media (max-width: 1100px) { .ol-art-layout { grid-template-columns: 1fr; gap: 3rem; } }
 
     /* ============================================================ ARTICLE BODY ============================================================ */
-    .ol-art-body { max-width: 760px; font-family: 'Inter', system-ui, sans-serif; }
+    .ol-art-body { max-width: none; width: 100%; font-family: 'Inter', system-ui, sans-serif; }
     .ol-art-body > h2 { font-size: clamp(1.5rem, 2.5vw, 1.875rem); font-weight: 800; color: #F0F0F5; letter-spacing: -0.025em; margin: 3.5rem 0 1.25rem; line-height: 1.2; scroll-margin-top: 110px; position: relative; }
     .ol-art-body > h2::before { content: ''; position: absolute; left: -1.25rem; top: 0.5em; width: 4px; height: 1.1em; background: linear-gradient(180deg, #C9A84C, rgba(201,168,76,0.2)); border-radius: 2px; }
     @media (max-width: 760px) { .ol-art-body > h2::before { display: none; } }
@@ -366,6 +351,30 @@
   </div>
 </nav>
 
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="ol-bc-wrap" aria-label="Migas de pan">
+  <div class="ol-bc">
+    <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../../index.html" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-item-mid" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="../index.html" itemprop="item"><span itemprop="name">Blog</span></a>
+        <meta itemprop="position" content="2" />
+      </li>
+      <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
+      <li class="ol-bc-item ol-bc-current" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Por qué tu sitio web lento te está costando clientes</span>
+        <meta itemprop="position" content="3" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
 <main id="main">
 
   <!-- ARTICLE HERO -->
@@ -373,14 +382,6 @@
     <div class="ol-art-hero-inner">
       <div class="ol-art-hero-grid">
         <div class="ol-art-hero-left">
-          <div class="ol-art-breadcrumb">
-            <a href="../../index.html">Inicio</a>
-            <span class="sep">/</span>
-            <a href="../index.html">Blog</a>
-            <span class="sep">/</span>
-            <span class="current">Rendimiento</span>
-          </div>
-
           <div class="ol-art-badges">
             <span class="ol-art-cat rendimiento">
               <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
@@ -394,7 +395,7 @@
 
           <h1 class="ol-art-title">Por qué tu sitio web lento te está costando clientes cada día</h1>
 
-          <p class="ol-art-excerpt">El 53% de los visitantes abandona un sitio que tarda más de 3 segundos en cargar. Si tu sitio está en WordPress sin optimizar, o en un hosting compartido barato, es probable que estés perdiendo prospectos sin siquiera saberlo. Aquí te explicamos exactamente qué pasa y cómo medirlo.</p>
+          <p class="ol-art-excerpt">El 53% de los visitantes abandona un sitio que tarda más de 3 segundos en cargar. Aquí te explicamos exactamente qué pasa y cómo medirlo.</p>
 
           <div class="ol-art-meta">
             <div class="ol-art-meta-author">
@@ -417,21 +418,8 @@
         </div>
 
         <div class="ol-art-hero-right">
-          <div class="ol-art-hero-card" aria-hidden="true">
-            <div class="ol-art-hero-card-inner">
-              <div class="ol-art-hero-gauge">
-                <svg width="160" height="160" viewBox="0 0 160 160">
-                  <circle class="gauge-bg" cx="80" cy="80" r="70" fill="none" stroke-width="10"/>
-                  <circle class="gauge-fg" cx="80" cy="80" r="70" fill="none" stroke-width="10" stroke-linecap="round"/>
-                </svg>
-                <div class="ol-art-hero-gauge-value">
-                  <span class="num">53%</span>
-                  <span class="unit">rebote</span>
-                </div>
-              </div>
-              <span class="ol-art-hero-card-caption">Usuarios que abandonan sitios &gt;3s</span>
-            </div>
-          </div>
+          <p class="ol-art-hero-copy">Si tu sitio está en WordPress sin optimizar, o vive en un hosting compartido barato, es probable que estés perdiendo prospectos sin siquiera saberlo. La velocidad de carga no es un detalle técnico — es el primer filtro que decide si un visitante se queda o se va antes de ver tu propuesta.</p>
+          <p class="ol-art-hero-copy">En esta guía práctica te explicamos qué pasa exactamente cuando un sitio carga lento, cómo medirlo con herramientas gratuitas como PageSpeed Insights, y qué pasos concretos puedes tomar hoy para recuperar las conversiones que tu sitio actual está dejando en la mesa.</p>
         </div>
       </div>
     </div>

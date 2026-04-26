@@ -2122,3 +2122,224 @@ select:focus-visible,
   margin-top: auto;
   font-weight: 600;
 }
+
+/* ============================================================
+   MOBILE RESPONSIVE — Comprehensive fixes
+   Breakpoints: 900px · 768px · 640px · 480px · 380px
+   ============================================================ */
+
+/* ----- Inner div widths ----- */
+@media (max-width: 768px) {
+  .ol-services-inner,
+  .ol-why-inner,
+  .ol-process-inner,
+  .ol-testimonials-inner,
+  .ol-faq-inner,
+  .ol-related-inner,
+  .ol-page-hero-inner {
+    width: 92%;
+  }
+  .ol-cta-bar-inner { width: 92%; }
+}
+@media (max-width: 480px) {
+  .ol-services-inner,
+  .ol-why-inner,
+  .ol-process-inner,
+  .ol-testimonials-inner,
+  .ol-faq-inner,
+  .ol-related-inner,
+  .ol-page-hero-inner {
+    width: 94%;
+  }
+  .ol-cta-bar-inner { width: 94%; }
+}
+
+/* ----- Section padding ----- */
+@media (max-width: 768px) {
+  .ol-services,
+  .ol-why,
+  .ol-process,
+  .ol-testimonials,
+  .ol-faq-section,
+  .ol-related      { padding: 4rem 0; }
+  .ol-cta-bar      { padding: 3.5rem 0; }
+  .ol-cta-final    { padding: 5rem 0; }
+  .ol-section-header { margin-bottom: 2.5rem; }
+  .ol-sh           { margin-bottom: 2.5rem !important; }
+}
+@media (max-width: 480px) {
+  .ol-services,
+  .ol-why,
+  .ol-process,
+  .ol-testimonials,
+  .ol-faq-section,
+  .ol-related      { padding: 3rem 0; }
+  .ol-cta-bar      { padding: 3rem 0; }
+  .ol-cta-final    { padding: 4rem 0; }
+}
+
+/* ----- HERO home — min-height + CTAs ----- */
+@media (max-width: 900px) {
+  .hero[data-astro-cid-bbe6dxrz] {
+    min-height: auto !important;
+    padding: clamp(3.5rem, 10vw, 5rem) 0 clamp(3rem, 8vw, 4rem) !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero__ctas[data-astro-cid-bbe6dxrz] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+  }
+  .hero__ctas[data-astro-cid-bbe6dxrz] .btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .hero__sub[data-astro-cid-bbe6dxrz] {
+    font-size: 1rem !important;
+    max-width: 100% !important;
+    margin-bottom: 1.75rem !important;
+  }
+  .hero__eyebrow[data-astro-cid-bbe6dxrz] {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero__title[data-astro-cid-bbe6dxrz] {
+    font-size: clamp(1.9rem, 10vw, 2.5rem) !important;
+    margin-bottom: 1.1rem !important;
+  }
+  .hero__p1[data-astro-cid-bbe6dxrz],
+  .hero__p2[data-astro-cid-bbe6dxrz] {
+    font-size: 0.875rem !important;
+    line-height: 1.75 !important;
+  }
+}
+
+/* ----- PAGE HERO — inner pages ----- */
+@media (max-width: 768px) {
+  .ol-page-hero {
+    padding: 4rem 0 3rem !important;
+  }
+  .ol-page-hero-title {
+    font-size: clamp(2rem, 8vw, 2.8rem) !important;
+    margin-bottom: 1rem !important;
+  }
+  .ol-page-hero-sub {
+    font-size: 0.9375rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .ol-page-hero-copy {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 480px) {
+  .ol-page-hero {
+    padding: 3rem 0 2.5rem !important;
+  }
+  .ol-page-hero-title {
+    font-size: clamp(1.75rem, 9vw, 2.2rem) !important;
+  }
+}
+
+/* ----- Titles: hide forced <br> on small phones ----- */
+@media (max-width: 480px) {
+  .ol-section-title br,
+  .ol-page-hero-title br,
+  .ol-cta-bar-headline br,
+  .ol-cta-final-title br { display: none; }
+}
+
+/* ----- ol-section-title floor at very narrow screens ----- */
+@media (max-width: 380px) {
+  .ol-section-title        { font-size: 1.65rem !important; }
+  .ol-cta-final-title      { font-size: 1.65rem !important; }
+  .hero__title[data-astro-cid-bbe6dxrz] { font-size: 1.75rem !important; }
+  .ol-page-hero-title      { font-size: 1.65rem !important; }
+}
+
+/* ----- CTA bar — full-width actions on phones ----- */
+@media (max-width: 480px) {
+  .ol-cta-bar-actions {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: stretch !important;
+  }
+  .ol-cta-primary,
+  .ol-cta-secondary {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
+
+/* ----- CTA final — stacked on mobile ----- */
+@media (max-width: 480px) {
+  .ol-cta-final-title { font-size: clamp(1.75rem, 9vw, 2.5rem) !important; }
+}
+
+/* ----- Services cards — tighter padding ----- */
+@media (max-width: 580px) {
+  .ol-svc-body  { padding: 1.25rem !important; }
+  .ol-svc-title { font-size: 1rem !important; }
+  .ol-svc-desc  { font-size: 13px !important; }
+}
+
+/* ----- Process steps — alignment on 1-col ----- */
+@media (max-width: 768px) {
+  .ol-process-step { padding: 0 0.75rem !important; }
+}
+@media (max-width: 480px) {
+  .ol-process-steps { gap: 2rem !important; }
+  .ol-process-step  {
+    padding: 0 !important;
+    text-align: center !important;
+  }
+  .ol-process-num {
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 15px !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* ----- Testimonials card — tighter on small screens ----- */
+@media (max-width: 580px) {
+  .ol-tc      { padding: 1.25rem !important; }
+  .ol-tc-text { font-size: 13px !important; }
+}
+
+/* ----- FAQ form — remove sticky on mobile ----- */
+@media (max-width: 900px) {
+  .ol-faq-form-wrap {
+    position: static !important;
+    top: auto !important;
+  }
+}
+
+/* ----- Footer links — 1-col on phones ----- */
+@media (max-width: 480px) {
+  .ol-footer-links { grid-template-columns: 1fr !important; gap: 1.25rem !important; }
+  .ol-footer-top   { padding: 1.5rem 0 !important; }
+}
+
+/* ----- QuickNav — tighter on very small phones ----- */
+@media (max-width: 380px) {
+  .ol-qn-item  { padding: 0.75rem 0.65rem; }
+  .ol-qn-title { font-size: 11.5px; }
+  .ol-qn-sub   { display: none; }
+}
+
+/* ----- Header logo — slightly smaller on phones ----- */
+@media (max-width: 480px) {
+  .ol-logo-img { height: 46px !important; }
+}
+
+/* ----- WA bubble — tighter margin on phones ----- */
+@media (max-width: 480px) {
+  .wa-bubble[data-astro-cid-q7trxeqo] {
+    bottom: 1.25rem !important;
+    right: 1.25rem !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
