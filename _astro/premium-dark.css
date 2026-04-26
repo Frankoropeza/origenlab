@@ -137,11 +137,6 @@ body {
   border-radius: 50%;
   background: var(--gold, #C9A84C);
   flex-shrink: 0;
-  animation: ol-pulse 2.5s ease-in-out infinite;
-}
-@keyframes ol-pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.7); }
 }
 /* RIGHT */
 .ol-topbar-right {
@@ -2090,11 +2085,6 @@ select:focus-visible,
   border: 1px solid rgba(255,255,255,0.07);
   border-radius: 12px;
   text-decoration: none;
-  transition: border-color 0.25s ease, transform 0.25s ease;
-}
-.ol-related-card:hover {
-  border-color: rgba(201,168,76,0.3);
-  transform: translateY(-2px);
 }
 .ol-related-cat {
   font-size: 10.5px;

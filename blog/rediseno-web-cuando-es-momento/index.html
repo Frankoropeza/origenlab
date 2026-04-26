@@ -111,7 +111,7 @@
     .ol-art-share { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin: 3.5rem 0 2rem; padding: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.07); border-bottom: 1px solid rgba(255,255,255,0.07); }
     .ol-art-share-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(240,240,245,0.4); margin-right: 0.5rem; }
     .ol-art-share-btn { width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; color: rgba(240,240,245,0.55); text-decoration: none; transition: all 0.2s; }
-    .ol-art-share-btn:hover { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.3); color: #C9A84C; transform: translateY(-2px); }
+    .ol-art-share-btn:hover { background: rgba(201,168,76,0.1); border-color: rgba(201,168,76,0.3); color: #C9A84C; }
 
     .ol-art-author-card { display: grid; grid-template-columns: 64px 1fr auto; gap: 1.25rem; align-items: center; margin: 2rem 0 0; padding: 1.75rem; background: #0C0C18; border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; }
     @media (max-width: 600px) { .ol-art-author-card { grid-template-columns: 56px 1fr; gap: 1rem; } .ol-art-author-card-btn { grid-column: 1 / -1; text-align: center; } }
@@ -172,7 +172,7 @@
     .ol-art-nextread-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
     @media (max-width: 900px) { .ol-art-nextread-grid { grid-template-columns: 1fr; } }
     .ol-art-nextread-card { background: #0C0C18; border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; overflow: hidden; text-decoration: none; display: flex; flex-direction: column; transition: all 0.25s; }
-    .ol-art-nextread-card:hover { border-color: rgba(201,168,76,0.25); transform: translateY(-3px); }
+    .ol-art-nextread-card:hover { border-color: rgba(201,168,76,0.25); }
     .ol-art-nextread-thumb { position: relative; background: linear-gradient(135deg, #0D0D1E, #14142A, #0A0A18); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; overflow: hidden; }
     .ol-art-nextread-thumb::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(201,168,76,0.1) 0%, transparent 65%); }
     .ol-art-nextread-thumb::after { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px); background-size: 28px 28px; }
@@ -232,7 +232,7 @@
     <div class="ol-topbar-center">
       <span class="ol-topbar-promo">
         <span class="ol-topbar-dot"></span>
-        Respuesta garantizada en menos de 24 horas &nbsp;·&nbsp; Ciudad de México
+        Atención personalizada &nbsp;·&nbsp; Ciudad de México
       </span>
     </div>
     <div class="ol-topbar-right">
@@ -246,33 +246,33 @@
 
 <header class="ol-header" id="ol-header">
   <div class="ol-header-inner">
-    <a href="../../index.html" class="ol-header-logo">
+    <a href="/" class="ol-header-logo">
       <img src="../../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
     </a>
     <nav class="ol-nav" aria-label="Navegación principal">
       <ul class="ol-nav-list">
-        <li><a href="../../index.html" class="ol-nav-link">Inicio</a></li>
+        <li><a href="/" class="ol-nav-link">Inicio</a></li>
         <li class="ol-has-dropdown">
-          <a href="../../servicios/index.html" class="ol-nav-link">
+          <a href="/servicios/" class="ol-nav-link">
             Servicios
             <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <div class="ol-dropdown">
             <ul>
-              <li><a href="../../servicios/desarrollo-web/index.html" class="ol-dropdown-link">Desarrollo Web</a></li>
-              <li><a href="../../servicios/tiendas-en-linea/index.html" class="ol-dropdown-link">Tiendas en Línea</a></li>
-              <li><a href="../../servicios/landing-pages/index.html" class="ol-dropdown-link">Landing Pages</a></li>
-              <li><a href="../../servicios/rediseno-web/index.html" class="ol-dropdown-link">Rediseño Web</a></li>
+              <li><a href="/servicios/desarrollo-web/" class="ol-dropdown-link">Desarrollo Web</a></li>
+              <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
+              <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
+              <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
             </ul>
           </div>
         </li>
-        <li><a href="../../portafolio/index.html" class="ol-nav-link">Portafolio</a></li>
-        <li><a href="../../nosotros/index.html" class="ol-nav-link">Nosotros</a></li>
-        <li><a href="../index.html" class="ol-nav-link active">Blog</a></li>
-        <li><a href="../../contacto/index.html" class="ol-nav-link">Contacto</a></li>
+        <li><a href="/portafolio/" class="ol-nav-link">Portafolio</a></li>
+        <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
+        <li><a href="/blog/" class="ol-nav-link active">Blog</a></li>
+        <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
       </ul>
     </nav>
-    <a href="../../cotizar/index.html" class="ol-header-cta">Cotizar proyecto →</a>
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
     <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
       <span class="ol-ham-line"></span>
       <span class="ol-ham-line"></span>
@@ -285,7 +285,7 @@
 
 <nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
   <div class="ol-mobile-header">
-    <a href="../../index.html" class="ol-mobile-logo">
+    <a href="/" class="ol-mobile-logo">
       <img src="../../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
     </a>
     <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
@@ -293,26 +293,26 @@
     </button>
   </div>
   <ul class="ol-mobile-nav">
-    <li><a href="../../index.html" class="ol-mobile-link">Inicio</a></li>
+    <li><a href="/" class="ol-mobile-link">Inicio</a></li>
     <li>
       <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
         <span>Servicios</span>
         <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <ul class="ol-mobile-submenu">
-        <li><a href="../../servicios/desarrollo-web/index.html" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
-        <li><a href="../../servicios/tiendas-en-linea/index.html" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
-        <li><a href="../../servicios/landing-pages/index.html" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
-        <li><a href="../../servicios/rediseno-web/index.html" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+        <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
       </ul>
     </li>
-    <li><a href="../../portafolio/index.html" class="ol-mobile-link">Portafolio</a></li>
-    <li><a href="../../nosotros/index.html" class="ol-mobile-link">Nosotros</a></li>
-    <li><a href="../index.html" class="ol-mobile-link active">Blog</a></li>
-    <li><a href="../../contacto/index.html" class="ol-mobile-link">Contacto</a></li>
+    <li><a href="/portafolio/" class="ol-mobile-link">Portafolio</a></li>
+    <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
+    <li><a href="/blog/" class="ol-mobile-link active">Blog</a></li>
+    <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
   </ul>
   <div class="ol-mobile-footer">
-    <a href="../../cotizar/index.html" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
   </div>
 </nav>
 
@@ -323,12 +323,12 @@
   <div class="ol-bc">
     <ol class="ol-bc-list" itemscope itemtype="https://schema.org/BreadcrumbList">
       <li class="ol-bc-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a href="../../index.html" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
+        <a href="/" itemprop="item" class="ol-bc-home"><span itemprop="name">Inicio</span></a>
         <meta itemprop="position" content="1" />
       </li>
       <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
       <li class="ol-bc-item ol-bc-item-mid" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a href="../index.html" itemprop="item"><span itemprop="name">Blog</span></a>
+        <a href="/blog/" itemprop="item"><span itemprop="name">Blog</span></a>
         <meta itemprop="position" content="2" />
       </li>
       <li class="ol-bc-sep" aria-hidden="true"><svg aria-hidden="true" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4-4 4"/></svg></li>
@@ -452,7 +452,7 @@
               <h3>¿Listo para llevar tu sitio al siguiente nivel?</h3>
               <p>Hacemos diagnóstico técnico y estratégico sin costo. Te decimos exactamente qué frena a tu sitio hoy y qué camino tiene más sentido para tu negocio — sin compromiso de compra.</p>
             </div>
-            <a href="../../cotizar/index.html" class="ol-art-cta-inline-btn">
+            <a href="/cotizar/" class="ol-art-cta-inline-btn">
               Solicitar diagnóstico
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -484,7 +484,7 @@
               <span class="name">Equipo OrigenLab</span>
               <span class="bio">Agencia mexicana de desarrollo web. Construimos sitios rápidos, modernos y pensados para convertir — para empresas en CDMX, Monterrey y Guadalajara.</span>
             </div>
-            <a href="../../nosotros/index.html" class="ol-art-author-card-btn">
+            <a href="/nosotros/" class="ol-art-author-card-btn">
               Conocer al equipo
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -499,8 +499,8 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
             </div>
             <p class="ol-sb-cta-title">¿Listo para<br>tu proyecto?</p>
-            <p class="ol-sb-cta-sub">Cotización y diagnóstico estratégico sin costo. Respondemos en menos de 24 horas.</p>
-            <a href="../../cotizar/index.html" class="ol-sb-cta-btn">
+            <p class="ol-sb-cta-sub">Cotización y diagnóstico estratégico sin costo. Te respondemos personalmente.</p>
+            <a href="/cotizar/" class="ol-sb-cta-btn">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               Cotizar mi proyecto
             </a>
@@ -526,7 +526,7 @@
           <div class="ol-sb-widget">
             <p class="ol-sb-title">Nuestros Servicios</p>
             <div class="ol-sb-services">
-              <a href="../../servicios/desarrollo-web/index.html" class="ol-sb-svc-link">
+              <a href="/servicios/desarrollo-web/" class="ol-sb-svc-link">
                 <div class="ol-sb-svc-icon">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
                 </div>
@@ -535,7 +535,7 @@
                   <span class="ol-sb-svc-sub">Sitios corporativos a medida</span>
                 </div>
               </a>
-              <a href="../../servicios/landing-pages/index.html" class="ol-sb-svc-link">
+              <a href="/servicios/landing-pages/" class="ol-sb-svc-link">
                 <div class="ol-sb-svc-icon">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                 </div>
@@ -544,7 +544,7 @@
                   <span class="ol-sb-svc-sub">Alta conversión desde día 1</span>
                 </div>
               </a>
-              <a href="../../servicios/tiendas-en-linea/index.html" class="ol-sb-svc-link">
+              <a href="/servicios/tiendas-en-linea/" class="ol-sb-svc-link">
                 <div class="ol-sb-svc-icon">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
                 </div>
@@ -553,7 +553,7 @@
                   <span class="ol-sb-svc-sub">E-commerce con Mercado Pago</span>
                 </div>
               </a>
-              <a href="../../servicios/rediseno-web/index.html" class="ol-sb-svc-link">
+              <a href="/servicios/rediseno-web/" class="ol-sb-svc-link">
                 <div class="ol-sb-svc-icon">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
                 </div>
@@ -568,28 +568,28 @@
           <div class="ol-sb-widget">
             <p class="ol-sb-title">Seguir leyendo</p>
             <div class="ol-sb-related">
-              <a href="../5-errores-sitios-web-pymes-mexico/index.html" class="ol-sb-related-item">
+              <a href="/blog/5-errores-sitios-web-pymes-mexico/" class="ol-sb-related-item">
                 <span class="ol-sb-related-num">01</span>
                 <div class="ol-sb-related-info">
                   <span class="ol-sb-related-title">5 errores en sitios web de pymes mexicanas</span>
                   <span class="ol-sb-related-meta">Diseño Web · 5 min</span>
                 </div>
               </a>
-              <a href="../velocidad-de-carga-importancia/index.html" class="ol-sb-related-item">
+              <a href="/blog/velocidad-de-carga-importancia/" class="ol-sb-related-item">
                 <span class="ol-sb-related-num">02</span>
                 <div class="ol-sb-related-info">
                   <span class="ol-sb-related-title">Por qué tu sitio lento te está costando clientes</span>
                   <span class="ol-sb-related-meta">Rendimiento · 5 min</span>
                 </div>
               </a>
-              <a href="../astro-vs-wordpress-cual-elegir/index.html" class="ol-sb-related-item">
+              <a href="/blog/astro-vs-wordpress-cual-elegir/" class="ol-sb-related-item">
                 <span class="ol-sb-related-num">03</span>
                 <div class="ol-sb-related-info">
                   <span class="ol-sb-related-title">Astro vs WordPress: cuál elegir para tu empresa</span>
                   <span class="ol-sb-related-meta">Tecnología · 8 min</span>
                 </div>
               </a>
-              <a href="../core-web-vitals-que-son/index.html" class="ol-sb-related-item">
+              <a href="/blog/core-web-vitals-que-son/" class="ol-sb-related-item">
                 <span class="ol-sb-related-num">04</span>
                 <div class="ol-sb-related-info">
                   <span class="ol-sb-related-title">Core Web Vitals: qué son y cómo afectan tu negocio</span>
@@ -613,14 +613,14 @@
           <p class="ol-art-nextread-label">Te puede interesar</p>
           <h2 class="ol-art-nextread-title">Sigue explorando el blog</h2>
         </div>
-        <a href="../index.html" class="ol-art-nextread-all">
+        <a href="/blog/" class="ol-art-nextread-all">
           Ver todos los artículos
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
       <div class="ol-art-nextread-grid">
 
-        <a href="../5-errores-sitios-web-pymes-mexico/index.html" class="ol-art-nextread-card">
+        <a href="/blog/5-errores-sitios-web-pymes-mexico/" class="ol-art-nextread-card">
           <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">01</span></div>
           <div class="ol-art-nextread-body">
             <div class="ol-art-nextread-top">
@@ -632,7 +632,7 @@
             <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </a>
-        <a href="../velocidad-de-carga-importancia/index.html" class="ol-art-nextread-card">
+        <a href="/blog/velocidad-de-carga-importancia/" class="ol-art-nextread-card">
           <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">02</span></div>
           <div class="ol-art-nextread-body">
             <div class="ol-art-nextread-top">
@@ -644,7 +644,7 @@
             <span class="ol-art-nextread-link">Leer artículo <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
           </div>
         </a>
-        <a href="../astro-vs-wordpress-cual-elegir/index.html" class="ol-art-nextread-card">
+        <a href="/blog/astro-vs-wordpress-cual-elegir/" class="ol-art-nextread-card">
           <div class="ol-art-nextread-thumb"><span class="ol-art-nextread-num">03</span></div>
           <div class="ol-art-nextread-body">
             <div class="ol-art-nextread-top">
@@ -670,7 +670,7 @@
         <p class="ol-blog-cta-band-sub">Si este artículo te hizo preguntarte cómo se aplica en tu negocio, la respuesta más rápida es una conversación directa. Sin compromiso, sin ventas de presión — solo claridad sobre lo que necesitas.</p>
       </div>
       <div class="ol-blog-cta-band-actions">
-        <a href="../../cotizar/index.html" class="ol-blog-cta-band-btn">
+        <a href="/cotizar/" class="ol-blog-cta-band-btn">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           Cotizar mi proyecto
         </a>
@@ -685,26 +685,26 @@
   <!-- QUICKNAV BOTTOM -->
   <div class="ol-quicknav">
     <div class="ol-quicknav-inner">
-      <a href="../../servicios/desarrollo-web/index.html" class="ol-qn-item">
+      <a href="/servicios/desarrollo-web/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Sitios Corporativos</span><span class="ol-qn-sub">Diseño a medida</span></div>
       </a>
-      <a href="../../servicios/tiendas-en-linea/index.html" class="ol-qn-item">
+      <a href="/servicios/tiendas-en-linea/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Tienda en Línea</span><span class="ol-qn-sub">Vende desde el día uno</span></div>
       </a>
-      <a href="../../servicios/landing-pages/index.html" class="ol-qn-item">
+      <a href="/servicios/landing-pages/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Landing Pages</span><span class="ol-qn-sub">Más leads, más ventas</span></div>
       </a>
-      <a href="../../servicios/rediseno-web/index.html" class="ol-qn-item">
+      <a href="/servicios/rediseno-web/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Rediseño Web</span><span class="ol-qn-sub">Actualiza tu presencia</span></div>
       </a>
-      <a href="../../portafolio/index.html" class="ol-qn-item">
+      <a href="/portafolio/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Portafolio</span><span class="ol-qn-sub">Proyectos realizados</span></div>
       </a>
-      <a href="../../nosotros/index.html" class="ol-qn-item">
+      <a href="/nosotros/" class="ol-qn-item">
         <div class="ol-qn-text"><span class="ol-qn-title">Nosotros</span><span class="ol-qn-sub">Quiénes somos</span></div>
       </a>
-      <a href="../../cotizar/index.html" class="ol-qn-item ol-qn-cta">
-        <div class="ol-qn-text"><span class="ol-qn-title">Iniciar Proyecto</span><span class="ol-qn-sub">Respuesta en 24 h</span></div>
+      <a href="/cotizar/" class="ol-qn-item ol-qn-cta">
+        <div class="ol-qn-text"><span class="ol-qn-title">Iniciar Proyecto</span><span class="ol-qn-sub">Solicitar propuesta</span></div>
       </a>
     </div>
   </div>
@@ -713,7 +713,7 @@
 
 <footer class="ol-footer">
   <div class="ol-footer-top">
-    <a href="../../index.html" class="ol-footer-logo">
+    <a href="/" class="ol-footer-logo">
       Origen<span class="ol-footer-logo-dot">.</span>Lab
     </a>
     <p class="ol-footer-tagline">
@@ -751,25 +751,25 @@
     <div>
       <p class="ol-footer-col-title">Servicios</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../../servicios/desarrollo-web/index.html">Desarrollo Web</a></li>
-        <li><a href="../../servicios/tiendas-en-linea/index.html">Tiendas en Línea</a></li>
-        <li><a href="../../servicios/landing-pages/index.html">Landing Pages</a></li>
-        <li><a href="../../servicios/rediseno-web/index.html">Rediseño Web</a></li>
+        <li><a href="/servicios/desarrollo-web/">Desarrollo Web</a></li>
+        <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
+        <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
+        <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
       </ul>
     </div>
     <div>
       <p class="ol-footer-col-title">Empresa</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../../nosotros/index.html">Nosotros</a></li>
-        <li><a href="../../portafolio/index.html">Portafolio</a></li>
-        <li><a href="../index.html">Blog</a></li>
-        <li><a href="../../cotizar/index.html">Cotizar proyecto</a></li>
+        <li><a href="/nosotros/">Nosotros</a></li>
+        <li><a href="/portafolio/">Portafolio</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/cotizar/">Cotizar proyecto</a></li>
       </ul>
     </div>
     <div>
       <p class="ol-footer-col-title">Contacto</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../../contacto/index.html">Formulario de contacto</a></li>
+        <li><a href="/contacto/">Formulario de contacto</a></li>
         <li><a href="mailto:hola@origenlab.mx">hola@origenlab.mx</a></li>
         <li><a href="tel:+525547868402">+52 55 4786 8402</a></li>
       </ul>
@@ -777,16 +777,16 @@
     <div>
       <p class="ol-footer-col-title">Legal</p>
       <ul class="ol-footer-col-list">
-        <li><a href="../../aviso-de-privacidad/index.html">Aviso de privacidad</a></li>
-        <li><a href="../../terminos/index.html">Términos de servicio</a></li>
+        <li><a href="/aviso-de-privacidad/">Aviso de privacidad</a></li>
+        <li><a href="/terminos/">Términos de servicio</a></li>
       </ul>
     </div>
   </div>
   <div class="ol-footer-bottom">
     <p class="ol-footer-copy">© 2026 OrigenLab. Todos los derechos reservados.</p>
     <div class="ol-footer-legal">
-      <a href="../../aviso-de-privacidad/index.html">Privacidad</a>
-      <a href="../../terminos/index.html">Términos</a>
+      <a href="/aviso-de-privacidad/">Privacidad</a>
+      <a href="/terminos/">Términos</a>
     </div>
   </div>
 </footer>
