@@ -28,210 +28,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
   <!-- CSS -->
-  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260421a">
-  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260421a">
-  <script src="../_astro/ol-header.js?v20260421a" defer></script>
-  <style>
-    /* ============================================================
-       PAGE HERO — ol-page-hero
-       ============================================================ */
-    .ol-page-hero {
-      background: #08080E;
-      padding: 6rem 0 5rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .ol-page-hero::before {
-      content: '';
-      position: absolute;
-      top: -20%; left: -10%;
-      width: 60%; height: 120%;
-      background: radial-gradient(ellipse at center, rgba(201,168,76,0.06) 0%, transparent 65%);
-      pointer-events: none;
-    }
-    .ol-page-hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent);
-    }
-    .ol-page-hero-inner {
-      width: 90%;
-      max-width: 1600px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-    .ol-page-hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: center;
-    }
-    @media (max-width: 860px) {
-      .ol-page-hero-grid { grid-template-columns: 1fr; gap: 2rem; }
-    }
-    .ol-page-hero-title {
-      font-size: clamp(2.8rem, 5vw, 4.5rem);
-      font-weight: 900;
-      color: #F0F0F5;
-      letter-spacing: -0.035em;
-      line-height: 1.04;
-      margin: 0 0 1.5rem;
-    }
-    .ol-page-hero-sub {
-      font-size: 1.0625rem;
-      color: rgba(240,240,245,0.5);
-      line-height: 1.75;
-      margin: 0;
-    }
-    .ol-page-hero-right {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-      padding-top: 0.25rem;
-    }
-    .ol-page-hero-copy {
-      font-size: 15px;
-      color: rgba(240,240,245,0.48);
-      line-height: 1.8;
-      margin: 0;
-    }
-
-    /* ============================================================
-       OL-ABOUT — Sección manifesto (exclusiva de nosotros)
-       ============================================================ */
-    .ol-about {
-      background: #04040A;
-      padding: 6rem 0;
-      position: relative;
-    }
-    .ol-about::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent);
-    }
-    .ol-about-inner {
-      width: 90%;
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-    .ol-about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: start;
-      margin-top: 4rem;
-    }
-    @media (max-width: 900px) {
-      .ol-about-grid { grid-template-columns: 1fr; gap: 3rem; }
-    }
-
-    /* Narrativa izquierda */
-    .ol-about-narrative {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    .ol-about-p {
-      font-size: 1.0625rem;
-      color: rgba(240,240,245,0.6);
-      line-height: 1.8;
-      margin: 0;
-    }
-    .ol-about-p strong {
-      color: rgba(240,240,245,0.88);
-      font-weight: 600;
-    }
-    .ol-about-signature {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding-top: 1.75rem;
-      border-top: 1px solid rgba(255,255,255,0.07);
-      margin-top: 0.5rem;
-    }
-    .ol-about-sig-avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, rgba(201,168,76,0.15), rgba(201,168,76,0.05));
-      border: 1px solid rgba(201,168,76,0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-size: 14px;
-      font-weight: 800;
-      color: #C9A84C;
-      letter-spacing: -0.03em;
-    }
-    .ol-about-sig-name {
-      font-size: 0.9375rem;
-      font-weight: 600;
-      color: #F0F0F5;
-      margin: 0 0 0.2rem;
-    }
-    .ol-about-sig-role {
-      font-size: 12.5px;
-      color: rgba(240,240,245,0.38);
-      margin: 0;
-    }
-
-    /* Grid de valores derecha */
-    .ol-about-values {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.25rem;
-    }
-    @media (max-width: 560px) {
-      .ol-about-values { grid-template-columns: 1fr; }
-    }
-    .ol-about-value {
-      background: #0C0C18;
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 12px;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.85rem;
-    }
-    .ol-about-value-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
-      background: rgba(201,168,76,0.08);
-      border: 1px solid rgba(201,168,76,0.15);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #C9A84C;
-      flex-shrink: 0;
-    }
-    .ol-about-value-title {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #F0F0F5;
-      margin: 0;
-      letter-spacing: -0.015em;
-    }
-    .ol-about-value-desc {
-      font-size: 13px;
-      color: rgba(240,240,245,0.48);
-      line-height: 1.65;
-      margin: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260426e">
+  <script src="../_astro/ol-header.js?v20260426d" defer></script>
+  <!-- Componentes en premium-dark.css: .ol-page-hero, .ol-about*, .ol-faq* -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"AboutPage","@id":"https://origenlab.mx/nosotros/#page","url":"https://origenlab.mx/nosotros/","name":"Nosotros — OrigenLab","inLanguage":"es-MX","about":{"@id":"https://origenlab.mx/#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Nosotros","item":"https://origenlab.mx/nosotros/"}]}]}</script></head>
 <body>
 
 <a class="ol-skip-link" href="#main">Saltar al contenido</a>
-<!-- ============================================================
-     TOPBAR
-     ============================================================ -->
 <div class="ol-topbar">
   <div class="ol-topbar-inner">
     <div class="ol-topbar-left">
@@ -252,7 +56,7 @@
     <div class="ol-topbar-center">
       <span class="ol-topbar-promo">
         <span class="ol-topbar-dot"></span>
-        Atención personalizada &nbsp;·&nbsp; Ciudad de México
+        Atención personalizada  ·  Ciudad de México
       </span>
     </div>
     <div class="ol-topbar-right">
@@ -265,14 +69,10 @@
     </div>
   </div>
 </div>
-
-<!-- ============================================================
-     HEADER
-     ============================================================ -->
 <header class="ol-header" id="ol-header">
   <div class="ol-header-inner">
     <a href="/" class="ol-header-logo">
-      <img src="../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
     </a>
     <nav class="ol-nav" aria-label="Navegación principal">
       <ul class="ol-nav-list">
@@ -291,7 +91,30 @@
             </ul>
           </div>
         </li>
-        <li><a href="/portafolio/" class="ol-nav-link">Portafolio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
         <li><a href="/nosotros/" class="ol-nav-link active">Nosotros</a></li>
         <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
         <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
@@ -305,15 +128,11 @@
     </button>
   </div>
 </header>
-
-<!-- Mobile overlay -->
 <div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
-
-<!-- Mobile panel -->
 <nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
   <div class="ol-mobile-header">
     <a href="/" class="ol-mobile-logo">
-      <img src="../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
     </a>
     <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
       <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -333,7 +152,22 @@
         <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
       </ul>
     </li>
-    <li><a href="/portafolio/" class="ol-mobile-link">Portafolio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
+      </ul>
+    </li>
     <li><a href="/nosotros/" class="ol-mobile-link active">Nosotros</a></li>
     <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
     <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
@@ -726,7 +560,7 @@
           <div class="ol-tc-footer">
             <div class="ol-tc-avatar">GM</div>
             <div class="ol-tc-info">
-              <p class="ol-tc-name">Gama de México</p>
+              <p class="ol-tc-name"><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(192,57,43,0.4);">Gama de México</a></p>
               <p class="ol-tc-role">Distribución y Catálogo · <a href="https://gamademexico.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">gamademexico.com</a></p>
             </div>
           </div>
@@ -804,207 +638,8 @@
   <!-- ============================================================
        FAQ + FORMULARIO WHATSAPP
        ============================================================ -->
-  <style>
-  /* ---- FAQ Section ---- */
-  .ol-faq-section {
-    background: var(--bg-alt, #0D0D16);
-    padding: 6rem 0;
-    position: relative;
-    overflow: hidden;
-  }
-  .ol-faq-section::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.3) 50%, transparent 100%);
-  }
-  .ol-faq-inner {
-    width: 90%;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
-  .ol-faq-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
-  }
-  @media (max-width: 900px) {
-    .ol-faq-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  }
-  .ol-faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  .ol-faq-col-label {
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(240,240,245,0.35);
-    margin-bottom: 1.25rem;
-  }
-  .ol-faq-item {
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-  }
-  .ol-faq-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.07); }
-  .ol-faq-question {
-    width: 100%;
-    background: none;
-    border: none;
-    padding: 1.15rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    cursor: pointer;
-    text-align: left;
-    color: #F0F0F5;
-    font-size: 0.95rem;
-    font-weight: 500;
-    font-family: 'Inter', -apple-system, sans-serif;
-    line-height: 1.4;
-  }
-  .ol-faq-question:hover { color: #C9A84C; }
-  .ol-faq-question.active { color: #C9A84C; }
-  .ol-faq-icon {
-    flex-shrink: 0;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 1px solid rgba(255,255,255,0.12);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .ol-faq-question.active .ol-faq-icon {
-    border-color: #C9A84C;
-    background: rgba(201,168,76,0.12);
-    transform: rotate(45deg);
-  }
-  .ol-faq-icon svg { display: block; }
-  .ol-faq-answer {
-    max-height: 0;
-    overflow: hidden;
-  }
-  .ol-faq-answer-inner {
-    padding: 0 0 1.25rem;
-    font-size: 0.9rem;
-    color: rgba(240,240,245,0.6);
-    line-height: 1.7;
-    margin: 0;
-  }
-  .ol-faq-form-wrap {
-    background: #131320;
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 16px;
-    padding: 2.25rem;
-    position: sticky;
-    top: 120px;
-  }
-  .ol-faq-form-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #25D366;
-    background: rgba(37,211,102,0.1);
-    border: 1px solid rgba(37,211,102,0.2);
-    border-radius: 980px;
-    padding: 0.35rem 0.85rem;
-    margin-bottom: 1.25rem;
-  }
-  .ol-faq-form-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #F0F0F5;
-    letter-spacing: -0.02em;
-    margin: 0 0 0.45rem;
-    line-height: 1.25;
-  }
-  .ol-faq-form-sub {
-    font-size: 0.875rem;
-    color: rgba(240,240,245,0.5);
-    line-height: 1.55;
-    margin: 0 0 1.75rem;
-  }
-  .ol-faq-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .ol-faq-field {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-  .ol-faq-field label {
-    font-size: 11.5px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: rgba(240,240,245,0.45);
-  }
-  .ol-faq-field input,
-  .ol-faq-field select,
-  .ol-faq-field textarea {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 8px;
-    padding: 0.7rem 0.9rem;
-    font-size: 0.9rem;
-    font-family: 'Inter', -apple-system, sans-serif;
-    color: #F0F0F5;
-    outline: none;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .ol-faq-field input::placeholder,
-  .ol-faq-field textarea::placeholder { color: rgba(240,240,245,0.25); }
-  .ol-faq-field select option { background: #131320; color: #F0F0F5; }
-  .ol-faq-field input:focus,
-  .ol-faq-field select:focus,
-  .ol-faq-field textarea:focus {
-    border-color: rgba(201,168,76,0.45);
-    background: rgba(201,168,76,0.04);
-  }
-  .ol-faq-field textarea { resize: vertical; min-height: 90px; }
-  .ol-faq-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-  @media (max-width: 560px) { .ol-faq-form-row { grid-template-columns: 1fr; } }
-  .ol-faq-submit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem;
-    width: 100%;
-    padding: 0.85rem 1.5rem;
-    background: #25D366;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    font-family: 'Inter', -apple-system, sans-serif;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 0.5rem;
-    transition: background 0.2s, transform 0.15s;
-  }
-  .ol-faq-submit:hover { background: #1ebe5a; transform: translateY(-1px); }
-  .ol-faq-form-note {
-    font-size: 11px;
-    color: rgba(240,240,245,0.3);
-    text-align: center;
-    margin-top: 0.65rem;
-    line-height: 1.5;
-  }
-  </style>
-
-  <section class="ol-faq-section">
+  <!-- Componentes en premium-dark.css: .ol-page-hero, .ol-about*, .ol-faq* -->
+<section class="ol-faq-section">
     <div class="ol-faq-inner">
 
       <div class="ol-sh">

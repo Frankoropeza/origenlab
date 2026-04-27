@@ -32,656 +32,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260421a">
-  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260421a">
-  <script src="../_astro/ol-header.js?v20260421a" defer></script>
-
-  <style>
-    /* ============================================================
-       PAGE HERO — ol-page-hero (igual que nosotros/servicios)
-       ============================================================ */
-    .ol-page-hero {
-      background: #08080E;
-      padding: 6rem 0 5rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .ol-page-hero::before {
-      content: '';
-      position: absolute;
-      top: -20%; left: -10%;
-      width: 60%; height: 120%;
-      background: radial-gradient(ellipse at center, rgba(201,168,76,0.06) 0%, transparent 65%);
-      pointer-events: none;
-    }
-    .ol-page-hero::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent);
-    }
-    .ol-page-hero-inner {
-      width: 90%;
-      max-width: 1600px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-    }
-    .ol-page-hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: start;
-    }
-    @media (max-width: 860px) {
-      .ol-page-hero-grid { grid-template-columns: 1fr; gap: 2rem; }
-    }
-    .ol-page-hero-title {
-      font-size: clamp(2.8rem, 5vw, 4.5rem);
-      font-weight: 900;
-      color: #F0F0F5;
-      letter-spacing: -0.035em;
-      line-height: 1.04;
-      margin: 0 0 1.5rem;
-    }
-    .ol-page-hero-sub {
-      font-size: 1.0625rem;
-      color: rgba(240,240,245,0.5);
-      line-height: 1.75;
-      margin: 0 0 2.5rem;
-    }
-    .ol-page-hero-right {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-      padding-top: 0.25rem;
-    }
-    .ol-page-hero-copy {
-      font-size: 15px;
-      color: rgba(240,240,245,0.48);
-      line-height: 1.8;
-      margin: 0;
-    }
-
-    /* channels pills in hero */
-    .hero-channels {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      margin-top: 0.5rem;
-    }
-    .hero-channel {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      padding: 0.5rem 1rem;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 500;
-      color: rgba(240,240,245,0.65);
-      text-decoration: none;
-    }
-    .hero-channel:hover {
-      border-color: rgba(201,168,76,0.45);
-      color: #C9A84C;
-      background: rgba(201,168,76,0.06);
-    }
-    .hero-channel svg { flex-shrink: 0; }
-
-    /* hero stats row */
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 0;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 14px;
-      overflow: hidden;
-      margin-top: auto;
-    }
-    .hero-stat {
-      padding: 1.25rem 1.5rem;
-      border-right: 1px solid rgba(255,255,255,0.07);
-    }
-    .hero-stat:last-child { border-right: none; }
-    .hero-stat-num {
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: #C9A84C;
-      letter-spacing: -0.04em;
-      line-height: 1;
-      margin-bottom: 0.3rem;
-    }
-    .hero-stat-label {
-      font-size: 12px;
-      color: rgba(240,240,245,0.38);
-      line-height: 1.4;
-    }
-
-    /* status dot in hero */
-    .hero-status {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 12.5px;
-      color: rgba(240,240,245,0.42);
-      margin-bottom: 1.75rem;
-    }
-    .hero-status-dot {
-      width: 7px;
-      height: 7px;
-      background: #22C55E;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    /* ============================================================
-       SECCIÓN CONTACTO (grid info + form)
-       ============================================================ */
-    .ol-contact {
-      background: #0D0D16;
-      padding: 6rem 0;
-      position: relative;
-    }
-    .ol-contact::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.18), transparent);
-    }
-    .ol-contact-inner {
-      width: 90%;
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-    .ol-contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 5rem;
-      align-items: start;
-    }
-    @media (max-width: 960px) {
-      .ol-contact-grid { grid-template-columns: 1fr; gap: 3.5rem; }
-    }
-
-    /* ── Left info panel ── */
-    .ol-contact-info { position: sticky; top: 160px; }
-    .ol-contact-label {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #C9A84C;
-      margin-bottom: 1.25rem;
-    }
-    .ol-contact-heading {
-      font-size: clamp(1.75rem, 3vw, 2.4rem);
-      font-weight: 800;
-      color: #F0F0F5;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-      margin: 0 0 1rem;
-    }
-    .ol-contact-desc {
-      font-size: 15px;
-      color: rgba(240,240,245,0.48);
-      line-height: 1.8;
-      margin: 0 0 2.5rem;
-    }
-
-    /* contact items */
-    .ol-contact-items {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      margin-bottom: 2.5rem;
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 14px;
-      overflow: hidden;
-    }
-    .ol-ci {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 1rem 1.25rem;
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-    }
-    .ol-ci:last-child { border-bottom: none; }
-    .ol-ci:hover { background: rgba(255,255,255,0.025); }
-    .ol-ci-icon {
-      width: 38px;
-      height: 38px;
-      background: rgba(201,168,76,0.07);
-      border: 1px solid rgba(201,168,76,0.18);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      color: #C9A84C;
-    }
-    .ol-ci-icon svg { width: 15px; height: 15px; }
-    .ol-ci-body {}
-    .ol-ci-label {
-      font-size: 10.5px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: rgba(240,240,245,0.3);
-      margin-bottom: 0.2rem;
-    }
-    .ol-ci-val {
-      font-size: 14.5px;
-      font-weight: 500;
-      color: rgba(240,240,245,0.8);
-      text-decoration: none;
-      
-    }
-    .ol-ci-val:hover { color: #C9A84C; }
-
-    /* status badge */
-    .ol-status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.45rem 0.9rem;
-      background: rgba(34,197,94,0.07);
-      border: 1px solid rgba(34,197,94,0.2);
-      border-radius: 999px;
-      font-size: 12.5px;
-      font-weight: 500;
-      color: rgba(34,197,94,0.8);
-    }
-    .ol-status-dot {
-      width: 7px;
-      height: 7px;
-      background: #22C55E;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    /* ── Right: form card ── */
-    .ol-form-card {
-      background: #0C0C18;
-      border: 1px solid rgba(255,255,255,0.08);
-      border-top: 2px solid rgba(201,168,76,0.35);
-      border-radius: 16px;
-      padding: 2.5rem;
-    }
-    .ol-form-header { margin-bottom: 2rem; }
-    .ol-form-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #F0F0F5;
-      letter-spacing: -0.02em;
-      margin: 0 0 0.35rem;
-    }
-    .ol-form-subtitle {
-      font-size: 13.5px;
-      color: rgba(240,240,245,0.4);
-      margin: 0;
-    }
-
-    /* Service chips */
-    .ol-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.75rem;
-    }
-    .ol-chip {
-      padding: 0.4rem 0.85rem;
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 999px;
-      font-size: 12.5px;
-      font-weight: 500;
-      color: rgba(240,240,245,0.45);
-      cursor: pointer;
-      background: transparent;
-      font-family: inherit;
-    }
-    .ol-chip:hover {
-      border-color: rgba(201,168,76,0.4);
-      color: #C9A84C;
-    }
-    .ol-chip.active {
-      border-color: #C9A84C;
-      background: rgba(201,168,76,0.1);
-      color: #C9A84C;
-    }
-
-    /* Form fields */
-    .ol-form-group { margin-bottom: 1.125rem; }
-    .ol-form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-    @media (max-width: 560px) { .ol-form-row { grid-template-columns: 1fr; } }
-    .ol-form-group label {
-      display: block;
-      font-size: 12.5px;
-      font-weight: 500;
-      color: rgba(240,240,245,0.55);
-      margin-bottom: 0.4rem;
-      letter-spacing: 0.01em;
-    }
-    .ol-form-group input,
-    .ol-form-group textarea,
-    .ol-form-group select {
-      width: 100%;
-      background: #08080E;
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 10px;
-      padding: 0.75rem 1rem;
-      color: #F0F0F5;
-      font-family: inherit;
-      font-size: 14.5px;
-      line-height: 1.5;
-      box-sizing: border-box;
-      -webkit-appearance: none;
-      appearance: none;
-    }
-    .ol-form-group input::placeholder,
-    .ol-form-group textarea::placeholder {
-      color: rgba(240,240,245,0.2);
-    }
-    .ol-form-group input:focus,
-    .ol-form-group textarea:focus,
-    .ol-form-group select:focus {
-      outline: none;
-      border-color: rgba(201,168,76,0.5);
-      box-shadow: 0 0 0 3px rgba(201,168,76,0.1);
-    }
-    .ol-form-group textarea {
-      resize: vertical;
-      min-height: 130px;
-    }
-    .ol-select-wrap { position: relative; }
-    .ol-select-wrap::after {
-      content: '';
-      position: absolute;
-      right: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      border: 5px solid transparent;
-      border-top-color: rgba(240,240,245,0.3);
-      pointer-events: none;
-    }
-    .ol-form-note {
-      font-size: 11.5px;
-      color: rgba(240,240,245,0.28);
-      margin-top: 0.35rem;
-    }
-    .ol-required { color: #C9A84C; }
-
-    /* Submit */
-    .ol-btn-submit {
-      width: 100%;
-      background: linear-gradient(135deg, #C9A84C, #B8922E);
-      color: #08080E;
-      border: none;
-      padding: 0.95rem;
-      border-radius: 10px;
-      font-size: 14.5px;
-      font-weight: 700;
-      cursor: pointer;
-      font-family: inherit;
-      letter-spacing: 0.01em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-      transition: box-shadow 0.25s, transform 0.2s;
-      position: relative;
-      overflow: hidden;
-    }
-    .ol-btn-submit::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(255,255,255,0.12);
-      opacity: 0;
-    }
-    .ol-btn-submit:hover { box-shadow: 0 8px 32px rgba(201,168,76,0.4); transform: translateY(-1px); }
-    .ol-btn-submit:hover::before { opacity: 1; }
-    .ol-btn-submit:active { transform: scale(0.99); }
-
-    .ol-form-footer-note {
-      text-align: center;
-      font-size: 12px;
-      color: rgba(240,240,245,0.25);
-      margin-top: 1rem;
-    }
-
-    /* Success state */
-    .ol-form-success {
-      display: none;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    .ol-form-success.show { display: block; }
-    .ol-form-visible.hidden { display: none; }
-    .ol-success-icon {
-      font-size: 2.75rem;
-      margin-bottom: 1rem;
-    }
-    .ol-success-title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #F0F0F5;
-      margin: 0 0 0.5rem;
-    }
-    .ol-success-copy {
-      font-size: 14.5px;
-      color: rgba(240,240,245,0.45);
-      line-height: 1.75;
-    }
-
-    /* ============================================================
-       PROCESO — 4 pasos
-       ============================================================ */
-    .ol-proceso {
-      background: #08080E;
-      padding: 6rem 0;
-      position: relative;
-    }
-    .ol-proceso::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent);
-    }
-    .ol-proceso-inner {
-      width: 90%;
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-
-    .ol-steps {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0;
-      position: relative;
-    }
-    .ol-steps::before {
-      content: '';
-      position: absolute;
-      top: 27px;
-      left: calc(12.5% + 30px);
-      right: calc(12.5% + 30px);
-      height: 1px;
-      background: linear-gradient(90deg, rgba(201,168,76,0.15), rgba(201,168,76,0.35) 50%, rgba(201,168,76,0.15));
-    }
-    .ol-step {
-      padding: 0 2rem;
-      text-align: center;
-      position: relative;
-    }
-    .ol-step-num {
-      width: 56px;
-      height: 56px;
-      background: #0C0C18;
-      border: 1px solid rgba(201,168,76,0.25);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 2rem;
-      font-size: 17px;
-      font-weight: 800;
-      color: #C9A84C;
-      position: relative;
-      z-index: 1;
-    }
-    .ol-step-title {
-      font-size: 1.0625rem;
-      font-weight: 700;
-      color: #F0F0F5;
-      margin: 0 0 0.75rem;
-      letter-spacing: -0.01em;
-    }
-    .ol-step-copy {
-      font-size: 14px;
-      color: rgba(240,240,245,0.44);
-      line-height: 1.72;
-      margin: 0;
-    }
-    @media (max-width: 768px) {
-      .ol-steps { grid-template-columns: repeat(2, 1fr); gap: 3rem 1.5rem; }
-      .ol-steps::before { display: none; }
-    }
-    @media (max-width: 480px) {
-      .ol-steps { grid-template-columns: 1fr; }
-      .ol-step { padding: 0; }
-    }
-
-    /* ============================================================
-       FAQ
-       ============================================================ */
-    .ol-faq {
-      background: #0D0D16;
-      padding: 6rem 0;
-      position: relative;
-    }
-    .ol-faq::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.18), transparent);
-    }
-    .ol-faq-inner {
-      width: 90%;
-      max-width: 1600px;
-      margin: 0 auto;
-    }
-    .ol-faq-grid {
-      display: grid;
-      grid-template-columns: 1fr 1.6fr;
-      gap: 5rem;
-      align-items: start;
-    }
-    @media (max-width: 900px) {
-      .ol-faq-grid { grid-template-columns: 1fr; gap: 3rem; }
-    }
-    .ol-faq-sticky { position: sticky; top: 160px; }
-    .ol-faq-cta-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      background: rgba(201,168,76,0.1);
-      border: 1px solid rgba(201,168,76,0.3);
-      border-radius: 10px;
-      font-size: 14px;
-      font-weight: 600;
-      color: #C9A84C;
-      text-decoration: none;
-      transition: background 0.2s, border-color 0.2s;
-      margin-top: 2rem;
-    }
-    .ol-faq-cta-btn:hover {
-      background: rgba(201,168,76,0.15);
-      border-color: rgba(201,168,76,0.55);
-    }
-
-    /* accordion */
-    .ol-faq-list { display: flex; flex-direction: column; gap: 0; }
-    .ol-faq-item {
-      border-bottom: 1px solid rgba(255,255,255,0.07);
-    }
-    .ol-faq-item:first-child { border-top: 1px solid rgba(255,255,255,0.07); }
-    .ol-faq-trigger {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 1.25rem 0;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-family: inherit;
-      text-align: left;
-      gap: 1rem;
-    }
-    .ol-faq-q {
-      font-size: 15px;
-      font-weight: 600;
-      color: rgba(240,240,245,0.8);
-      line-height: 1.4;
-      
-    }
-    .ol-faq-trigger:hover .ol-faq-q { color: #F0F0F5; }
-    .ol-faq-icon {
-      width: 26px;
-      height: 26px;
-      min-width: 26px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .ol-faq-icon svg { width: 10px; height: 10px; }
-    .ol-faq-trigger[aria-expanded="true"] .ol-faq-icon {
-      background: rgba(201,168,76,0.15);
-      border-color: rgba(201,168,76,0.4);
-    }
-    .ol-faq-trigger[aria-expanded="true"] .ol-faq-icon svg { transform: rotate(180deg); }
-    .ol-faq-trigger[aria-expanded="true"] .ol-faq-icon svg path { stroke: #C9A84C; }
-    .ol-faq-answer {
-      overflow: hidden;
-      max-height: 0;
-    }
-    .ol-faq-answer.open { max-height: 300px; }
-    .ol-faq-answer-inner {
-      padding: 0.25rem 0 1.4rem;
-      font-size: 14.5px;
-      color: rgba(240,240,245,0.48);
-      line-height: 1.8;
-    }
-    .ol-faq-answer-inner a {
-      color: #C9A84C;
-      text-decoration: none;
-      
-    }
-    .ol-faq-answer-inner a:hover { color: #E4C26B; }
-  </style>
+  <link rel="stylesheet" href="../_astro/BaseLayout.xeR8R953.css?v20260426c">
+  <link rel="stylesheet" href="../_astro/premium-dark.css?v20260426e">
+  <script src="../_astro/ol-header.js?v20260426d" defer></script>
+  <!-- Componentes en premium-dark.css: .ol-page-hero, .ol-contact*, .ol-form*, .ol-chip*, .ol-proceso*, .ol-faq -->
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.mx/#organization","name":"OrigenLab","url":"https://origenlab.mx","logo":"https://origenlab.mx/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"ContactPage","@id":"https://origenlab.mx/contacto/#page","url":"https://origenlab.mx/contacto/","name":"Contacto — OrigenLab","inLanguage":"es-MX"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.mx/"},{"@type":"ListItem","position":2,"name":"Contacto","item":"https://origenlab.mx/contacto/"}]}]}</script></head>
 <body>
 
 <a class="ol-skip-link" href="#main">Saltar al contenido</a>
-<!-- ============================================================
-     TOPBAR
-     ============================================================ -->
 <div class="ol-topbar">
   <div class="ol-topbar-inner">
     <div class="ol-topbar-left">
@@ -702,7 +60,7 @@
     <div class="ol-topbar-center">
       <span class="ol-topbar-promo">
         <span class="ol-topbar-dot"></span>
-        Atención personalizada &nbsp;·&nbsp; Ciudad de México
+        Atención personalizada  ·  Ciudad de México
       </span>
     </div>
     <div class="ol-topbar-right">
@@ -715,14 +73,10 @@
     </div>
   </div>
 </div>
-
-<!-- ============================================================
-     HEADER
-     ============================================================ -->
 <header class="ol-header" id="ol-header">
   <div class="ol-header-inner">
     <a href="/" class="ol-header-logo">
-      <img src="../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
     </a>
     <nav class="ol-nav" aria-label="Navegación principal">
       <ul class="ol-nav-list">
@@ -741,7 +95,30 @@
             </ul>
           </div>
         </li>
-        <li><a href="/portafolio/" class="ol-nav-link">Portafolio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
         <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
         <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
         <li><a href="/contacto/" class="ol-nav-link active">Contacto</a></li>
@@ -755,15 +132,11 @@
     </button>
   </div>
 </header>
-
-<!-- Mobile overlay -->
 <div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
-
-<!-- Mobile panel -->
 <nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
   <div class="ol-mobile-header">
     <a href="/" class="ol-mobile-logo">
-      <img src="../img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
     </a>
     <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
       <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -783,7 +156,22 @@
         <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
       </ul>
     </li>
-    <li><a href="/portafolio/" class="ol-mobile-link">Portafolio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
+      </ul>
+    </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
     <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
     <li><a href="/contacto/" class="ol-mobile-link active">Contacto</a></li>

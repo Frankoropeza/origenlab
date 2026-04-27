@@ -9,10 +9,10 @@
         tjs.parentNode.insertBefore(js, tjs);
       }(document, 'script', 'ti-js'));
     </script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
-<link rel="stylesheet" href="_astro/BaseLayout.xeR8R953.css?v20260421a">
-<link rel="stylesheet" href="_astro/index@_@astro.BX4RFBkr.css">
-<link rel="stylesheet" href="_astro/premium-dark.css?v20260421a">
-  <script src="_astro/ol-header.js?v20260421a" defer></script>
+<link rel="stylesheet" href="_astro/BaseLayout.xeR8R953.css?v20260426c">
+<link rel="stylesheet" href="_astro/index@_@astro.BX4RFBkr.css?v20260426c">
+<link rel="stylesheet" href="_astro/premium-dark.css?v20260426e">
+  <script src="_astro/ol-header.js?v20260426d" defer></script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -323,7 +323,7 @@
       "name": "¿Cuánto tiempo tarda en estar listo mi sitio web?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Los plazos varían según la complejidad: una landing page puede estar lista en 5–7 días hábiles, un sitio corporativo en 3–4 semanas y un e-commerce en 4–6 semanas. Trabajamos con fechas de entrega comprometidas desde el inicio del proyecto."
+        "text": "Los plazos varían según la complejidad de cada proyecto. Trabajamos con calendario comprometido por escrito desde el inicio, con entregas iterativas en entorno de pruebas para ver el avance real durante todo el proyecto."
       }
     },
     {
@@ -376,10 +376,8 @@
     }
   ]
 }</script>
-</head> <body> <a class="ol-skip-link" href="#main">Saltar al contenido</a>
-<div class="ol-topbar">
+</head> <body> <a class="ol-skip-link" href="#main">Saltar al contenido</a><div class="ol-topbar">
   <div class="ol-topbar-inner">
-    <!-- Izquierda: contacto -->
     <div class="ol-topbar-left">
       <a href="mailto:hola@origenlab.mx" class="ol-topbar-contact">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
@@ -395,14 +393,12 @@
         +52 55 4786 8402
       </a>
     </div>
-    <!-- Centro: promo -->
     <div class="ol-topbar-center">
       <span class="ol-topbar-promo">
         <span class="ol-topbar-dot"></span>
-        Atención personalizada &nbsp;·&nbsp; Ciudad de México
+        Atención personalizada  ·  Ciudad de México
       </span>
     </div>
-    <!-- Derecha: WhatsApp -->
     <div class="ol-topbar-right">
       <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
         <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
@@ -412,14 +408,12 @@
       </a>
     </div>
   </div>
-</div> <!-- ======= NEW HEADER ======= -->
+</div>
 <header class="ol-header" id="ol-header">
   <div class="ol-header-inner">
-    <!-- Logo -->
     <a href="/" class="ol-header-logo">
-      <img src="img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
-          </a>
-    <!-- Desktop Nav -->
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" width="696" height="190" decoding="async">
+    </a>
     <nav class="ol-nav" aria-label="Navegación principal">
       <ul class="ol-nav-list">
         <li><a href="/" class="ol-nav-link active">Inicio</a></li>
@@ -437,15 +431,36 @@
             </ul>
           </div>
         </li>
-        <li><a href="/portafolio/" class="ol-nav-link">Portafolio</a></li>
+        <li class="ol-has-dropdown">
+          <a href="/portafolio/" class="ol-nav-link">
+            Portafolio
+            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="ol-dropdown">
+            <ul>
+              <li><a href="/portafolio/" class="ol-dropdown-link">Todo el Portafolio</a></li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/equipos-contra-incendios/" class="ol-dropdown-link ol-dropdown-parent">Equipos Contra Incendios</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-dropdown-link">Gama de México</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-dropdown-link">MESECI</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-dropdown-link">LGA Contraincendios</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-dropdown-link">MANEXT</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-dropdown-link">BOMBERO.MX</a></li>
+                    <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-dropdown-link">ProyectoRed</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
         <li><a href="/nosotros/" class="ol-nav-link">Nosotros</a></li>
         <li><a href="/blog/" class="ol-nav-link">Blog</a></li>
         <li><a href="/contacto/" class="ol-nav-link">Contacto</a></li>
       </ul>
     </nav>
-    <!-- Desktop CTA -->
-    <a href="cotizar.html" class="ol-header-cta">Cotizar proyecto →</a>
-    <!-- Hamburger -->
+    <a href="/cotizar/" class="ol-header-cta">Cotizar proyecto →</a>
     <button class="ol-menu-toggle" id="ol-menu-toggle" aria-label="Abrir menú" aria-expanded="false">
       <span class="ol-ham-line"></span>
       <span class="ol-ham-line"></span>
@@ -453,14 +468,12 @@
     </button>
   </div>
 </header>
-<!-- Mobile overlay -->
 <div class="ol-mobile-overlay" id="ol-mobile-overlay"></div>
-<!-- Mobile panel -->
 <nav class="ol-mobile-panel" id="ol-mobile-panel" aria-label="Menú móvil">
   <div class="ol-mobile-header">
     <a href="/" class="ol-mobile-logo">
-      <img src="img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
-          </a>
+      <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
+    </a>
     <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
       <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
@@ -479,13 +492,28 @@
         <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
       </ul>
     </li>
-    <li><a href="/portafolio/" class="ol-mobile-link">Portafolio</a></li>
+    <li>
+      <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
+        <span>Portafolio</span>
+        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="ol-mobile-submenu">
+        <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/" class="ol-mobile-link ol-mobile-sublink">Equipos Contra Incendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Gama de México</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/meseci/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MESECI</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/lga-contraincendios/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— LGA Contraincendios</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/manext/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MANEXT</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
+        <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
+      </ul>
+    </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
     <li><a href="/blog/" class="ol-mobile-link">Blog</a></li>
     <li><a href="/contacto/" class="ol-mobile-link">Contacto</a></li>
   </ul>
   <div class="ol-mobile-footer">
-    <a href="cotizar.html" class="btn btn-primary ol-mobile-cta">Cotizar proyecto →</a>
+    <a href="/cotizar/" class="ol-header-cta ol-mobile-cta">Cotizar proyecto →</a>
   </div>
 </nav>
 <!-- ======= END NEW HEADER ======= -->
@@ -853,7 +881,7 @@ Nos diferenciamos por usar tecnología moderna — Astro, Next.js y arquitectura
         <div class="ol-tc-footer">
           <div class="ol-tc-avatar">GM</div>
           <div class="ol-tc-info">
-            <p class="ol-tc-name">Gama de México</p>
+            <p class="ol-tc-name"><a href="/portafolio/equipos-contra-incendios/gama-de-mexico/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(192,57,43,0.4);">Gama de México</a></p>
             <p class="ol-tc-role">Distribución y Catálogo · <a href="https://gamademexico.com/" target="_blank" rel="noopener noreferrer" class="ol-tc-link">gamademexico.com</a></p>
           </div>
         </div>
@@ -1013,243 +1041,7 @@ Moda Vázquez </p> </div> </div> </div> </div> </div> </section>  <section class
 <!-- ============================================================
      OL-FAQ — Preguntas Frecuentes + Formulario WhatsApp
      ============================================================ -->
-<style>
-/* ---- FAQ Section ---- */
-.ol-faq-section {
-  background: var(--bg-alt, #0D0D16);
-  padding: 6rem 0;
-  position: relative;
-  overflow: hidden;
-}
-.ol-faq-section::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(201,168,76,0.3) 50%, transparent 100%);
-}
-.ol-faq-inner {
-  width: 90%;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-.ol-faq-header {
-  text-align: center;
-  margin-bottom: 3.5rem;
-}
-.ol-faq-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #C9A84C;
-  margin-bottom: 0.85rem;
-}
-.ol-faq-eyebrow::before,
-.ol-faq-eyebrow::after {
-  content: '';
-  width: 28px;
-  height: 1px;
-  background: #C9A84C;
-  opacity: 0.5;
-}
-.ol-faq-title {
-  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
-  font-weight: 700;
-  color: #F0F0F5;
-  letter-spacing: -0.025em;
-  line-height: 1.15;
-  margin: 0 0 0.75rem;
-}
-.ol-faq-subtitle {
-  font-size: 1rem;
-  color: rgba(240,240,245,0.5);
-  max-width: 520px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-.ol-faq-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
-}
-@media (max-width: 900px) {
-  .ol-faq-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-}
-.ol-faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-.ol-faq-col-label {
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(240,240,245,0.35);
-  margin-bottom: 1.25rem;
-}
-.ol-faq-item {
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-}
-.ol-faq-item:first-of-type { border-top: 1px solid rgba(255,255,255,0.07); }
-.ol-faq-question {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 1.15rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  cursor: pointer;
-  text-align: left;
-  color: #F0F0F5;
-  font-size: 0.95rem;
-  font-weight: 500;
-  font-family: 'Inter', -apple-system, sans-serif;
-  line-height: 1.4;
-}
-.ol-faq-question:hover { color: #C9A84C; }
-.ol-faq-question.active { color: #C9A84C; }
-.ol-faq-icon {
-  flex-shrink: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.ol-faq-question.active .ol-faq-icon {
-  border-color: #C9A84C;
-  background: rgba(201,168,76,0.12);
-  transform: rotate(45deg);
-}
-.ol-faq-icon svg { display: block; }
-.ol-faq-answer {
-  max-height: 0;
-  overflow: hidden;
-}
-.ol-faq-answer-inner {
-  padding: 0 0 1.25rem;
-  font-size: 0.9rem;
-  color: rgba(240,240,245,0.6);
-  line-height: 1.7;
-  margin: 0;
-}
-.ol-faq-form-wrap {
-  background: #131320;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  padding: 2.25rem;
-  position: sticky;
-  top: 120px;
-}
-.ol-faq-form-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #25D366;
-  background: rgba(37,211,102,0.1);
-  border: 1px solid rgba(37,211,102,0.2);
-  border-radius: 980px;
-  padding: 0.35rem 0.85rem;
-  margin-bottom: 1.25rem;
-}
-.ol-faq-form-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #F0F0F5;
-  letter-spacing: -0.02em;
-  margin: 0 0 0.45rem;
-  line-height: 1.25;
-}
-.ol-faq-form-sub {
-  font-size: 0.875rem;
-  color: rgba(240,240,245,0.5);
-  line-height: 1.55;
-  margin: 0 0 1.75rem;
-}
-.ol-faq-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.ol-faq-field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-.ol-faq-field label {
-  font-size: 11.5px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: rgba(240,240,245,0.45);
-}
-.ol-faq-field input,
-.ol-faq-field select,
-.ol-faq-field textarea {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px;
-  padding: 0.7rem 0.9rem;
-  font-size: 0.9rem;
-  font-family: 'Inter', -apple-system, sans-serif;
-  color: #F0F0F5;
-  outline: none;
-  width: 100%;
-  box-sizing: border-box;
-}
-.ol-faq-field input::placeholder,
-.ol-faq-field textarea::placeholder { color: rgba(240,240,245,0.25); }
-.ol-faq-field select option { background: #131320; color: #F0F0F5; }
-.ol-faq-field input:focus,
-.ol-faq-field select:focus,
-.ol-faq-field textarea:focus {
-  border-color: rgba(201,168,76,0.45);
-  background: rgba(201,168,76,0.04);
-}
-.ol-faq-field textarea { resize: vertical; min-height: 90px; }
-.ol-faq-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-@media (max-width: 560px) { .ol-faq-form-row { grid-template-columns: 1fr; } }
-.ol-faq-submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-  width: 100%;
-  padding: 0.85rem 1.5rem;
-  background: #25D366;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  font-family: 'Inter', -apple-system, sans-serif;
-  color: #fff;
-  cursor: pointer;
-  margin-top: 0.5rem;
-  transition: background 0.2s, transform 0.15s;
-}
-.ol-faq-submit:hover { background: #1ebe5a; transform: translateY(-1px); }
-.ol-faq-form-note {
-  font-size: 11px;
-  color: rgba(240,240,245,0.3);
-  text-align: center;
-  margin-top: 0.65rem;
-  line-height: 1.5;
-}
-</style>
+<!-- Componente FAQ — estilos en _astro/premium-dark.css -->
 
 <section class="ol-faq-section">
   <div class="ol-faq-inner">
@@ -1289,7 +1081,7 @@ Moda Vázquez </p> </div> </div> </div> </div> </div> </section>  <section class
               <span class="ol-faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M5 1V9M1 5H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
             </button>
             <div class="ol-faq-answer" id="faq-ans-1">
-              <p class="ol-faq-answer-inner">Los plazos varían según la complejidad: una landing page puede estar lista en 5–7 días hábiles, un sitio corporativo en 3–4 semanas y un e-commerce en 4–6 semanas. Trabajamos con fechas de entrega comprometidas desde el inicio del proyecto.</p>
+              <p class="ol-faq-answer-inner">Los plazos varían según la complejidad de cada proyecto. Trabajamos con calendario comprometido por escrito desde el inicio, con entregas iterativas en entorno de pruebas para ver el avance real durante todo el proyecto.</p>
             </div>
           </div>
 
