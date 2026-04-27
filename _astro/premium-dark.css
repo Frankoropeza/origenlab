@@ -1842,7 +1842,7 @@ body { padding-top: calc(42px + 88px) !important; }
   margin: 0 auto;
   padding: 1.75rem 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
   border-bottom: 1px solid rgba(201,168,76,0.08);
 }
