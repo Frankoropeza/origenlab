@@ -4,22 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caso · BOMBERO.MX — Equipo Personal de Protección · Distribución NFPA Nacional | OrigenLab</title>
-  <meta name="description" content="Caso de estudio del sitio corporativo de BOMBERO.MX, distribuidor especializado de equipo personal de protección certificado NFPA — trajes estructurales, equipos autónomos de respiración, herramientas de rescate. Marcas MSA, Honeywell, Globe y Bullard con cobertura en toda la República Mexicana.">
+  <meta name="description" content="El sitio que OrigenLab construyó para BOMBERO.MX, distribuidor multimarca de EPP NFPA para bomberos: MSA, Honeywell, Globe y Bullard, cobertura nacional.">
   <link rel="canonical" href="https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/">
   <meta property="og:title" content="Caso · BOMBERO.MX — Equipo Personal de Protección · Distribución NFPA Nacional | OrigenLab">
-  <meta property="og:description" content="Cómo construimos el sitio corporativo de BOMBERO.MX: arquitectura, diseño, catálogo técnico de PPE certificado NFPA y conversión B2B para distribución especializada de equipo para bomberos en toda México.">
-  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/bombero/bombero-home-equipo-bomberos-nfpa-mexico.avif">
+  <meta property="og:description" content="Cómo construimos el sitio corporativo de BOMBERO.MX: arquitectura, diseño, catálogo técnico de PPE certificado NFPA y conversión B2B para distribución…">
+  <meta property="og:image" content="https://origenlab.com/img/equipos-contra-incendios/bombero/bombero-hero.webp">
   <meta property="og:locale" content="es_MX">
   <meta property="og:site_name" content="OrigenLab">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Caso · BOMBERO.MX — Equipo Personal de Protección · Distribución NFPA Nacional | OrigenLab">
   <meta name="twitter:description" content="Sitio corporativo B2B para distribuidor especializado de PPE certificado NFPA — MSA · Honeywell · Globe · Bullard. Cobertura nacional.">
-  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/bombero/bombero-home-equipo-bomberos-nfpa-mexico.avif">
+  <meta name="twitter:image" content="https://origenlab.com/img/equipos-contra-incendios/bombero/bombero-hero.webp">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
@@ -27,12 +27,12 @@
   <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
 
   <!-- CSS aprobado del sitio -->
-  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260427b">
-  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260427b">
-  <script src="../../../_astro/ol-header.js?v20260427b" defer></script>
+  <link rel="stylesheet" href="../../../_astro/BaseLayout.xeR8R953.css?v20260604f">
+  <link rel="stylesheet" href="../../../_astro/premium-dark.css?v20260605a">
+  <script src="../../../_astro/ol-header.js?v20260604b" defer></script>
 
   <style>
     /* ============================================================
@@ -49,9 +49,120 @@
     /* Hero hereda el acento del caso */
     .hero { --hero-accent: var(--case-accent); --hero-accent-soft: var(--case-accent-soft); --hero-accent-line: var(--case-accent-line); }
     .hero::before { background: radial-gradient(ellipse at center, rgba(185,28,28,0.08) 0%, transparent 65%); }
+
+    /* Check de listas hereda el acento del caso (shared usa hex Gama por defecto) */
+    .ol-case-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B91C1C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
+    .ol-cta-hero-promises-list li::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B91C1C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); }
+
+    /* ── Maquetas .mk (browser-mockups del sitio del cliente · tema claro · sin animaciones) ── */
+    .mk { --mk-indigo:#B91C1C; --mk-ink:#0F1729; --mk-gray:#475467; --mk-soft:#7A8699;
+          --mk-line:#E6E8EE; --mk-bg:#FFFFFF; --mk-bg2:#F6F7FB; --mk-indigo-soft:#FBEAEA;
+          border-radius:10px; overflow:hidden; border:1px solid var(--mk-line); background:var(--mk-bg); }
+    .mk-bar { display:flex; align-items:center; gap:.55rem; padding:.5rem .8rem; background:#1A1D29; border-bottom:1px solid rgba(255,255,255,.06); }
+    .mk-dots { display:flex; gap:5px; }
+    .mk-dots i { width:8px; height:8px; border-radius:50%; background:rgba(255,255,255,.22); }
+    .mk-dots i:nth-child(1){ background:#ED6A5E; } .mk-dots i:nth-child(2){ background:#F4BF4F; } .mk-dots i:nth-child(3){ background:#61C554; }
+    .mk-url { flex:1; background:rgba(255,255,255,.07); border-radius:999px; padding:.22rem .7rem; font-size:10.5px; color:rgba(255,255,255,.62); text-align:center; font-family:'SFMono-Regular',Menlo,Consolas,monospace; letter-spacing:.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mk-view { background:var(--mk-bg); color:var(--mk-ink); padding:1.4rem 1.5rem 1.6rem; }
+    .mk-nav { display:flex; align-items:center; justify-content:space-between; padding-bottom:1rem; border-bottom:1px solid var(--mk-line); margin-bottom:1.3rem; }
+    .mk-logo { font-size:.95rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.01em; }
+    .mk-menu { display:flex; gap:.85rem; font-size:10.5px; color:var(--mk-gray); font-weight:600; align-items:center; }
+    .mk-menu .mk-cta { background:var(--mk-indigo); color:#fff; padding:.28rem .6rem; border-radius:6px; }
+    .mk-eyebrow { font-size:9.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--mk-indigo); }
+    .mk-h { font-size:1.5rem; font-weight:800; letter-spacing:-.02em; line-height:1.1; color:var(--mk-ink); margin:.4rem 0 0; }
+    .mk-h .ac { color:var(--mk-indigo); }
+    .mk-sub { font-size:11.5px; color:var(--mk-gray); line-height:1.55; margin:.6rem 0 0; }
+    .mk-grid2 { display:grid; grid-template-columns:1.1fr 1fr; gap:1.6rem; align-items:start; }
+    .mk-sect-h { font-size:1.05rem; font-weight:800; letter-spacing:-.01em; color:var(--mk-ink); text-align:center; margin:0 0 .25rem; }
+    .mk-sect-sub { font-size:10.5px; color:var(--mk-soft); text-align:center; line-height:1.5; margin:0 auto 1.2rem; max-width:80%; }
+    .mk-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-card { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.8rem .75rem; }
+    .mk-ic { width:30px; height:30px; border-radius:7px; background:var(--mk-indigo-soft); color:var(--mk-indigo); display:flex; align-items:center; justify-content:center; margin-bottom:.55rem; }
+    .mk-ct { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin:0 0 .35rem; }
+    .mk-bul { list-style:none; margin:0; padding:0; }
+    .mk-bul li { position:relative; font-size:9.5px; color:var(--mk-gray); line-height:1.5; padding-left:.85rem; margin-bottom:.18rem; }
+    .mk-bul li::before { content:''; position:absolute; left:0; top:.42em; width:5px; height:5px; border-radius:50%; background:var(--mk-indigo); opacity:.55; }
+    .mk-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-stat { text-align:center; background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:1rem .5rem; }
+    .mk-stat b { display:block; font-size:1.45rem; font-weight:800; color:var(--mk-indigo); letter-spacing:-.02em; line-height:1; }
+    .mk-stat span { display:block; font-size:9px; color:var(--mk-soft); margin-top:.4rem; line-height:1.35; font-weight:600; }
+    .mk-chips { display:flex; flex-wrap:wrap; gap:.4rem; justify-content:center; }
+    .mk-chip { font-size:9.5px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:999px; padding:.3rem .65rem; }
+    .mk-chip.on { background:var(--mk-indigo-soft); border-color:rgba(185,28,28,.25); color:var(--mk-indigo); }
+    .mk-tcards { display:grid; grid-template-columns:repeat(3,1fr); gap:.7rem; }
+    .mk-tcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .8rem; }
+    .mk-trow { display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem; }
+    .mk-av { width:28px; height:28px; border-radius:50%; background:var(--mk-indigo); color:#fff; font-size:9.5px; font-weight:700; display:flex; align-items:center; justify-content:center; flex:0 0 28px; }
+    .mk-tn { font-size:10px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-tloc { font-size:8.5px; color:var(--mk-soft); }
+    .mk-stars { color:#F5A623; font-size:9px; letter-spacing:1px; margin-bottom:.3rem; }
+    .mk-quote { font-size:9.5px; color:var(--mk-gray); line-height:1.5; margin:0; }
+    .mk-form { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:11px; padding:1.1rem 1.1rem 1.2rem; }
+    .mk-field { height:30px; background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:7px; margin-bottom:.55rem; display:flex; align-items:center; padding:0 .6rem; font-size:9.5px; color:var(--mk-soft); }
+    .mk-frow { display:grid; grid-template-columns:1fr 1fr; gap:.55rem; }
+    .mk-submit { background:var(--mk-indigo); color:#fff; font-size:10.5px; font-weight:700; text-align:center; border-radius:7px; padding:.6rem; margin-top:.3rem; }
+    .mk-trust { display:grid; grid-template-columns:repeat(4,1fr); gap:.55rem; margin-bottom:1rem; }
+    .mk-trust div { text-align:center; }
+    .mk-trust b { display:block; font-size:1.05rem; font-weight:800; color:var(--mk-indigo); line-height:1; }
+    .mk-trust span { display:block; font-size:8px; color:var(--mk-soft); margin-top:.25rem; font-weight:600; }
+    /* --- Hero oscuro (mirror del sitio live · acento crimson brillante) --- */
+    .mk-hero { background:linear-gradient(135deg,#1A1014 0%,#120A0C 58%,#1A1014 100%); margin:-1.4rem -1.5rem 1.3rem; padding:1.5rem 1.5rem 1.35rem; border-bottom:1px solid var(--mk-line); }
+    .mk-hero .mk-eyebrow { color:#FCA5A5; }
+    .mk-hero .mk-h { color:#fff; }
+    .mk-hero .mk-h .ac { color:#F87171; }
+    .mk-hero .mk-sub { color:rgba(241,231,231,.74); }
+    .mk-hb { display:grid; grid-template-columns:1.2fr 1fr; gap:1.4rem; align-items:start; }
+    .mk-hk { font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#FCA5A5; margin:0 0 .35rem; }
+    .mk-hp { font-size:10px; color:rgba(241,231,231,.68); line-height:1.55; margin:0; }
+    .mk-strip { display:flex; gap:1.6rem; margin-top:1rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.1); }
+    .mk-strip div b { font-size:1.15rem; font-weight:800; color:#fff; letter-spacing:-.02em; line-height:1; }
+    .mk-strip div b span { color:#F87171; }
+    .mk-strip div .l { display:block; font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(241,231,231,.52); margin-top:.3rem; }
+    /* --- Tira de accesos rápidos bajo el hero --- */
+    .mk-quick { display:grid; grid-template-columns:repeat(6,1fr); gap:.5rem; }
+    .mk-qc { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:8px; padding:.6rem .55rem; }
+    .mk-qc .mk-ic { width:24px; height:24px; margin-bottom:.4rem; border-radius:6px; }
+    .mk-qc b { display:block; font-size:9.5px; font-weight:700; color:var(--mk-ink); line-height:1.2; }
+    .mk-qc span { display:block; font-size:7.5px; color:var(--mk-soft); margin-top:.18rem; line-height:1.3; }
+    .mk-qc.cta { background:var(--mk-indigo); border-color:var(--mk-indigo); }
+    .mk-qc.cta b, .mk-qc.cta span { color:#fff; }
+    .mk-qc.cta .mk-ic { background:rgba(255,255,255,.18); color:#fff; }
+    /* --- Listas INCLUYE en cards de familia --- */
+    .mk-pbadge { float:right; font-size:7.5px; font-weight:700; letter-spacing:.08em; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .4rem; }
+    .mk-inc-k { font-size:7.5px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:var(--mk-soft); margin:.55rem 0 .35rem; }
+    .mk-inc { display:flex; flex-wrap:wrap; gap:.28rem; }
+    .mk-inc span { font-size:8px; font-weight:600; color:var(--mk-gray); background:var(--mk-bg); border:1px solid var(--mk-line); border-radius:5px; padding:.22rem .42rem .22rem .82rem; position:relative; }
+    .mk-inc span::before { content:''; position:absolute; left:.36rem; top:50%; transform:translateY(-50%); width:4px; height:4px; border-radius:50%; background:var(--mk-indigo); }
+    /* --- Marcas distribuidas (4 col) --- */
+    .mk-diff { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-dcard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; }
+    .mk-dcard .mk-ic { margin-bottom:.5rem; }
+    .mk-dcard b { display:block; font-size:11px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-dcard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .4rem; }
+    .mk-dlink { font-size:8px; font-weight:700; color:var(--mk-indigo); }
+    /* --- Sectores atendidos --- */
+    .mk-sect-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; }
+    .mk-scard { background:var(--mk-bg2); border:1px solid var(--mk-line); border-radius:9px; padding:.85rem .75rem; display:flex; flex-direction:column; }
+    .mk-scard .k { font-size:7.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--mk-indigo); margin-bottom:.3rem; }
+    .mk-scard b { font-size:11.5px; font-weight:700; color:var(--mk-ink); margin-bottom:.3rem; }
+    .mk-scard p { font-size:8.5px; color:var(--mk-gray); line-height:1.5; margin:0 0 .5rem; }
+    .mk-scard .v { font-size:8px; font-weight:700; color:var(--mk-indigo); margin-top:auto; }
+    /* --- Aliados / casos del sector --- */
+    .mk-ally { font-size:7.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--mk-indigo); background:var(--mk-indigo-soft); border-radius:5px; padding:.18rem .45rem; display:inline-block; margin-bottom:.45rem; }
+    .mk-dom { font-size:8px; color:var(--mk-soft); margin-top:.35rem; }
+    @media (max-width:640px){
+      .mk-grid2 { grid-template-columns:1fr; gap:1rem; }
+      .mk-cards, .mk-tcards { grid-template-columns:1fr 1fr; }
+      .mk-stats, .mk-trust { grid-template-columns:repeat(2,1fr); }
+      .mk-h { font-size:1.2rem; }
+      .mk-hb { grid-template-columns:1fr; gap:.8rem; }
+      .mk-quick { grid-template-columns:repeat(3,1fr); }
+      .mk-diff, .mk-sect-cards { grid-template-columns:1fr 1fr; }
+      .mk-strip { flex-wrap:wrap; gap:.9rem; }
+    }
   </style>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"BOMBERO.MX","item":"https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/"}]},{"@type":"Organization","@id":"https://bombero.mx/#organization","name":"BOMBERO.MX","url":"https://bombero.mx/","description":"Distribuidor especializado en equipo personal de protección certificado NFPA para bomberos profesionales en México.","areaServed":{"@type":"Country","name":"México"},"knowsAbout":["Equipo personal de protección","NFPA 1971","NFPA 1981","NFPA 1855","SCBA","Trajes estructurales","Cascos de bombero","Herramientas de rescate"],"brand":[{"@type":"Brand","name":"MSA"},{"@type":"Brand","name":"Honeywell"},{"@type":"Brand","name":"Globe"},{"@type":"Brand","name":"Bullard"}]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/#case","name":"BOMBERO.MX — Equipo Personal de Protección · Distribución NFPA Nacional","headline":"Sitio corporativo para distribuidor nacional de PPE certificado NFPA para bomberos profesionales","description":"Caso de estudio del sitio corporativo de BOMBERO.MX. Distribución especializada de equipo personal de protección certificado NFPA: trajes estructurales NFPA 1971, equipos autónomos de respiración NFPA 1981, herramientas hidráulicas y accesorios para cuerpos de bomberos, brigadas industriales y unidades de protección civil en toda la República Mexicana. Marcas distribuidas: MSA, Honeywell, Globe y Bullard.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/bombero/bombero-home-equipo-bomberos-nfpa-mexico.avif","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://bombero.mx/#organization"},"keywords":["equipo personal de protección","PPE","NFPA","trajes estructurales","SCBA","MSA","Honeywell","Globe","Bullard","bomberos","brigadas industriales","cobertura nacional"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://origenlab.com/#organization","name":"OrigenLab","url":"https://origenlab.com","logo":"https://origenlab.com/logo.svg","description":"Agencia de desarrollo web profesional en México. Sitios web que generan resultados.","address":{"@type":"PostalAddress","addressLocality":"Ciudad de México","addressCountry":"MX"},"contactPoint":{"@type":"ContactPoint","telephone":"+525547868402","contactType":"sales","availableLanguage":["Spanish","es-MX"],"areaServed":"MX"},"sameAs":[]},{"@type":"WebSite","@id":"https://origenlab.com/#website","url":"https://origenlab.com/","name":"OrigenLab","inLanguage":"es-MX","publisher":{"@id":"https://origenlab.com/#organization"}},{"@type":"BreadcrumbList","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://origenlab.com/"},{"@type":"ListItem","position":2,"name":"Portafolio","item":"https://origenlab.com/portafolio/"},{"@type":"ListItem","position":3,"name":"Equipos Contra Incendios","item":"https://origenlab.com/portafolio/equipos-contra-incendios/"},{"@type":"ListItem","position":4,"name":"BOMBERO.MX","item":"https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/"}]},{"@type":"Organization","@id":"https://bombero.mx/#organization","name":"BOMBERO.MX","url":"https://bombero.mx/","description":"Distribuidor especializado en equipo personal de protección certificado NFPA para bomberos profesionales en México.","areaServed":{"@type":"Country","name":"México"},"foundingDate":"2010","knowsAbout":["Equipo personal de protección","NFPA 1971","NFPA 1977","NFPA 1981","NFPA 1936","SCBA","Trajes estructurales","Equipo forestal","Cascos de bombero","Herramientas de rescate","HAZMAT"],"brand":[{"@type":"Brand","name":"MSA"},{"@type":"Brand","name":"Honeywell"},{"@type":"Brand","name":"Globe"},{"@type":"Brand","name":"Bullard"},{"@type":"Brand","name":"Holmatro"},{"@type":"Brand","name":"Genesis"}]},{"@type":"CreativeWork","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/#case","datePublished":"2026-04-26","dateModified":"2026-06-05","name":"BOMBERO.MX — Equipo Personal de Protección · Distribución NFPA Nacional","headline":"Sitio corporativo para distribuidor nacional de PPE certificado NFPA para bomberos profesionales","description":"Caso de estudio del sitio corporativo de BOMBERO.MX, distribuidor autorizado NFPA desde 2010. Distribución de equipo personal de protección certificado: trajes estructurales NFPA 1971, equipo forestal NFPA 1977, equipos autónomos de respiración NFPA 1981, herramientas hidráulicas de rescate NFPA 1936, HAZMAT y accesorios para cuerpos de bomberos, brigadas industriales y unidades de protección civil en toda la República Mexicana. Marcas distribuidas: MSA, Honeywell, Globe, Bullard, Holmatro y Genesis.","inLanguage":"es-MX","image":"https://origenlab.com/img/equipos-contra-incendios/bombero/bombero-hero.webp","author":{"@id":"https://origenlab.com/#organization"},"publisher":{"@id":"https://origenlab.com/#organization"},"about":{"@id":"https://bombero.mx/#organization"},"keywords":["equipo personal de protección","PPE","NFPA","trajes estructurales","SCBA","MSA","Honeywell","Globe","Bullard","bomberos","brigadas industriales","cobertura nacional"]},{"@type":"FAQPage","@id":"https://origenlab.com/portafolio/equipos-contra-incendios/bombero-mx/#faq","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta un sitio web profesional?","acceptedAnswer":{"@type":"Answer","text":"El costo depende del alcance, funcionalidad y diseño de cada proyecto. Cada cotización se construye a la medida y entregamos una propuesta detallada y por escrito, sin cargos ocultos, antes de comenzar."}},{"@type":"Question","name":"¿Cuánto tiempo tarda en estar listo mi sitio web?","acceptedAnswer":{"@type":"Answer","text":"Los plazos varían según la complejidad. Trabajamos con calendario comprometido por escrito desde el inicio y entregas iterativas en entorno de pruebas para ver el avance real."}},{"@type":"Question","name":"¿Trabajan con empresas fuera de Ciudad de México?","acceptedAnswer":{"@type":"Answer","text":"Sí. Trabajamos con clientes en todo México y proyectos en Estados Unidos y Latinoamérica, gestionados de forma remota y en línea."}},{"@type":"Question","name":"¿Qué incluye el sitio web?","acceptedAnswer":{"@type":"Answer","text":"Diseño personalizado, desarrollo front-end y back-end, versión responsiva, integración de formularios, optimización de velocidad y entrega de archivos finales. Dominio y hosting según el plan."}},{"@type":"Question","name":"¿Puedo ver avances antes de aprobar el proyecto?","acceptedAnswer":{"@type":"Answer","text":"Sí. El proceso incluye etapas de revisión con prototipos y diseños antes del desarrollo final. Apruebas cada fase antes de avanzar."}},{"@type":"Question","name":"¿Qué pasa si necesito cambios después de entregar el sitio?","acceptedAnswer":{"@type":"Answer","text":"Todos los proyectos incluyen un periodo de ajustes post-entrega. Para cambios posteriores ofrecemos planes de mantenimiento mensual o cotizaciones por proyecto."}},{"@type":"Question","name":"¿Necesito tener dominio y hosting propios?","acceptedAnswer":{"@type":"Answer","text":"No necesariamente. Te asesoramos en la elección de dominio y hosting, trabajamos con los que ya tienes, u ofrecemos gestión completa de infraestructura."}},{"@type":"Question","name":"¿Hacen tiendas en línea y e-commerce?","acceptedAnswer":{"@type":"Answer","text":"Sí. Desarrollamos tiendas en línea con catálogo, carrito, pasarelas de pago (OXXO, tarjeta, transferencia) y panel de administración para gestionar inventario."}}]}]}</script>
 </head>
 <body>
 
@@ -61,14 +172,14 @@
   <div class="ol-topbar-inner">
     <div class="ol-topbar-left">
       <a href="mailto:hola@origenlab.com" class="ol-topbar-contact">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
           <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
         </svg>
         hola@origenlab.com
       </a>
       <span class="ol-topbar-sep"></span>
       <a href="tel:+525547868402" class="ol-topbar-contact">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 12 19.79 19.79 0 0 1 .38 3.38 2 2 0 0 1 2.38 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L6.91 8.35a16 16 0 0 0 6.29 6.29l1.41-1.41a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
         </svg>
         +52 55 4786 8402
@@ -82,7 +193,7 @@
     </div>
     <div class="ol-topbar-right">
       <a href="https://wa.me/525547868402?text=Hola%2C%20me%20interesa%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="ol-topbar-wa">
-        <svg width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
+        <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 32 32" fill="currentColor">
           <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004a15.94 15.94 0 002.46 8.55L.848 31.456l7.168-1.584A15.93 15.93 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.336 22.594c-.396 1.116-1.956 2.04-3.216 2.312-.864.18-1.992.324-5.792-1.244-4.86-2.004-7.986-6.93-8.226-7.254-.232-.324-1.932-2.58-1.932-4.92s1.224-3.492 1.656-3.972c.432-.48.948-.6 1.26-.6.312 0 .636.003.912.018.294.012.684-.111 1.068.816.396.96 1.344 3.276 1.464 3.516.12.24.198.516.036.84-.156.324-.24.516-.48.792-.24.276-.504.612-.72.828-.24.24-.492.504-.21.984.276.48 1.236 2.04 2.652 3.3 1.824 1.62 3.36 2.124 3.84 2.364.48.24.756.204 1.032-.12.276-.324 1.2-1.392 1.524-1.872.312-.48.636-.396 1.068-.24.432.168 2.748 1.296 3.216 1.536.48.24.792.36.912.552.12.204.12 1.14-.276 2.256z"/>
         </svg>
         WhatsApp
@@ -101,7 +212,7 @@
         <li class="ol-has-dropdown">
           <a href="/servicios/" class="ol-nav-link">
             Servicios
-            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg aria-hidden="true" focusable="false" class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <div class="ol-dropdown">
             <ul>
@@ -109,13 +220,14 @@
               <li><a href="/servicios/tiendas-en-linea/" class="ol-dropdown-link">Tiendas en Línea</a></li>
               <li><a href="/servicios/landing-pages/" class="ol-dropdown-link">Landing Pages</a></li>
               <li><a href="/servicios/rediseno-web/" class="ol-dropdown-link">Rediseño Web</a></li>
+              <li><a href="/servicios/paginas-en-renta/" class="ol-dropdown-link">Páginas en Renta</a></li>
             </ul>
           </div>
         </li>
         <li class="ol-has-dropdown">
           <a href="/portafolio/" class="ol-nav-link active">
             Portafolio
-            <svg class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg aria-hidden="true" focusable="false" class="ol-nav-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
           <div class="ol-dropdown">
             <ul>
@@ -134,6 +246,38 @@
                   </ul>
                 </div>
               </li>
+              <li class="ol-has-subdrop">
+                <a href="/portafolio/seguridad-privada/" class="ol-dropdown-link ol-dropdown-parent">Seguridad Privada</a>
+                <div class="ol-subdrop">
+                  <ul>
+                    <li><a href="/portafolio/seguridad-privada/origins/" class="ol-dropdown-link">ORIGINS Private Security</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-dropdown-link">SEPRICO</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-dropdown-link">SeguridadPrivadaMX</a></li>
+                    <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-dropdown-link">SeguridadEventos</a></li>
+                    <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-dropdown-link">GUPRI</a></li>
+                    <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="ol-has-subdrop">
+              <a href="/portafolio/equipo-para-eventos/" class="ol-dropdown-link ol-dropdown-parent">Equipo para Eventos</a>
+              <div class="ol-subdrop"><ul>
+                <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-dropdown-link">PODIUMEX</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-dropdown-link">BOLDIS</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-dropdown-link">PantallaLED</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-dropdown-link">INFLAPY</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-dropdown-link">EVENTECH</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/redeil/" class="ol-dropdown-link">REDEIL</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/resoil/" class="ol-dropdown-link">RESOIL</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/rentadeiluminacion/" class="ol-dropdown-link">REDEIL Iluminación</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/soeve/" class="ol-dropdown-link">SOEVE</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/mededul/" class="ol-dropdown-link">MEDEDUL</a></li>
+                <li><a href="/portafolio/equipo-para-eventos/renta-de-inflables/" class="ol-dropdown-link">RID · Renta de Inflables</a></li>
+<li><a href="/portafolio/equipo-para-eventos/avantexpo/" class="ol-dropdown-link">AVANTEXPO</a></li>
+<li><a href="/portafolio/equipo-para-eventos/deglob/" class="ol-dropdown-link">DEGLOB</a></li>
+<li><a href="/portafolio/equipo-para-eventos/directorio/" class="ol-dropdown-link">Directorio México</a></li>
+              </ul></div>
+            </li>
             </ul>
           </div>
         </li>
@@ -157,7 +301,7 @@
       <img src="/img/origenlab.webp" alt="OrigenLab" class="ol-logo-img" style="height:26px;filter:brightness(0) invert(1);opacity:.9;" width="696" height="190" decoding="async">
     </a>
     <button class="ol-mobile-close" id="ol-mobile-close" aria-label="Cerrar menú">
-      <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M1 1L17 17M17 1L1 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
   </div>
   <ul class="ol-mobile-nav">
@@ -165,19 +309,20 @@
     <li>
       <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
         <span>Servicios</span>
-        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg aria-hidden="true" focusable="false" class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <ul class="ol-mobile-submenu">
         <li><a href="/servicios/desarrollo-web/" class="ol-mobile-link ol-mobile-sublink">Desarrollo Web</a></li>
         <li><a href="/servicios/tiendas-en-linea/" class="ol-mobile-link ol-mobile-sublink">Tiendas en Línea</a></li>
         <li><a href="/servicios/landing-pages/" class="ol-mobile-link ol-mobile-sublink">Landing Pages</a></li>
         <li><a href="/servicios/rediseno-web/" class="ol-mobile-link ol-mobile-sublink">Rediseño Web</a></li>
+        <li><a href="/servicios/paginas-en-renta/" class="ol-mobile-link ol-mobile-sublink">Páginas en Renta</a></li>
       </ul>
     </li>
     <li>
       <button class="ol-mobile-link ol-mobile-sub-toggle" data-submenu>
         <span>Portafolio</span>
-        <svg class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg aria-hidden="true" focusable="false" class="ol-mobile-chevron" width="12" height="7" viewBox="0 0 12 7" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <ul class="ol-mobile-submenu">
         <li><a href="/portafolio/" class="ol-mobile-link ol-mobile-sublink">Todo el Portafolio</a></li>
@@ -189,6 +334,28 @@
         <li><a href="/portafolio/equipos-contra-incendios/bombero-mx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOMBERO.MX</a></li>
         <li><a href="/portafolio/equipos-contra-incendios/proyectored/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ProyectoRed</a></li>
         <li><a href="/portafolio/equipos-contra-incendios/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/seguridad-privada/" class="ol-mobile-link ol-mobile-sublink">Seguridad Privada</a></li>
+        <li><a href="/portafolio/seguridad-privada/origins/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— ORIGINS Private Security</a></li>
+        <li><a href="/portafolio/seguridad-privada/seprico/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SEPRICO</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadprivadamx/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadPrivadaMX</a></li>
+        <li><a href="/portafolio/seguridad-privada/seguridadeventos/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SeguridadEventos</a></li>
+        <li><a href="/portafolio/seguridad-privada/gupri/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— GUPRI</a></li>
+        <li><a href="/portafolio/seguridad-privada/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/" class="ol-mobile-link ol-mobile-sublink">Equipo para Eventos</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/podiumex/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PODIUMEX</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/boldis/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— BOLDIS</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/pantalla-led/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— PantallaLED</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/inflapy/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— INFLAPY</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/eventech/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— EVENTECH</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/redeil/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— REDEIL</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/resoil/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— RESOIL</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/rentadeiluminacion/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— REDEIL Iluminación</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/soeve/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— SOEVE</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/mededul/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— MEDEDUL</a></li>
+        <li><a href="/portafolio/equipo-para-eventos/renta-de-inflables/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— RID · Renta de Inflables</a></li>
+<li><a href="/portafolio/equipo-para-eventos/avantexpo/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— AVANTEXPO</a></li>
+<li><a href="/portafolio/equipo-para-eventos/deglob/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— DEGLOB</a></li>
+<li><a href="/portafolio/equipo-para-eventos/directorio/" class="ol-mobile-link ol-mobile-sublink ol-mobile-subsublink">— Directorio México</a></li>
       </ul>
     </li>
     <li><a href="/nosotros/" class="ol-mobile-link">Nosotros</a></li>
@@ -255,12 +422,191 @@
       </div>
 
       <div class="hero__col2">
-        <p class="hero__p1">Plataforma comercial B2B diseñada para que comandantes de cuerpos de bomberos, jefes de brigada industrial, áreas de seguridad de plantas y refinerías, y direcciones de protección civil encuentren equipo certificado bajo norma NFPA con respaldo técnico documentado y disponibilidad real en territorio mexicano. Cada sección refuerza la autoridad de las marcas distribuidas y la capacidad logística nacional de BOMBERO.MX.</p>
-        <p class="hero__p2">Arquitectura de contenidos, jerarquía visual y redacción técnica orientadas al lenguaje real de la industria: equipo personal de protección, trajes estructurales NFPA 1971, equipos autónomos de respiración SCBA NFPA 1981, herramientas hidráulicas de rescate y accesorios certificados para bomberos profesionales y brigadas industriales en México. Sitio rápido, indexable y construido para soportar un catálogo extenso por marca y por familia.</p>
+        <p class="hero__p1">Cuando lo que compras protege a alguien que entra al fuego, la certificación no es un detalle: es la diferencia entre que el equipo aguante o no. El sitio de BOMBERO.MX tenía que transmitir esa seriedad, y dejar claro que detrás hay marcas como MSA, Honeywell, Globe y Bullard, con respaldo real en México.</p>
+        <p class="hero__p2">El reto era ordenar un catálogo enorme —muchas marcas, muchas familias— sin que el comprador se perdiera. Lo resolvimos con una estructura clara por marca y por equipo, lenguaje que un comandante reconoce de inmediato, y un camino directo a la cotización para licitación o reposición de parque.</p>
       </div>
 
     </div>
   </section>
+
+  <!-- ============== PERFIL DE EMPRESA (.ol-co-*) ============== -->
+  <section class="ol-co" id="empresa" aria-label="La empresa">
+    <div class="ol-co-inner">
+
+      <div class="ol-co-head">
+        <div>
+          <span class="ol-co-eyebrow">La empresa</span>
+          <h2 class="ol-co-title">Equipo personal de protección <em>donde la vida depende del equipo</em>.</h2>
+        </div>
+        <p class="ol-co-lead">Desde 2010, BOMBERO.MX es distribuidor autorizado de <strong>equipo personal de protección certificado NFPA</strong> para bomberos profesionales y brigadas industriales. Distribuye directo de marcas líderes mundiales —MSA, Honeywell, Globe y Bullard— con un catálogo de más de 500 productos en 13 categorías y cobertura en los 32 estados.</p>
+      </div>
+
+      <div class="ol-co-stats">
+        <div class="ol-co-stat">
+          <p class="ol-co-stat-val">Desde 2010</p>
+          <p class="ol-co-stat-label">+15 años equipando estaciones de bomberos</p>
+        </div>
+        <div class="ol-co-stat">
+          <p class="ol-co-stat-val">+500 estaciones</p>
+          <p class="ol-co-stat-label">cuerpos de bomberos, protección civil y brigadas equipados</p>
+        </div>
+        <div class="ol-co-stat">
+          <p class="ol-co-stat-val">32 estados</p>
+          <p class="ol-co-stat-label">cobertura nacional con envíos a toda la República</p>
+        </div>
+        <div class="ol-co-stat">
+          <p class="ol-co-stat-val">+500 productos</p>
+          <p class="ol-co-stat-label">13 categorías de equipo certificado NFPA</p>
+        </div>
+      </div>
+
+      <div class="ol-co-split">
+        <div class="ol-co-panel">
+          <p class="ol-co-panel-k">Qué hace</p>
+          <h3 class="ol-co-panel-h">El equipo que protege a quien entra al fuego.</h3>
+          <p class="ol-co-panel-p">BOMBERO.MX abastece a <strong>cuerpos de bomberos, brigadas industriales y gobierno</strong> con trajes estructurales, equipos autónomos de respiración, herramientas de rescate y accesorios. Cada segmento crítico donde la protección humana depende del desempeño del equipo bajo norma.</p>
+        </div>
+        <div class="ol-co-panel">
+          <p class="ol-co-panel-k">Cómo lo hace</p>
+          <h3 class="ol-co-panel-h">Distribución autorizada y norma NFPA.</h3>
+          <p class="ol-co-panel-p">Distribuye directo de <strong>MSA, Honeywell, Globe y Bullard</strong> —referentes mundiales del sector— y complementa con herramientas de rescate Holmatro y Genesis. Producto genuino, ficha técnica y certificado de laboratorio en cada pedido. La asesoría se centra en la aplicación real: combate estructural, forestal, industria y rescate.</p>
+        </div>
+      </div>
+
+      <div class="ol-co-sub">
+        <p class="ol-co-sub-eyebrow">Líneas de producto</p>
+        <h3 class="ol-co-sub-h">Equipo personal de protección certificado.</h3>
+        <p class="ol-co-sub-p">Trece categorías de equipo certificado NFPA, con respaldo de las mejores marcas del mundo.</p>
+
+        <div class="ol-co-lines">
+          <div class="ol-co-line">
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2H6l-1 13h14L18 8h-2V6a4 4 0 0 0-4-4z"/></svg></div>
+            <h4 class="ol-co-line-h">Trajes estructurales</h4>
+            <p class="ol-co-line-p">Equipo de protección personal completo bajo NFPA 1971 para combate estructural.</p>
+          </div>
+          <div class="ol-co-line">
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="4"/><path d="M12 8h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2"/><path d="M8 12v8"/></svg></div>
+            <h4 class="ol-co-line-h">Equipos de respiración</h4>
+            <p class="ol-co-line-p">Equipos autónomos de respiración (SCBA) certificados NFPA 1981 para atmósferas peligrosas.</p>
+          </div>
+          <div class="ol-co-line">
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6l-6 6a1.4 1.4 0 0 0 2 2l6-6a4 4 0 0 0 5.6-5.6l-2.1 2.1-2-2 2.1-2.1z"/></svg></div>
+            <h4 class="ol-co-line-h">Herramientas de rescate</h4>
+            <p class="ol-co-line-p">Herramienta de extracción, forzamiento y rescate para operaciones de emergencia.</p>
+          </div>
+          <div class="ol-co-line">
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h4 class="ol-co-line-h">Accesorios certificados</h4>
+            <p class="ol-co-line-p">Cascos, guantes, botas y accesorios que completan el equipo bajo norma.</p>
+          </div>
+          <div class="ol-co-line">
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <h4 class="ol-co-line-h">Equipo forestal NFPA 1977</h4>
+            <p class="ol-co-line-p">Trajes, cascos y equipo forestal certificado NFPA 1977 y norma CONAFOR para combate de incendios de vegetación.</p>
+          </div>
+          <div class="ol-co-line">
+            <div class="ol-co-line-ic"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+            <h4 class="ol-co-line-h">Detección y tecnología</h4>
+            <p class="ol-co-line-p">Cámaras termográficas, detectores de gas multigas, equipo HAZMAT/CBRN y drones de reconocimiento táctico.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-co-sub">
+        <p class="ol-co-sub-eyebrow">Por qué elegir a BOMBERO.MX</p>
+        <h3 class="ol-co-sub-h">Cuando el equipo no puede fallar.</h3>
+
+        <div class="ol-co-why">
+          <div class="ol-co-why-item">
+            <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div>
+              <h4 class="ol-co-why-h">Marcas Tier-1</h4>
+              <p class="ol-co-why-p">Representación de cuatro líderes mundiales: producto genuino con respaldo de fabricante.</p>
+            </div>
+          </div>
+          <div class="ol-co-why-item">
+            <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div>
+              <h4 class="ol-co-why-h">Certificación NFPA</h4>
+              <p class="ol-co-why-p">Equipo bajo NFPA 1971, 1977 y 1981, además de normas UL, EN, ISO y NOM-002-STPS. Cada pedido incluye ficha técnica y certificado de laboratorio.</p>
+            </div>
+          </div>
+          <div class="ol-co-why-item">
+            <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div>
+              <h4 class="ol-co-why-h">Cobertura nacional</h4>
+              <p class="ol-co-why-p">Atención a las 32 entidades federativas para cuerpos de bomberos y brigadas.</p>
+            </div>
+          </div>
+          <div class="ol-co-why-item">
+            <div class="ol-co-why-ic"><svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div>
+              <h4 class="ol-co-why-h">Especialización total</h4>
+              <p class="ol-co-why-p">Foco exclusivo en PPE de bombero: asesoría por aplicación, no catálogo genérico.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ol-co-band">
+        <div>
+          <p class="ol-co-band-k">Marcas distribuidas</p>
+          <h3 class="ol-co-band-h">MSA, Honeywell, Globe y Bullard — referentes mundiales.</h3>
+          <p class="ol-co-band-p">Las marcas más confiables del planeta en equipo personal de protección, distribuidas en México por BOMBERO.MX con producto genuino, certificación NFPA y respaldo de fabricante. Para herramientas de rescate, líneas Holmatro y Genesis.</p>
+        </div>
+        <div class="ol-co-band-tags">
+          <span class="ol-co-band-tag">MSA</span>
+          <span class="ol-co-band-tag">Honeywell</span>
+          <span class="ol-co-band-tag">Globe</span>
+          <span class="ol-co-band-tag">Bullard</span>
+          <span class="ol-co-band-tag">NFPA</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== GALERÍA DE INICIO — vistazo al sitio real ============== -->
+  <section class="ol-co" aria-label="Vistazo al sitio">
+    <div class="ol-co-inner">
+      <div class="ol-co-sub">
+        <p class="ol-co-sub-eyebrow">El sitio en operación</p>
+        <h3 class="ol-co-sub-h">Así se ve el sitio que construimos para BOMBERO.MX.</h3>
+        <p class="ol-co-sub-p">Pantallas reales de bombero.mx: catálogo por categoría, cotización en línea y blog técnico — el resultado en vivo del proyecto.</p>
+
+        <div class="ol-case-gallery-3">
+          <figure class="ol-case-figure">
+            <div class="ol-case-figure-frame">
+              <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-categorias-epp-scba-trajes-estructurales.avif" type="image/avif">
+                <img src="/img/equipos-contra-incendios/bombero/bombero-categorias-epp-scba-trajes-estructurales.webp" alt="Catálogo por categoría de bombero.mx — EPP, SCBA y trajes estructurales NFPA" width="1543" height="854" loading="lazy" decoding="async"></picture>
+            </div>
+            <figcaption class="ol-case-figure-caption">Catálogo — EPP, SCBA y trajes estructurales por categoría.</figcaption>
+          </figure>
+          <figure class="ol-case-figure">
+            <div class="ol-case-figure-frame">
+              <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-sitio-cotizar.avif" type="image/avif">
+                <img src="/img/equipos-contra-incendios/bombero/bombero-sitio-cotizar.webp" alt="Cotización en línea de BOMBERO.MX — solicitud de equipo para bomberos" width="1920" height="1200" loading="lazy" decoding="async"></picture>
+            </div>
+            <figcaption class="ol-case-figure-caption">Cotización en línea — solicitud directa por WhatsApp.</figcaption>
+          </figure>
+          <figure class="ol-case-figure">
+            <div class="ol-case-figure-frame">
+              <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-blog-articulos-tecnicas-rescate-nfpa.avif" type="image/avif">
+                <img src="/img/equipos-contra-incendios/bombero/bombero-blog-articulos-tecnicas-rescate-nfpa.webp" alt="Blog técnico de BOMBERO.MX — técnicas de rescate y normativa NFPA" width="1543" height="854" loading="lazy" decoding="async"></picture>
+            </div>
+            <figcaption class="ol-case-figure-caption">Blog técnico — rescate, normativa NFPA y selección de EPP.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reframe del caso: la autoría de OrigenLab -->
+  <div class="ol-co-divider">
+    <p class="ol-co-divider-k">Detrás del sitio · Hecho por OrigenLab</p>
+    <h2 class="ol-co-divider-h">Nosotros construimos esta plataforma digital</h2>
+    <p class="ol-co-divider-p">En OrigenLab somos especialistas en sitios corporativos rápidos, claros y orientados a conversión. Este es el proyecto que desarrollamos para BOMBERO.MX — diseño, arquitectura técnica y redacción, de principio a fin — para comunicar el peso de sus marcas distribuidas y su catálogo certificado NFPA, y convertir a nivel nacional.</p>
+  </div>
 
   <!-- ============== CASE SHELL: SIDEBAR + CONTENT ============== -->
   <section class="ol-case-shell" id="construccion">
@@ -277,8 +623,8 @@
               <li><dt>Sector</dt><dd>Equipo contra incendios · Distribución especializada PPE</dd></li>
               <li><dt>Tipo de sitio</dt><dd>Corporativo B2B · Catálogo técnico nacional</dd></li>
               <li><dt>Modelo de negocio</dt><dd>Distribución de marcas internacionales certificadas NFPA</dd></li>
-              <li><dt>Marcas distribuidas</dt><dd>MSA · Honeywell · Globe · Bullard</dd></li>
-              <li><dt>Cumplimiento</dt><dd>NFPA 1971 · NFPA 1981 · NFPA 1855</dd></li>
+              <li><dt>Marcas distribuidas</dt><dd>MSA · Honeywell · Globe · Bullard · Holmatro · Genesis</dd></li>
+              <li><dt>Cumplimiento</dt><dd>NFPA 1971 · 1977 · 1981 · UL · EN · ISO · NOM-002-STPS</dd></li>
               <li><dt>Cobertura</dt><dd>Nacional · 32 entidades federativas</dd></li>
               <li><dt>Sitio en vivo</dt><dd><a href="https://bombero.mx/" target="_blank" rel="noopener noreferrer">bombero.mx →</a></dd></li>
             </ul>
@@ -336,16 +682,19 @@
           <section class="ol-case-section" id="contexto">
             <span class="ol-case-eyebrow">01 · Contexto del cliente</span>
             <h2 class="ol-case-h2">Distribuidor nacional de equipo personal de protección certificado NFPA.</h2>
-            <p class="ol-case-lead">BOMBERO.MX es un distribuidor especializado en México de equipo personal de protección para bomberos profesionales y brigadas industriales, con representación de cuatro marcas Tier-1 globales del sector: <strong>MSA, Honeywell, Globe y Bullard</strong>. Su catálogo cubre los segmentos críticos donde la protección humana depende del desempeño del equipo bajo norma NFPA.</p>
+            <p class="ol-case-lead">Fundada en 2010, BOMBERO.MX es distribuidor autorizado en México de equipo personal de protección para bomberos profesionales y brigadas industriales, con distribución directa de marcas líderes mundiales del sector: <strong>MSA, Honeywell, Globe y Bullard</strong>. Su catálogo —más de 500 productos en 13 categorías— cubre los segmentos críticos donde la protección humana depende del desempeño del equipo bajo norma NFPA.</p>
             <p class="ol-case-p">Su cliente típico no es el comprador minorista: es un <strong>comandante de cuerpo de bomberos municipal o estatal, un jefe de brigada industrial en planta, refinería o terminal logística, un director de protección civil o un comprador del sector federal</strong> que adquiere PPE bajo procesos de licitación, requisición corporativa o reposición programada de parque, y que necesita garantizar certificación NFPA documentada por cada unidad recibida.</p>
-            <p class="ol-case-p">BOMBERO.MX opera con cobertura logística en las 32 entidades federativas del país, sirviendo desde corporaciones municipales hasta brigadas internas de complejos industriales en el Bajío, el Golfo, el norte y el sureste mexicano. Antes de este proyecto, la presencia digital de BOMBERO.MX no comunicaba ni la profundidad del catálogo distribuido, ni el peso de las marcas representadas, ni la capacidad operativa real de la empresa para atender una compra del sector seguridad.</p>
+            <p class="ol-case-p">Con más de 15 años en el mercado, BOMBERO.MX ha equipado más de 500 estaciones de bomberos en las 32 entidades federativas, sirviendo desde corporaciones municipales con presupuesto ajustado hasta brigadas industriales de complejos como los de PEMEX y CFE en el Bajío, el Golfo, el norte y el sureste mexicano. Antes de este proyecto, la presencia digital de BOMBERO.MX no comunicaba ni la profundidad del catálogo distribuido, ni el peso de las marcas representadas, ni la capacidad operativa real de la empresa para atender una compra del sector seguridad.</p>
 
-            <div class="ol-case-figure">
+            <figure class="ol-case-figure">
               <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/bombero/bombero-nosotros-distribuidor-autorizado-nfpa.avif" alt="BOMBERO.MX — distribuidor autorizado de equipo personal de protección NFPA" width="1543" height="854" loading="lazy" decoding="async">
+                <picture>
+                  <source srcset="/img/equipos-contra-incendios/bombero/bombero-contexto-retrato.avif" type="image/avif">
+                  <img src="/img/equipos-contra-incendios/bombero/bombero-contexto-retrato.webp" alt="Bombera con equipo de protección personal certificado NFPA — BOMBERO.MX" width="600" height="900" loading="lazy" decoding="async">
+                </picture>
               </div>
-              <p class="ol-case-figure-caption">Sección institucional: marcas distribuidas, certificaciones NFPA y cobertura nacional comunicadas desde el primer scroll.</p>
-            </div>
+              <figcaption class="ol-case-figure-caption">El EPP que distribuye BOMBERO.MX protege a quien entra al fuego — certificado NFPA, marca por marca.</figcaption>
+            </figure>
           </section>
 
           <!-- 02 RETO -->
@@ -430,13 +779,6 @@
                 <p>Formularios diferenciados para cotización corporativa, licitación pública y requisición industrial, con atención por correo, teléfono y WhatsApp.</p>
               </div>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/bombero/bombero-catalogo-equipo-proteccion-personal-bomberos.avif" alt="BOMBERO.MX — catálogo de equipo de protección personal certificado NFPA para bomberos" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Catálogo organizado por familia de equipo y por marca distribuida: trajes estructurales, SCBA, cascos, herramientas y accesorios certificados.</p>
-            </div>
           </section>
 
           <!-- 04 DISEÑO -->
@@ -473,17 +815,57 @@
                   <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                 </div>
                 <h4>Badges NFPA</h4>
-                <p>Componente específico para destacar NFPA 1971, NFPA 1981, NFPA 1855 y normas asociadas en cada ficha — refuerza credibilidad sin saturar la jerarquía visual.</p>
+                <p>Componente específico para destacar NFPA 1971, NFPA 1977, NFPA 1981, UL Listed, NOM-002-STPS y normas asociadas en cada ficha — refuerza credibilidad sin saturar la jerarquía visual.</p>
               </div>
-            </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/bombero/bombero-categorias-epp-scba-trajes-estructurales.avif" alt="BOMBERO.MX — categorías EPP: SCBA, trajes estructurales y cascos para bomberos" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Sistema de tarjetas, badges NFPA y jerarquía técnica aplicados de forma consistente en todo el catálogo distribuido.</p>
             </div>
           </section>
+
+          <!-- GALERÍA MEDIA — catálogo EPP real por familia -->
+          <p class="ol-case-p" style="margin-top:2.2rem"><strong>El catálogo real, por familia de EPP.</strong> Cada línea del sitio se presenta con fotografía del equipo personal de protección certificado NFPA que BOMBERO.MX distribuye en México.</p>
+          <div class="ol-case-gallery-3" aria-label="Catálogo EPP real por familia">
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-cat-trajes.avif" type="image/avif">
+                  <img src="/img/equipos-contra-incendios/bombero/bombero-cat-trajes.webp" alt="Trajes estructurales para bombero certificados NFPA 1971 — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Trajes estructurales — NFPA 1971, marcas líderes.</figcaption>
+            </figure>
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-cat-cascos.avif" type="image/avif">
+                  <img src="/img/equipos-contra-incendios/bombero/bombero-cat-cascos.webp" alt="Cascos para bombero estructurales y ARFF certificados — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Cascos — estructural, ARFF e industrial.</figcaption>
+            </figure>
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-cat-guantes.avif" type="image/avif">
+                  <img src="/img/equipos-contra-incendios/bombero/bombero-cat-guantes.webp" alt="Guantes para bombero de combate certificados NFPA — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Guantes — combate y rescate, cuero vaqueta.</figcaption>
+            </figure>
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-cat-botas.avif" type="image/avif">
+                  <img src="/img/equipos-contra-incendios/bombero/bombero-cat-botas.webp" alt="Botas para bombero de caucho certificadas NFPA 1971 — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Botas — caucho y piel, NFPA 1971.</figcaption>
+            </figure>
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-cat-gafas.avif" type="image/avif">
+                  <img src="/img/equipos-contra-incendios/bombero/bombero-cat-gafas.webp" alt="Gafas de protección ocular para bombero — BOMBERO.MX" width="420" height="300" loading="lazy" decoding="async"></picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Gafas — protección ocular para campo.</figcaption>
+            </figure>
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-cat-capucha.avif" type="image/avif">
+                  <img src="/img/equipos-contra-incendios/bombero/bombero-cat-capucha.webp" alt="Capucha para bombero protección NFPA — BOMBERO.MX" width="420" height="300" loading="lazy" decoding="async"></picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">Capuchas — protección facial certificada NFPA.</figcaption>
+            </figure>
+          </div>
 
           <!-- 05 CATÁLOGO -->
           <section class="ol-case-section" id="catalogo">
@@ -505,34 +887,31 @@
                 <p>Cascos estructurales y de rescate de Bullard, Honeywell y MSA — modelos tradicionales, modernos europeos y de rescate técnico, con barbiquejos, cubre-nucas y faceshields certificados.</p>
               </div>
               <div class="ol-case-card">
-                <h4>Herramientas y rescate</h4>
-                <p>Herramientas hidráulicas de rescate vehicular, equipo de rescate técnico, cuerdas, arneses, ascendedores, descendedores, sistemas de protección anti-caída y dispositivos de aseguramiento.</p>
+                <h4>Herramientas y rescate NFPA 1936</h4>
+                <p>Herramientas hidráulicas de rescate vehicular Jaws of Life, cizallas y expansores USAR de Holmatro y Genesis certificados NFPA 1936, además de equipo de rescate técnico, cuerdas, arneses y sistemas anti-caída.</p>
               </div>
               <div class="ol-case-card">
-                <h4>Detección y monitoreo</h4>
-                <p>Detectores de gases multi-sensor, monitores ambientales, cámaras térmicas y equipo de medición para entornos peligrosos —respaldados por la línea industrial de MSA y Honeywell—.</p>
+                <h4>Equipo forestal y HAZMAT</h4>
+                <p>Trajes y cascos forestales NFPA 1977 y norma CONAFOR, trajes HAZMAT Nivel A/B encapsulados, kits de descontaminación y protección CBRN para respuesta a emergencias químicas.</p>
+              </div>
+              <div class="ol-case-card">
+                <h4>Detección y tecnología</h4>
+                <p>Cámaras termográficas TIC, detectores de gas multigas, drones de reconocimiento táctico y extintores certificados NOM-100 (PQS, CO₂, espuma AFFF, halotron) para industria y uso doméstico.</p>
               </div>
               <div class="ol-case-card">
                 <h4>Accesorios y consumibles</h4>
-                <p>Guantes estructurales NFPA 1971, capuchas Nomex, botas estructurales, linternas intrínsecamente seguras, comunicaciones, capuchas particulares y consumibles del sector.</p>
+                <p>Guantes estructurales NFPA 1971, capuchas Nomex y PBI Gold, botas estructurales con suela Vibram, gafas ANSI Z87.1, linternas intrínsecamente seguras y consumibles del sector.</p>
               </div>
             </div>
 
             <ul class="ol-case-list" style="margin-top:1.25rem;">
               <li><strong>Especificación técnica por modelo:</strong> talla, materiales, niveles de resistencia, normas asociadas, peso y dimensiones del producto distribuido.</li>
-              <li><strong>Certificaciones aplicables:</strong> badges NFPA 1971, 1981, 1855 y normas específicas según la línea, mostradas en jerarquía superior de la ficha.</li>
+              <li><strong>Certificaciones aplicables:</strong> badges NFPA 1971, 1977, 1981, 1936, UL, EN, ISO y NOM-002-STPS según la línea, mostradas en jerarquía superior de la ficha.</li>
               <li><strong>Aplicaciones recomendadas:</strong> entornos donde el modelo es particularmente útil —cuerpo municipal, brigada industrial, refinería, terminal logística, protección civil—.</li>
               <li><strong>Imagen de producto:</strong> foto principal aislada sobre fondo neutro, con vistas adicionales cuando aportan claridad técnica.</li>
               <li><strong>Documentación descargable:</strong> espacio reservado para hoja técnica, ficha del fabricante o documento de certificación cuando aplica.</li>
               <li><strong>CTA contextual:</strong> botón "Solicitar cotización para este modelo" que precarga el modelo en el formulario de contacto B2B.</li>
             </ul>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/bombero/bombero-directorio-estaciones-bomberos-mexico.avif" alt="BOMBERO.MX — directorio de estaciones de bomberos en México" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Ficha de producto con especificación técnica, certificación NFPA aplicable, aplicaciones operativas y CTA contextual de cotización.</p>
-            </div>
           </section>
 
           <!-- 06 CONVERSIÓN -->
@@ -615,13 +994,6 @@
                 </div>
               </dl>
             </div>
-
-            <div class="ol-case-figure">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/bombero/bombero-blog-articulos-tecnicas-rescate-nfpa.avif" alt="BOMBERO.MX — blog técnico: artículos sobre técnicas de rescate y normatividad NFPA" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <p class="ol-case-figure-caption">Comportamiento responsivo: desktop, tablet y móvil compartiendo sistema de componentes.</p>
-            </div>
           </section>
 
           <!-- 08 PROCESO -->
@@ -671,55 +1043,61 @@
 
           <!-- 09 GALERÍA -->
           <section class="ol-case-section" id="galeria">
-            <span class="ol-case-eyebrow">09 · Galería del sitio</span>
-            <h2 class="ol-case-h2">Pantallas y secciones del sitio en operación.</h2>
-            <p class="ol-case-p">Una recorrida por las pantallas principales del sitio: home, catálogo, sección institucional, página de marca distribuida, ficha de producto y módulo de contacto B2B sectorial — todas construidas con el mismo sistema de componentes y la misma jerarquía visual.</p>
+            <span class="ol-case-eyebrow">09 · Galería del proyecto</span>
+            <h2 class="ol-case-h2">El equipo en acción y el respaldo nacional.</h2>
+            <p class="ol-case-p">Más allá de las pantallas: el EPP en operación real y la capacidad que respalda cada venta —asesoría técnica NFPA, logística a 32 estados y control de calidad— la operación de BOMBERO.MX que el sitio comunica.</p>
 
-            <div class="ol-case-gallery">
+            <div class="ol-case-gallery-3">
+
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/bombero/bombero-home-equipo-bomberos-nfpa-mexico.avif" alt="BOMBERO.MX — pantalla 01: home equipo de bomberos certificado NFPA en México" width="1543" height="854" loading="lazy" decoding="async">
+                  <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-op-accion.avif" type="image/avif">
+                    <img src="/img/equipos-contra-incendios/bombero/bombero-op-accion.webp" alt="Bombero en combate de incendio estructural con EPP NFPA — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
                 </div>
-                <figcaption class="ol-case-figure-caption">01 · Hero principal con propuesta de valor y acceso al catálogo nacional.</figcaption>
+                <figcaption class="ol-case-figure-caption">En acción — combate estructural con EPP completo.</figcaption>
               </figure>
+
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/bombero/bombero-nosotros-distribuidor-autorizado-nfpa.avif" alt="BOMBERO.MX — pantalla 02: nosotros distribuidor autorizado NFPA" width="1543" height="854" loading="lazy" decoding="async">
+                  <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-op-capacitacion.avif" type="image/avif">
+                    <img src="/img/equipos-contra-incendios/bombero/bombero-op-capacitacion.webp" alt="Capacitación de bomberos en torre de entrenamiento — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
                 </div>
-                <figcaption class="ol-case-figure-caption">02 · Sección institucional con marcas distribuidas y respaldo NFPA.</figcaption>
+                <figcaption class="ol-case-figure-caption">Entrenamiento — torre de capacitación con equipo real.</figcaption>
               </figure>
+
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/bombero/bombero-catalogo-equipo-proteccion-personal-bomberos.avif" alt="BOMBERO.MX — pantalla 03: catálogo EPP para bomberos certificado NFPA" width="1543" height="854" loading="lazy" decoding="async">
+                  <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-op-rescate.avif" type="image/avif">
+                    <img src="/img/equipos-contra-incendios/bombero/bombero-op-rescate.webp" alt="Rescate vehicular con equipo de protección — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
                 </div>
-                <figcaption class="ol-case-figure-caption">03 · Catálogo organizado por familia de equipo y por marca.</figcaption>
+                <figcaption class="ol-case-figure-caption">Rescate vehicular — protección para respuesta crítica.</figcaption>
               </figure>
+
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/bombero/bombero-categorias-epp-scba-trajes-estructurales.avif" alt="BOMBERO.MX — pantalla 04: categorías EPP, SCBA y trajes estructurales" width="1543" height="854" loading="lazy" decoding="async">
+                  <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-op-asesoria.avif" type="image/avif">
+                    <img src="/img/equipos-contra-incendios/bombero/bombero-op-asesoria.webp" alt="Asesoría técnica NFPA para compra de EPP — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
                 </div>
-                <figcaption class="ol-case-figure-caption">04 · Sistema de tarjetas con badges NFPA por modelo.</figcaption>
+                <figcaption class="ol-case-figure-caption">Asesoría técnica NFPA — especificación por norma.</figcaption>
               </figure>
+
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/bombero/bombero-directorio-estaciones-bomberos-mexico.avif" alt="BOMBERO.MX — pantalla 05: directorio estaciones de bomberos México" width="1543" height="854" loading="lazy" decoding="async">
+                  <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-op-logistica.avif" type="image/avif">
+                    <img src="/img/equipos-contra-incendios/bombero/bombero-op-logistica.webp" alt="Logística nacional a 32 estados de México — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
                 </div>
-                <figcaption class="ol-case-figure-caption">05 · Ficha técnica de producto con especificación y CTA contextual.</figcaption>
+                <figcaption class="ol-case-figure-caption">Logística — cobertura a las 32 entidades.</figcaption>
               </figure>
+
               <figure class="ol-case-figure">
                 <div class="ol-case-figure-frame">
-                  <img src="../../../img/equipos-contra-incendios/bombero/bombero-blog-articulos-tecnicas-rescate-nfpa.avif" alt="BOMBERO.MX — pantalla 06: blog técnico rescate y normatividad NFPA" width="1543" height="854" loading="lazy" decoding="async">
+                  <picture><source srcset="/img/equipos-contra-incendios/bombero/bombero-op-garantia.avif" type="image/avif">
+                    <img src="/img/equipos-contra-incendios/bombero/bombero-op-garantia.webp" alt="Inspección de calidad y garantía NFPA del equipo — BOMBERO.MX" width="1200" height="675" loading="lazy" decoding="async"></picture>
                 </div>
-                <figcaption class="ol-case-figure-caption">06 · Comportamiento responsivo en distintos dispositivos.</figcaption>
+                <figcaption class="ol-case-figure-caption">Garantía — inspección de calidad NFPA por unidad.</figcaption>
               </figure>
+
             </div>
-
-            <figure class="ol-case-figure" style="margin-top:1.25rem;">
-              <div class="ol-case-figure-frame">
-                <img src="../../../img/equipos-contra-incendios/bombero/bombero-contacto-cotizacion-equipo-bomberos.avif" alt="BOMBERO.MX — pantalla 07: contacto y cotización de equipo para bomberos" width="1543" height="854" loading="lazy" decoding="async">
-              </div>
-              <figcaption class="ol-case-figure-caption">07 · Módulo de contacto B2B sectorial con formularios diferenciados y cobertura nacional.</figcaption>
-            </figure>
           </section>
 
           <!-- 10 RESULTADO -->
@@ -727,6 +1105,17 @@
             <span class="ol-case-eyebrow">10 · Resultado entregado</span>
             <h2 class="ol-case-h2">Una presencia digital al nivel de las marcas distribuidas.</h2>
             <p class="ol-case-p">El resultado es un sitio que <strong>comunica autoridad de marca y disponibilidad nacional desde el primer scroll</strong>, presenta el catálogo distribuido con la profundidad técnica que el comprador profesional necesita y abre canales de cotización diferenciados según el perfil del comprador del sector. La identidad visual y el tono editorial reflejan el peso de las cuatro marcas representadas y la seriedad operativa del equipo de BOMBERO.MX como distribuidor nacional especializado.</p>
+
+            <figure class="ol-case-figure">
+              <div class="ol-case-figure-frame">
+                <picture>
+                  <source srcset="/img/equipos-contra-incendios/bombero/bombero-sitio-cotizar.avif" type="image/avif">
+                  <img src="/img/equipos-contra-incendios/bombero/bombero-sitio-cotizar.webp" alt="Sitio entregado de BOMBERO.MX — cotización en línea para equipo de bomberos" width="1920" height="1200" loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <figcaption class="ol-case-figure-caption">El sitio entregado, en vivo en bombero.mx — cotización diferenciada por perfil de comprador del sector.</figcaption>
+            </figure>
+
             <ul class="ol-case-list">
               <li><strong>Sitio corporativo en operación</strong> bajo dominio propio, certificado SSL, hosting CDN y dominio gestionado.</li>
               <li><strong>Sistema de componentes reutilizable</strong> que permite ampliar familias, marcas y modelos sin rehacer el diseño.</li>
@@ -737,6 +1126,36 @@
               <li><strong>Datos estructurados Schema.org enriquecidos</strong> con Organization (marcas distribuidas), BreadcrumbList y CreativeWork del caso.</li>
               <li><strong>Documentación entregable</strong> al equipo del cliente para mantener y crecer el sitio en el tiempo.</li>
             </ul>
+          </section>
+
+          <!-- 11 SIGUE LEYENDO -->
+          <section class="ol-case-section" id="sigue-leyendo">
+            <span class="ol-case-eyebrow">11 · Sigue leyendo</span>
+            <h2 class="ol-case-h2">Más sobre BOMBERO.MX y el EPP certificado NFPA.</h2>
+            <p class="ol-case-p">Escribimos guías sobre equipo de protección, marcas y normatividad NFPA. También puedes <a href="/servicios/desarrollo-web/">ver cómo desarrollamos sitios como este</a> o <a href="/portafolio/equipos-contra-incendios/">recorrer el resto de casos del sector</a>.</p>
+
+            <div class="ol-case-cards">
+              <div class="ol-case-card">
+                <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v5c0 5.25-3.75 9.75-9 11-5.25-1.25-9-5.75-9-11V6.5L12 2z"/></svg></div>
+                <h4><a href="/blog/por-que-elegir-bombero-mx/">Por qué elegir a BOMBERO.MX</a></h4>
+                <p>Distribución multimarca certificada NFPA con respaldo y cobertura nacional.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9M14 17H5M17 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></div>
+                <h4><a href="/blog/msa-honeywell-globe-bullard-mexico-bombero/">MSA, Honeywell, Globe y Bullard en México</a></h4>
+                <p>Las marcas líderes de EPP para bomberos y qué distingue a cada una.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></div>
+                <h4><a href="/blog/equipos-respiracion-autonoma-scba-bomberos/">Equipos de respiración autónoma (SCBA)</a></h4>
+                <p>Cómo funciona un SCBA NFPA 1981 y qué considerar para brigadas industriales.</p>
+              </div>
+              <div class="ol-case-card">
+                <div class="icon"><svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m14.7 6.3 3 3M3 21l3-1 11-11-2-2L4 18l-1 3z"/></svg></div>
+                <h4><a href="/blog/herramientas-rescate-extraccion-vehicular-bomberos/">Herramientas de rescate y extracción vehicular</a></h4>
+                <p>Equipo hidráulico de rescate para respuesta a accidentes y emergencias.</p>
+              </div>
+            </div>
           </section>
 
         </article>
@@ -1075,6 +1494,7 @@
         <li><a href="/servicios/tiendas-en-linea/">Tiendas en Línea</a></li>
         <li><a href="/servicios/landing-pages/">Landing Pages</a></li>
         <li><a href="/servicios/rediseno-web/">Rediseño Web</a></li>
+        <li><a href="/servicios/paginas-en-renta/">Páginas en Renta</a></li>
       </ul>
     </div>
     <div>
