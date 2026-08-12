@@ -1,101 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url><loc>https://origenlab.com/</loc><lastmod>2026-06-04</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/5-errores-sitios-web-pymes-mexico/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/astro-vs-wordpress-cual-elegir/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/como-medir-resultados-sitio-web/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/core-web-vitals-que-son/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/cuanto-cuesta-sitio-web-mexico-2026/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/landing-page-vs-sitio-corporativo/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/mercado-pago-vs-stripe-ecommerce-mexico/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/por-que-tu-sitio-lento-cuesta-clientes/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/blog/rediseno-web-cuando-es-momento/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/contacto/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/cotizar/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/directorio/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/nosotros/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/portafolio/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/desarrollo-web/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/landing-pages/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/rediseno-web/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/_backup-2026-04-21/servicios/tiendas-en-linea/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://origenlab.com/aviso-de-privacidad/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://origenlab.com/blog/</loc><lastmod>2026-04-27</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://origenlab.com/blog/5-errores-sitios-web-pymes-mexico/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://origenlab.com/blog/alvifire-iztacalco-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/alvifire-iztacalco-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/alvifire-iztacalco-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/astro-vs-wordpress-cual-elegir/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/blog/como-elegir-agencia-diseno-web-mexico/</loc><lastmod>2026-07-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/agencia-vs-freelancer-sitio-web/</loc><lastmod>2026-07-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/senales-buena-agencia-desarrollo-web-mexico/</loc><lastmod>2026-07-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/como-vincular-google-analytics-4/</loc><lastmod>2026-07-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/avantexpo-guia-servicios/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/avantexpo-perfil/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/avantexpo-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/boldis-guia-servicios/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/boldis-perfil/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/boldis-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/bombas-contra-incendio-nfpa-20-gama-de-mexico/</loc><lastmod>2026-07-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/bombero-mx-equipo-personal-proteccion-bomberos/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/bombero-mx-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/bombero-mx-directorio-estaciones-bomberos-mexico/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/bombero-mx-trajes-estructurales-nfpa-1971-mexico/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/bombero-mx-distribuidor-msa-honeywell-globe-bullard-mexico/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/bombero-mx-como-equipar-brigada-industrial-epp-nfpa/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/bombero-mx-scba-equipos-respiracion-autonoma-nfpa-1981/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/capacitacion-brigadas-simulacros-bombero-mx/</loc><lastmod>2026-07-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/catalogo-extintores-rociadores-hidrantes-meseci/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/caybe-extintores-sistemas-ci-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/caybe-extintores-sistemas-ci-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/caybe-extintores-sistemas-ci-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/central-mexicana-extinguidores-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/central-mexicana-extinguidores-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/central-mexicana-extinguidores-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/como-medir-resultados-sitio-web/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://origenlab.com/blog/comprar-equipo-contra-incendios-en-linea-lga/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/core-web-vitals-que-son/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://origenlab.com/blog/cuanto-cuesta-pagina-web-mexico/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/cuanto-cuesta-sitio-web-mexico-2026/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/deglob-guia-servicios/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/deglob-perfil/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/deglob-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/detectores-humo-guia-compra-lga/</loc><lastmod>2026-07-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/diseno-instalacion-mantenimiento-sistemas-pci-proyecto-red/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/equipar-negocio-contra-incendios-queretaro-lga/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/equipos-respiracion-autonoma-scba-bomberos/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/equipos-y-servicios-mf-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/equipos-y-servicios-mf-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/equipos-y-servicios-mf-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/eventech-guia-servicios/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/eventech-perfil/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/eventech-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extinguidores-leon-tlalpan-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extinguidores-leon-tlalpan-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extinguidores-leon-tlalpan-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-aztahuacan-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-aztahuacan-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extintores-aztahuacan-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-casa-guajardo-milpa-alta-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-casa-guajardo-milpa-alta-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extintores-casa-guajardo-milpa-alta-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-corona-azcapotzalco-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-corona-azcapotzalco-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extintores-corona-azcapotzalco-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-cuauhtemoc-iztapalapa-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-cuauhtemoc-iztapalapa-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extintores-cuauhtemoc-iztapalapa-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-ecoin-iztacalco-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-ecoin-iztacalco-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extintores-ecoin-iztacalco-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-emmvira-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-emmvira-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extintores-emmvira-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-olivos-tlahuac-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-olivos-tlahuac-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extintores-olivos-tlahuac-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-omega-alvaro-obregon-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-omega-alvaro-obregon-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extintores-omega-alvaro-obregon-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-plasa-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/extintores-plasa-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/extintores-plasa-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/gama-de-mexico-distribuidor-elkhart-brass/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/gama-de-mexico-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/grupo-bam-extintores-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/grupo-bam-extintores-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/grupo-bam-extintores-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/gupri-guia-seguridad-privada-condominios/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/gupri-seguridad-privada-condominios/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/gupri-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -117,11 +92,9 @@
   <url><loc>https://origenlab.com/blog/monitores-elkhart-brass-plantas-industriales/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/monyza-equipos-contra-incendio-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/monyza-equipos-contra-incendio-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/monyza-equipos-contra-incendio-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/msa-honeywell-globe-bullard-mexico-bombero/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/multifire-systems-cuauhtemoc-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/multifire-systems-cuauhtemoc-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/multifire-systems-cuauhtemoc-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/origins-guia-seguridad-privada-condominios/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/origins-seguridad-privada-condominios/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/origins-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -157,6 +130,7 @@
   <url><loc>https://origenlab.com/blog/por-que-elegir-soeve/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/por-que-tu-sitio-lento-cuesta-clientes/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
   <url><loc>https://origenlab.com/blog/programa-anual-mantenimiento-extintores-empresas-manext/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/programa-interno-proteccion-civil-manext/</loc><lastmod>2026-07-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/proteccion-incendios-refinerias-terminales-combustible/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/proyecto-red-sistemas-contra-incendio-integrales/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/proyectored-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -164,11 +138,9 @@
   <url><loc>https://origenlab.com/blog/que-es-seo-local/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://origenlab.com/blog/recarga-extintores-iztapalapa-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/recarga-extintores-iztapalapa-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/recarga-extintores-iztapalapa-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/recarga-extintores-tipos-agente-pqs-co2-manext/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/recarga-extintores-venta-nuevo-milpa-alta-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/recarga-extintores-venta-nuevo-milpa-alta-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/recarga-extintores-venta-nuevo-milpa-alta-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/red-hidrantes-gabinetes-nfpa-14-meseci/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/redeil-guia-servicios/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/redeil-perfil/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -196,13 +168,13 @@
   <url><loc>https://origenlab.com/blog/seprico-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/sistemas-deteccion-alarma-incendio-nfpa-72-proyecto-red/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/sistemas-rociadores-automaticos-nfpa-13-meseci/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/blog/sistemas-supresion-cocinas-industriales-meseci/</loc><lastmod>2026-07-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/soeve-guia-servicios/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/soeve-perfil/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/soeve-servicios-cobertura/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/supresion-agentes-limpios-co2-centros-datos-proyecto-red/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/todo-en-extintores-tlalpan-extintores-perfil/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/todo-en-extintores-tlalpan-guia-extintores/</loc><lastmod>2026-04-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://origenlab.com/blog/todo-en-extintores-tlalpan-guia-tecnica/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/blog/velocidad-de-carga-importancia/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://origenlab.com/contacto/</loc><lastmod>2026-06-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://origenlab.com/cotizar/</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -223,8 +195,19 @@
   <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/salon-lido/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/salon-soleil/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/saraos/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/jardin-eventos-dvalle/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/dj-mena/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/jardin-los-pena/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/mg-organizadores-eventos/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/alquiladora-jona/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/globos-y-fiestas-mia/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/jardin-baluarte/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/salon-villa-maria/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/dj-pepe/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/directorio/alquileres-izquierdo/</loc><lastmod>2026-06-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/eventech/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/inflapy/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/inflapy/servicios/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/mededul/</loc><lastmod>2026-06-03</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/pantalla-led/</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://origenlab.com/portafolio/equipo-para-eventos/podiumex/</loc><lastmod>2026-06-02</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -286,4 +269,14 @@
   <url><loc>https://origenlab.com/servicios/rediseno-web/</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://origenlab.com/servicios/tiendas-en-linea/</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://origenlab.com/terminos/</loc><lastmod>2026-04-21</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/albatros-recargadores/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/diafa-sistemas-ci/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/eci-extintores/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/emergencias-integrales/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/extin-torr/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/extintores-del-sur/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/extintores-y-sistemas/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/flamers-protec/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/grupo-extintores-mexico/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://origenlab.com/portafolio/equipos-contra-incendios/directorio/vidal-extintores/</loc><lastmod>2026-07-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

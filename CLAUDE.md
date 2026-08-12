@@ -9,7 +9,9 @@ Sitio HTML estático servido en GitHub Pages (`Frankoropeza/origenlab` → orige
 ## Reglas duras (no negociar)
 
 1. **NO mencionar SEO** en el sitio (copy, alt, metadatos visibles). OrigenLab vende diseño + velocidad + conversión.
-2. **NO precios** en ninguna página. Cero cifras.
+2. **Precios — regla actualizada 2026-07-30. NADA DE PAQUETES.** El producto "Paquetes" se retiró por completo del sitio: no hay páginas `/paquetes/`, ni entradas de menú, ni footer, ni sección en el home, ni cifras. El sitio NO muestra precios en ningún lado. Todo va a `/cotizar/`, donde el alcance y el precio se entregan por escrito caso por caso. Los "paquetes" que aparecen en sitios de CLIENTES (INFLAPY, SOEVE, renta de inflables) son suyos y sí se quedan.
+
+
 3. **NO plazos** ("en 2 semanas", "entrega en X"). Reemplazar por "calendario por escrito desde el inicio".
 4. **NO animaciones excepto botones** (cards, imágenes, íconos JAMÁS animan).
 5. **NO duplicar CSS por página.** Si un patrón existe en >1 página, vive en premium-dark.css con variables CSS para overrides.
@@ -21,8 +23,13 @@ Sitio HTML estático servido en GitHub Pages (`Frankoropeza/origenlab` → orige
 - `/_docs/CONVENTIONS.md` — naming, estructura HTML, performance, a11y.
 - `/_docs/COMPONENTS.md` — catálogo de componentes con HTML de ejemplo.
 - `/_docs/LAYOUTS.md` — secuencia de componentes por tipo de página (home, servicio, caso, blog, etc.).
+- `/_docs/47 — Layout L10 — Página de Servicios del Cliente.md` — nivel L10, componente `.ol-clisvc-*`, procedimiento de datos del cliente.
 
-Cualquier nueva página: leer estos 3 archivos antes de empezar.
+Cualquier nueva página: leer estos archivos antes de empezar.
+
+> **⚠️ Estado de `_docs/` (2026-07-15).** Los 50 docs se borraron por accidente en el commit `b31292f` (2026-06-03, "Migración completa a Astro", 325 archivos) y se recuperaron con `git checkout b31292f^ -- _docs/`.
+> **Están congelados al 2026-06-03** — no conocen `/paquetes/`, los directorios L9 como nivel propio, ni el L10. `LAYOUTS.md` define **L9 = Misc**, mientras que los directorios se documentaron después como L9 propio: conflicto de numeración pendiente de resolver.
+> Los docs **44 y 45 nunca existieron** pese a que se les cita en memorias y notas: documentación fantasma, no buscarlos.
 
 ## Antes de escribir código nuevo
 

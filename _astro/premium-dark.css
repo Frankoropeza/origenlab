@@ -1355,7 +1355,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-svc-desc {
   font-size: 13.5px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.75;
   margin: 0 0 1.25rem;
   flex-grow: 1;
@@ -1372,7 +1372,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-svc-list li {
   font-size: 12px;
-  color: rgba(240,240,245,0.32);
+  color: rgba(240,240,245,0.58);
   padding-left: 1.1rem;
   position: relative;
   line-height: 1.5;
@@ -1697,7 +1697,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-cta-final-sub {
   font-size: 1.0625rem;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.75;
   margin: 0 0 3rem;
 }
@@ -1871,7 +1871,7 @@ body { padding-top: calc(42px + 88px) !important; }
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
   margin: 0 0 0.65rem;
 }
 .ol-footer-col-list {
@@ -1884,7 +1884,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-footer-col-list li a {
   font-size: 13.5px;
-  color: rgba(240,240,245,0.42);
+  color: rgba(240,240,245,0.58);
   text-decoration: none;
   line-height: 1.4;
 }
@@ -1904,7 +1904,7 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-footer-copy {
   font-size: 12.5px;
-  color: rgba(240,240,245,0.2);
+  color: rgba(240,240,245,0.58);
 }
 .ol-footer-legal {
   display: flex;
@@ -1912,10 +1912,10 @@ body { padding-top: calc(42px + 88px) !important; }
 }
 .ol-footer-legal a {
   font-size: 12.5px;
-  color: rgba(240,240,245,0.2);
+  color: rgba(240,240,245,0.58);
   text-decoration: none;
 }
-.ol-footer-legal a:hover { color: rgba(240,240,245,0.45); }
+.ol-footer-legal a:hover { color: rgba(240,240,245,0.58); }
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -2165,7 +2165,7 @@ select:focus-visible,
 }
 .ol-page-hero-copy {
   font-size: 15px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.8;
   margin: 0;
 }
@@ -2429,7 +2429,7 @@ select:focus-visible,
 .ol-sec-card:hover .ol-sec-card-title { color: #F87171; }
 .ol-sec-card-company {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
 }
 
 /* Thumbnail imagen en ol-sec-card */
@@ -2463,7 +2463,7 @@ select:focus-visible,
 
 .ol-blog-featured-meta {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.35);
+  color: rgba(240,240,245,0.58);
   font-weight: 500;
 }
 .ol-blog-featured-title {
@@ -2666,7 +2666,7 @@ select:focus-visible,
 }
 .ol-blog-card-meta {
   font-size: 11px;
-  color: rgba(240,240,245,0.3);
+  color: rgba(240,240,245,0.58);
   font-weight: 500;
 }
 .ol-blog-card-title {
@@ -2681,7 +2681,7 @@ select:focus-visible,
 .ol-blog-card:hover .ol-blog-card-title { color: #C9A84C; }
 .ol-blog-card-excerpt {
   font-size: 13px;
-  color: rgba(240,240,245,0.42);
+  color: rgba(240,240,245,0.58);
   line-height: 1.7;
   margin: 0;
   flex: 1;
@@ -2756,7 +2756,7 @@ select:focus-visible,
 .ol-blog-pg-next svg { pointer-events: none; }
 .ol-blog-pg-info {
   font-size: 12px;
-  color: rgba(240,240,245,0.28);
+  color: rgba(240,240,245,0.58);
   white-space: nowrap;
 }
 @media (max-width: 480px) {
@@ -2883,7 +2883,7 @@ select:focus-visible,
 .ol-sb-cat-count {
   font-size: 11px;
   font-weight: 700;
-  color: rgba(240,240,245,0.25);
+  color: rgba(240,240,245,0.58);
   background: rgba(255,255,255,0.04);
   border-radius: 999px;
   padding: 0.15rem 0.55rem;
@@ -2990,7 +2990,7 @@ select:focus-visible,
 .ol-sb-recent-item:hover .ol-sb-recent-title { color: #C9A84C; }
 .ol-sb-recent-meta {
   font-size: 11px;
-  color: rgba(240,240,245,0.28);
+  color: rgba(240,240,245,0.58);
 }
 
 /* Sidebar nav */
@@ -3029,7 +3029,7 @@ select:focus-visible,
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 999px;
   font-size: 11px;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
   padding: 0.2rem 0.65rem;
   cursor: pointer;
   text-decoration: none;
@@ -3188,7 +3188,7 @@ select:focus-visible,
 }
 .ol-art-hero-copy {
   font-size: 15px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.8;
   margin: 0;
 }
@@ -3283,7 +3283,7 @@ select:focus-visible,
 }
 .ol-art-meta-author-role {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
 }
 .ol-art-meta-sep {
   width: 1px;
@@ -3292,7 +3292,7 @@ select:focus-visible,
 }
 .ol-art-meta-item {
   font-size: 12.5px;
-  color: rgba(240,240,245,0.45);
+  color: rgba(240,240,245,0.58);
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -3333,7 +3333,7 @@ select:focus-visible,
 .ol-art-stat-num .accent { color: #C9A84C; }
 .ol-art-stat-label {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.4);
+  color: rgba(240,240,245,0.58);
   margin-top: 0.5rem;
   line-height: 1.4;
 }
@@ -4010,7 +4010,7 @@ select:focus-visible,
 }
 .ol-art-nextread-meta {
   font-size: 11px;
-  color: rgba(240,240,245,0.3);
+  color: rgba(240,240,245,0.58);
 }
 .ol-art-nextread-h {
   font-size: 1rem;
@@ -4582,7 +4582,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-faq-field { display: flex; flex-direction: column; gap: 0.4rem; }
 .ol-faq-field label { font-size: 11.5px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(240,240,245,0.58); }
 .ol-faq-field input, .ol-faq-field select, .ol-faq-field textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.7rem 0.9rem; font-size: 0.9rem; font-family: 'Inter', -apple-system, sans-serif; color: #F0F0F5; outline: none; width: 100%; box-sizing: border-box; }
-.ol-faq-field input::placeholder, .ol-faq-field textarea::placeholder { color: rgba(240,240,245,0.25); }
+.ol-faq-field input::placeholder, .ol-faq-field textarea::placeholder { color: rgba(240,240,245,0.58); }
 .ol-faq-field select option { background: #131320; color: #F0F0F5; }
 .ol-faq-field input:focus, .ol-faq-field select:focus, .ol-faq-field textarea:focus { border-color: rgba(201,168,76,0.45); background: rgba(201,168,76,0.04); }
 .ol-faq-field textarea { resize: vertical; min-height: 90px; }
@@ -4626,7 +4626,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-article-card-cat { font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold, #C9A84C); margin: 0; }
 .ol-article-card-title { font-size: 1.15rem; font-weight: 700; color: #F0F0F5; line-height: 1.3; letter-spacing: -0.015em; margin: 0; }
 .ol-article-card-excerpt { font-size: 14px; color: rgba(240,240,245,0.55); line-height: 1.65; margin: 0; }
-.ol-article-card-meta { font-size: 12px; color: rgba(240,240,245,0.4); margin: auto 0 0; padding-top: 0.5rem; }
+.ol-article-card-meta { font-size: 12px; color: rgba(240,240,245,0.58); margin: auto 0 0; padding-top: 0.5rem; }
 
 
 /* ============================================================
@@ -4654,7 +4654,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-side-meta { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
 .ol-side-meta li { display: flex; flex-direction: column; gap: 0.2rem; padding-bottom: 0.85rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
 .ol-side-meta li:last-child { border-bottom: none; padding-bottom: 0; }
-.ol-side-meta dt { font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(240,240,245,0.4); margin: 0; }
+.ol-side-meta dt { font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(240,240,245,0.58); margin: 0; }
 .ol-side-meta dd { font-size: 14px; color: #F0F0F5; line-height: 1.5; margin: 0; }
 .ol-side-meta a { color: #F0F0F5; text-decoration: none; border-bottom: 1px dotted var(--case-accent-line, rgba(201,168,76,0.3)); transition: color 0.18s; }
 .ol-side-meta a:hover { color: var(--case-accent, #C9A84C); }
@@ -4666,7 +4666,12 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-side-cta { background: linear-gradient(135deg, #110E1A 0%, #1A1326 100%); border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28)); border-radius: 14px; padding: 1.5rem; }
 .ol-side-cta-title { font-size: 1rem; font-weight: 700; color: #F0F0F5; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
 .ol-side-cta-desc { font-size: 13px; color: rgba(240,240,245,0.6); line-height: 1.6; margin: 0 0 1.25rem; }
-.ol-side-cta-btn { display: flex; align-items: center; justify-content: center; gap: 0.4rem; width: 100%; padding: 0.75rem 1rem; background: var(--case-accent, #C9A84C); color: #fff; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.22s, transform 0.15s; }
+/* La tinta se hereda de --case-accent-ink, igual que .ol-btn-primary. Iba a
+   `color:#fff` y sobre el oro de marca daba 2.28:1 — el MISMO fallo que se
+   arregló en .ol-btn-primary, que se quedó sin arreglar aquí porque se corrigió
+   la clase que se había medido en vez de buscar el patrón. Lo encontró axe en
+   /paquetes/elite/, no una revisión del CSS. */
+.ol-side-cta-btn { display: flex; align-items: center; justify-content: center; gap: 0.4rem; width: 100%; padding: 0.75rem 1rem; background: var(--case-accent, #C9A84C); color: var(--case-accent-ink, #0A0A12); border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; transition: background 0.22s, transform 0.15s; }
 .ol-side-cta-btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
 .ol-side-cta-link { display: block; text-align: center; font-size: 12px; color: rgba(240,240,245,0.5); margin-top: 0.85rem; text-decoration: none; transition: color 0.18s; }
 .ol-side-cta-link:hover { color: #F0F0F5; }
@@ -4694,6 +4699,19 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-case-card .icon { width: 38px; height: 38px; border-radius: 9px; background: var(--case-accent-soft, rgba(201,168,76,0.08)); border: 1px solid var(--case-accent-line, rgba(201,168,76,0.2)); display: flex; align-items: center; justify-content: center; color: var(--case-accent, #C9A84C); margin-bottom: 1rem; }
 .ol-case-card h4 { font-size: 0.98rem; font-weight: 700; color: #F0F0F5; margin: 0 0 0.4rem; letter-spacing: -0.01em; }
 .ol-case-card p { font-size: 13.5px; color: rgba(240,240,245,0.55); line-height: 1.65; margin: 0; }
+
+/* Páginas de Paquetes: reusan .ol-sh / .ol-features-grid / .ol-types-grid / .ol-faq-grid
+   (mismos componentes que L3) pero anidados dentro de la columna angosta de .ol-case-body.
+   Estas 3 reglas sólo reducen columnas cuando ese anidamiento ocurre — el comportamiento
+   full-bleed de esas clases en Servicios y demás páginas L3 no cambia. */
+.ol-case-body .ol-sh { grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2.5rem; }
+.ol-case-body .ol-features-grid,
+.ol-case-body .ol-types-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 640px) {
+  .ol-case-body .ol-features-grid,
+  .ol-case-body .ol-types-grid { grid-template-columns: 1fr; }
+}
+.ol-case-body .ol-faq-grid { grid-template-columns: 1fr; gap: 2.5rem; }
 
 /* Lista de bullets con check */
 .ol-case-list { list-style: none; padding: 0; margin: 1.25rem 0 0; display: flex; flex-direction: column; gap: 0.85rem; }
@@ -4767,7 +4785,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-cta-hero-blurb { font-size: 15px; color: rgba(240,240,245,0.62); line-height: 1.78; margin: 0 0 2rem; }
 .ol-cta-hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem; }
 .ol-cta-hero-promises { display: flex; flex-direction: column; gap: 1rem; }
-.ol-cta-hero-promises-title { font-size: 10.5px; color: rgba(240,240,245,0.45); font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 0.5rem; }
+.ol-cta-hero-promises-title { font-size: 10.5px; color: rgba(240,240,245,0.58); font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 0.5rem; }
 .ol-cta-hero-promises-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
 .ol-cta-hero-promises-list li { font-size: 14px; color: rgba(240,240,245,0.78); display: flex; align-items: flex-start; gap: 0.7rem; line-height: 1.55; }
 .ol-cta-hero-promises-list li::before {
@@ -4806,7 +4824,10 @@ img:hover, picture:hover, figure:hover, figure:hover * {
   text-decoration: none;
   transition: background 0.22s, transform 0.15s, box-shadow 0.22s, border-color 0.22s;
 }
-.ol-btn-primary { background: var(--case-accent, var(--gold, #C9A84C)); color: #fff; }
+/* El acento por defecto es el dorado de marca #C9A84C, que con texto blanco da 2.29:1.
+   Por eso la tinta por defecto es oscura. Los casos con acento OSCURO declaran
+   --case-accent-ink:#fff en su :root. Verificado en ambos sentidos por _qa.py. */
+.ol-btn-primary { background: var(--case-accent, var(--gold, #C9A84C)); color: var(--case-accent-ink, #0A0A12); }
 .ol-btn-primary:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 8px 24px var(--case-accent-soft, rgba(201,168,76,0.35)); }
 .ol-btn-ghost { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.12); color: rgba(240,240,245,0.85); }
 .ol-btn-ghost:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.22); transform: translateY(-1px); }
@@ -4830,7 +4851,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-page-hero-title { font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 900; color: #F0F0F5; letter-spacing: -0.035em; line-height: 1.04; margin: 0 0 1.5rem; }
 .ol-page-hero-sub { font-size: 1.0625rem; color: rgba(240,240,245,0.5); line-height: 1.75; margin: 0; }
 .ol-page-hero-right { display: flex; flex-direction: column; gap: 1.25rem; padding-top: 0.25rem; }
-.ol-page-hero-copy { font-size: 15px; color: rgba(240,240,245,0.48); line-height: 1.8; margin: 0; }
+.ol-page-hero-copy { font-size: 15px; color: rgba(240,240,245,0.58); line-height: 1.8; margin: 0; }
 
 /* ============================================================
    OVERVIEW — Imagen real + intro 2 columnas
@@ -4859,7 +4880,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-stack-item { background: #0C0C18; border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1.75rem 1.25rem; text-align: center; }
 .ol-stack-cat { font-size: 10.5px; color: rgba(201,168,76,0.85); text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 0.5rem; font-weight: 700; }
 .ol-stack-tech { font-size: 1rem; font-weight: 700; color: #F0F0F5; margin: 0 0 0.4rem; letter-spacing: -0.01em; }
-.ol-stack-desc { font-size: 12.5px; color: rgba(240,240,245,0.48); line-height: 1.55; margin: 0; }
+.ol-stack-desc { font-size: 12.5px; color: rgba(240,240,245,0.58); line-height: 1.55; margin: 0; }
 @media (max-width: 1100px) { .ol-stack-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 560px) { .ol-stack-grid { grid-template-columns: repeat(2, 1fr); } }
 
@@ -4874,7 +4895,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-type-num { font-size: 10.5px; color: rgba(201,168,76,0.7); font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; margin: 0; }
 .ol-type-title { font-size: 1.125rem; font-weight: 700; color: #F0F0F5; margin: 0; letter-spacing: -0.01em; }
 .ol-type-desc { font-size: 14px; color: rgba(240,240,245,0.55); line-height: 1.7; margin: 0; flex: 1; }
-.ol-type-meta { font-size: 12.5px; color: rgba(240,240,245,0.48); padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; gap: 1rem; }
+.ol-type-meta { font-size: 12.5px; color: rgba(240,240,245,0.58); padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; gap: 1rem; }
 .ol-type-meta strong { color: #C9A84C; font-weight: 600; }
 @media (max-width: 980px) { .ol-types-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 640px) { .ol-types-grid { grid-template-columns: 1fr; } }
@@ -4886,12 +4907,12 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 .ol-svc-process::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(201,168,76,0.15), transparent); }
 .ol-svc-process-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
 .ol-svc-process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
-.ol-svc-process-steps::before { content: ''; position: absolute; top: 27px; left: calc(12.5% + 30px); right: calc(12.5% + 30px); height: 1px; background: linear-gradient(90deg, rgba(201,168,76,0.15), rgba(201,168,76,0.35) 50%, rgba(201,168,76,0.15)); }
+.ol-svc-process-steps::before { content: ''; position: absolute; top: 27px; left: calc(12.5% + 30px); right: calc(12.5% + 30px); height: 1px; background: linear-gradient(90deg, color-mix(in srgb, var(--case-accent, #C9A84C) 15%, transparent), color-mix(in srgb, var(--case-accent, #C9A84C) 35%, transparent) 50%, color-mix(in srgb, var(--case-accent, #C9A84C) 15%, transparent)); }
 .ol-svc-process-step { padding: 0 2rem; text-align: center; position: relative; }
-.ol-svc-process-num { width: 56px; height: 56px; background: #0C0C18; border: 1px solid rgba(201,168,76,0.28); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 17px; font-weight: 800; color: #C9A84C; position: relative; z-index: 1; }
+.ol-svc-process-num { width: 56px; height: 56px; background: #0C0C18; border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 17px; font-weight: 800; color: var(--case-accent, #C9A84C); position: relative; z-index: 1; }
 .ol-svc-process-title { font-size: 1.0625rem; font-weight: 700; color: #F0F0F5; margin: 0 0 0.75rem; letter-spacing: -0.01em; }
 .ol-svc-process-desc { font-size: 14px; color: rgba(240,240,245,0.58); line-height: 1.72; margin: 0 0 1rem; }
-.ol-svc-process-time { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(201,168,76,0.75); margin: 0; }
+.ol-svc-process-time { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: color-mix(in srgb, var(--case-accent, #C9A84C) 75%, #fff); margin: 0; }
 @media (max-width: 900px) { .ol-svc-process-steps { grid-template-columns: repeat(2, 1fr); gap: 3rem 1.5rem; } .ol-svc-process-steps::before { display: none; } }
 @media (max-width: 520px) { .ol-svc-process-steps { grid-template-columns: 1fr; } .ol-svc-process-step { padding: 0; } }
 
@@ -5002,7 +5023,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-contact-desc {
   font-size: 15px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.8;
   margin: 0 0 2.5rem;
 }
@@ -5042,7 +5063,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(240,240,245,0.3);
+  color: rgba(240,240,245,0.58);
   margin-bottom: 0.2rem;
 }
 .ol-ci-val {
@@ -5107,7 +5128,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
   border-radius: 999px;
   font-size: 12.5px;
   font-weight: 500;
-  color: rgba(240,240,245,0.45);
+  color: rgba(240,240,245,0.58);
   cursor: pointer;
   background: transparent;
   font-family: inherit;
@@ -5154,7 +5175,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-form-group input::placeholder,
 .ol-form-group textarea::placeholder {
-  color: rgba(240,240,245,0.2);
+  color: rgba(240,240,245,0.58);
 }
 .ol-form-group input:focus,
 .ol-form-group textarea:focus,
@@ -5180,7 +5201,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-form-note {
   font-size: 11.5px;
-  color: rgba(240,240,245,0.28);
+  color: rgba(240,240,245,0.58);
   margin-top: 0.35rem;
 }
 .ol-required { color: #C9A84C; }
@@ -5240,7 +5261,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-success-copy {
   font-size: 14.5px;
-  color: rgba(240,240,245,0.45);
+  color: rgba(240,240,245,0.58);
   line-height: 1.75;
 }
 
@@ -5398,7 +5419,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-about-sig-role {
   font-size: 12.5px;
-  color: rgba(240,240,245,0.38);
+  color: rgba(240,240,245,0.58);
   margin: 0;
 }
 .ol-about-values {
@@ -5439,7 +5460,7 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 }
 .ol-about-value-desc {
   font-size: 13px;
-  color: rgba(240,240,245,0.48);
+  color: rgba(240,240,245,0.58);
   line-height: 1.65;
   margin: 0;
 }
@@ -5783,3 +5804,355 @@ img:hover, picture:hover, figure:hover, figure:hover * {
 
 @media (max-width:900px){ .ol-stats{ grid-template-columns:repeat(2,1fr);} }
 @media (max-width:520px){ .ol-stat{ padding:1.25rem 1rem;} .ol-stat-num{ font-size:1.9rem;} .ol-credband{ padding:4rem 0;} }
+
+/* ============================================================
+   .ol-packages — Paquetes / niveles de alcance (home)
+   Reemplaza el bloque "Por qué OrigenLab" bajo el hero. 2026-07-13.
+   Namespaced y aditivo: no afecta otras páginas (.ol-credband/.ol-stat
+   siguen vivos, los usa /contacto/). Sin animaciones en cards (regla 4)
+   — .ol-pkg-card hereda el bloqueo global [class*="card"]; solo
+   .ol-pkg-cta anima vía su propio :hover.
+   ============================================================ */
+.ol-packages { background:#0D0D16; padding:5.5rem 0; position:relative; }
+.ol-packages::before { content:''; position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg, transparent, rgba(201,168,76,0.2), transparent); }
+.ol-packages-inner { width:90%; max-width:1600px; margin:0 auto; }
+
+.ol-pkg-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; align-items:stretch; }
+
+.ol-pkg-card {
+  display:flex; flex-direction:column;
+  background:#0C0C18;
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:16px;
+  padding:2rem 1.85rem 1.85rem;
+  position:relative;
+}
+.ol-pkg-featured { border-color:rgba(201,168,76,0.45); background:linear-gradient(180deg, rgba(201,168,76,0.07) 0%, #0C0C18 24%); }
+
+.ol-pkg-badge {
+  position:absolute; top:-13px; left:1.85rem;
+  display:inline-flex; align-items:center;
+  padding:0.35rem 0.85rem;
+  background:#C9A84C; color:#08080E;
+  font-size:11px; font-weight:700; letter-spacing:0.06em; text-transform:uppercase;
+  border-radius:999px;
+}
+
+.ol-pkg-head { display:flex; align-items:baseline; gap:0.65rem; margin-bottom:0.35rem; }
+.ol-pkg-num { font-size:11px; font-weight:700; letter-spacing:0.14em; color:rgba(201,168,76,0.45); text-transform:uppercase; }
+.ol-pkg-name { font-size:1.5rem; font-weight:800; color:#F0F0F5; letter-spacing:-0.02em; margin:0; }
+
+.ol-pkg-price { font-size:2.2rem; font-weight:800; color:#C9A84C; letter-spacing:-0.01em; margin:0.55rem 0 0.9rem; line-height:1; text-align:center; }
+.ol-pkg-price-cur { font-size:0.75rem; font-weight:700; color:rgba(201,168,76,0.85); letter-spacing:0.08em; margin-left:0.25rem; }
+
+/* Precio destacado — card "Más elegido" (Profesional). Diseño tipo chip
+   con fondo, borde y sombra estática (sin animación, regla 4). */
+.ol-pkg-featured .ol-pkg-price {
+  display:block;
+  width:fit-content;
+  margin:0.7rem auto 1.1rem;
+  padding:0.55rem 1.6rem;
+  font-size:2.85rem;
+  color:#F6DA8A;
+  background:linear-gradient(180deg, rgba(201,168,76,0.20) 0%, rgba(201,168,76,0.06) 100%);
+  border:1px solid rgba(201,168,76,0.55);
+  border-radius:14px;
+  box-shadow:0 10px 28px -10px rgba(201,168,76,0.45), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+.ol-pkg-featured .ol-pkg-price-cur { color:rgba(246,218,138,0.75); }
+.ol-pkg-tagline { font-size:14.5px; font-weight:600; color:#C9A84C; margin:0 0 1rem; line-height:1.4; }
+.ol-pkg-desc { font-size:13.5px; color:rgba(240,240,245,0.55); line-height:1.75; margin:0 0 1.1rem; }
+
+.ol-pkg-fit {
+  font-size:12.5px; color:rgba(240,240,245,0.65); line-height:1.6;
+  margin:0 0 1.25rem; padding:0.85rem 1rem;
+  background:rgba(255,255,255,0.03); border-left:2px solid rgba(201,168,76,0.4);
+  border-radius:0 8px 8px 0;
+}
+.ol-pkg-fit strong { color:#F0F0F5; }
+
+.ol-pkg-list { list-style:none; padding:1.1rem 0 0; margin:0 0 1.5rem; display:flex; flex-direction:column; gap:0.5rem; border-top:1px solid rgba(255,255,255,0.06); flex-grow:1; }
+.ol-pkg-list li { font-size:12.5px; color:rgba(240,240,245,0.55); line-height:1.55; padding-left:1.1rem; position:relative; }
+.ol-pkg-list li::before { content:'→'; position:absolute; left:0; top:1px; font-size:10px; color:rgba(201,168,76,0.5); }
+
+.ol-pkg-cta {
+  display:inline-flex; align-items:center; justify-content:center; gap:0.45rem;
+  font-size:13px; font-weight:600; letter-spacing:0.02em;
+  color:#C9A84C; text-decoration:none;
+  padding:0.75rem 1.25rem;
+  border:1px solid rgba(201,168,76,0.3); border-radius:8px;
+  background:rgba(201,168,76,0.05);
+  margin-top:auto; text-align:center;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.ol-pkg-cta:hover { background:#C9A84C; border-color:#C9A84C; color:#08080E; }
+.ol-pkg-featured .ol-pkg-cta { background:#C9A84C; border-color:#C9A84C; color:#08080E; }
+.ol-pkg-featured .ol-pkg-cta:hover { background:#E0C169; border-color:#E0C169; }
+/* Card CTA → página del paquete (home + hub): sólido dorado, full-width, llamativo */
+.ol-pkg-cta--full { display:flex; width:100%; background:#C9A84C; border-color:#C9A84C; color:#08080E; font-size:14px; padding:0.85rem 1.25rem; }
+.ol-pkg-cta--full:hover { background:#E0C169; border-color:#E0C169; color:#08080E; }
+
+.ol-pkg-note { margin:2.5rem 0 0; font-size:13px; color:rgba(240,240,245,0.58); text-align:center; line-height:1.6; }
+.ol-pkg-note a { color:#C9A84C; font-weight:600; text-decoration:underline; text-underline-offset:2px; }
+
+/* Interlinking card → detalle / detalle → volver (home + /paquetes/) */
+.ol-pkg-more { display:block; text-align:center; margin-top:0.65rem; font-size:12px; font-weight:600; color:rgba(240,240,245,0.58); text-decoration:none; }
+.ol-pkg-more:hover { color:#C9A84C; text-decoration:underline; text-underline-offset:2px; }
+.ol-pkg-detail-back { display:inline-flex; align-items:center; gap:0.35rem; font-size:12px; font-weight:600; color:rgba(240,240,245,0.58); text-decoration:none; margin-bottom:1.1rem; }
+.ol-pkg-detail-back:hover { color:#C9A84C; }
+
+@media (max-width:1100px){ .ol-pkg-grid{ grid-template-columns:1fr; } .ol-pkg-featured{ order:-1; } }
+@media (max-width:520px){ .ol-packages{ padding:4rem 0; } .ol-pkg-card{ padding:1.5rem 1.35rem 1.5rem; } }
+
+/* ============================================================
+   .ol-pkg-detail — módulo 2 columnas por paquete (texto + maqueta
+   de referencia .mk). Vive en /paquetes/. Solo botón/CTA anima.
+   2026-07-13.
+   ============================================================ */
+.ol-pkg-detail-section { background:#0D0D16; padding:1rem 0 5.5rem; }
+.ol-pkg-detail-row { display:grid; grid-template-columns:1.05fr 0.95fr; gap:3.5rem; align-items:center; padding:3.5rem 0; border-top:1px solid rgba(255,255,255,0.07); }
+.ol-pkg-detail-row:first-child { border-top:none; padding-top:0; }
+
+.ol-pkg-detail-kicker { display:block; font-size:11px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#C9A84C; margin-bottom:0.6rem; }
+
+/* Fila destacada (paquete "Más elegido") — mismo layout, divisor más cálido
+   + tag inline junto al kicker. Sin reordenar columnas (regla: sin zig zag). */
+.ol-pkg-detail-row--featured { border-top-color:rgba(201,168,76,0.25); }
+.ol-pkg-detail-headrow { display:flex; align-items:center; gap:0.65rem; margin-bottom:0.6rem; }
+.ol-pkg-detail-headrow .ol-pkg-detail-kicker { margin-bottom:0; }
+.ol-pkg-detail-tag {
+  display:inline-flex; align-items:center;
+  padding:0.25rem 0.6rem;
+  background:#C9A84C; color:#08080E;
+  font-size:10px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;
+  border-radius:999px;
+}
+
+.ol-pkg-detail-title { font-size:2.75rem; font-weight:800; color:#F0F0F5; letter-spacing:-0.02em; margin:0 0 0.4rem; line-height:1.05; }
+.ol-pkg-detail-price { font-size:2.1rem; font-weight:800; color:#C9A84C; letter-spacing:-0.01em; margin:0 0 0.9rem; }
+.ol-pkg-detail-tagline { font-size:15px; font-weight:600; color:rgba(240,240,245,0.75); margin:0 0 1rem; line-height:1.4; }
+.ol-pkg-detail-desc { font-size:14.5px; color:rgba(240,240,245,0.58); line-height:1.8; margin:0 0 1.25rem; }
+
+.ol-pkg-detail-feat-label { font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(240,240,245,0.58); margin:1.75rem 0 1rem; padding-top:1.5rem; border-top:1px solid rgba(255,255,255,0.07); }
+.ol-pkg-detail-feat-list { list-style:none; margin:0 0 1.75rem; padding:0; display:flex; flex-direction:column; gap:1.1rem; }
+.ol-pkg-detail-feat-list li { padding-left:1.15rem; position:relative; }
+.ol-pkg-detail-feat-list li::before { content:''; position:absolute; left:0; top:0.5em; width:6px; height:6px; border-radius:50%; background:#C9A84C; }
+.ol-pkg-detail-feat-list strong { display:block; font-size:13.5px; font-weight:700; color:#F0F0F5; margin-bottom:0.25rem; }
+.ol-pkg-detail-feat-list span { display:block; font-size:13px; color:rgba(240,240,245,0.5); line-height:1.65; }
+
+.ol-pkg-detail-visual { display:flex; flex-direction:column; align-items:center; }
+.ol-pkg-detail-visual .mk-frame { width:100%; max-width:460px; margin-top:0.9rem; }
+.ol-pkg-detail-visual .mk { box-shadow:0 30px 60px -20px rgba(0,0,0,0.5); }
+.ol-pkg-detail-caption { margin:1.1rem 0 0; font-size:12.5px; color:rgba(240,240,245,0.58); text-align:center; font-style:italic; max-width:380px; }
+
+@media (max-width:900px){
+  .ol-pkg-detail-row { grid-template-columns:1fr; gap:2rem; padding:2.75rem 0; }
+  .ol-pkg-detail-visual { order:-1; }
+}
+@media (max-width:520px){
+  .ol-pkg-detail-title { font-size:2.1rem; }
+  .ol-pkg-detail-price { font-size:1.7rem; }
+}
+
+/* ════════════════════════════════════════════════════════════
+   .ol-clisvc-* — SERVICIOS DEL CLIENTE (L4 caso + L10 servicios)
+   Rejilla de líneas de servicio de la empresa del portafolio.
+   Se tematiza SOLO con --case-accent / --case-accent-soft / --case-accent-line.
+   Sin animaciones (regla 4). Sin precios (regla 2). Sin plazos (regla 3).
+   Doc: /_docs/47 — Layout L10.
+   ════════════════════════════════════════════════════════════ */
+.ol-clisvc { background: #08080F; padding: 5rem 0; position: relative; }
+.ol-clisvc::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent); }
+.ol-clisvc-inner { width: 90%; max-width: 1600px; margin: 0 auto; }
+
+.ol-clisvc-head { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 3.5rem; align-items: end; }
+@media (max-width: 880px) { .ol-clisvc-head { grid-template-columns: 1fr; gap: 1.5rem; align-items: start; } }
+.ol-clisvc-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--case-accent, #C9A84C); display: inline-block; padding: 0.35rem 0.85rem;
+  border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28)); border-radius: 999px;
+  background: var(--case-accent-soft, rgba(201,168,76,0.12)); margin: 0 0 1.4rem; }
+.ol-clisvc-title { font-size: clamp(1.75rem, 3.1vw, 2.5rem); font-weight: 800; color: #F4F4F8;
+  letter-spacing: -0.03em; line-height: 1.1; margin: 0; }
+.ol-clisvc-title em { font-style: normal; color: var(--case-accent, #C9A84C); }
+.ol-clisvc-lead { font-size: 1.05rem; color: rgba(240,240,245,0.66); line-height: 1.8; margin: 0; }
+.ol-clisvc-lead strong { color: rgba(240,240,245,0.9); font-weight: 600; }
+
+.ol-clisvc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-top: 2.75rem; }
+@media (max-width: 980px) { .ol-clisvc-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .ol-clisvc-grid { grid-template-columns: 1fr; } }
+
+.ol-clisvc-card { background: #0C0C18; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;
+  display: flex; flex-direction: column; overflow: hidden; }
+.ol-clisvc-body { padding: 1.5rem 1.75rem 1.9rem; display: flex; flex-direction: column; flex: 1; }
+
+/* Foto real del inflable (assets del cliente) */
+.ol-clisvc-media { position: relative; aspect-ratio: 16 / 9; overflow: hidden;
+  background: #08080F; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.ol-clisvc-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* Velo inferior: liga la foto (clara, exteriores) con la card oscura */
+.ol-clisvc-media::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 45%, rgba(12,12,24,0.55) 100%); }
+.ol-clisvc-media-num { position: absolute; top: 0.75rem; right: 0.85rem; z-index: 1;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: #F4F4F8;
+  font-variant-numeric: tabular-nums; padding: 0.25rem 0.55rem; border-radius: 6px;
+  background: rgba(6,6,13,0.72); border: 1px solid rgba(255,255,255,0.14); }
+
+.ol-clisvc-card-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: 0 0 1.25rem; }
+.ol-clisvc-ic { width: 46px; height: 46px; border-radius: 11px; flex-shrink: 0;
+  background: var(--case-accent-soft, rgba(201,168,76,0.12));
+  border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28));
+  display: flex; align-items: center; justify-content: center; color: var(--case-accent, #C9A84C); }
+.ol-clisvc-num { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; color: rgba(240,240,245,0.58);
+  font-variant-numeric: tabular-nums; }
+.ol-clisvc-k { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: color-mix(in srgb, var(--case-accent, #C9A84C) 62%, #fff); margin: 0 0 0.5rem; }
+.ol-clisvc-h { font-size: 1.2rem; font-weight: 700; color: #F4F4F8; letter-spacing: -0.02em; margin: 0 0 0.7rem; }
+.ol-clisvc-p { font-size: 14px; color: rgba(240,240,245,0.6); line-height: 1.75; margin: 0 0 1.4rem; }
+.ol-clisvc-p strong { color: rgba(240,240,245,0.88); font-weight: 600; }
+
+/* Ficha técnica del servicio: clave / valor */
+.ol-clisvc-spec { list-style: none; margin: 0 0 1.5rem; padding: 1.1rem 0 0;
+  border-top: 1px solid rgba(255,255,255,0.07); display: grid; gap: 0.6rem; }
+.ol-clisvc-spec li { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.ol-clisvc-spec dt, .ol-clisvc-spec-k { font-size: 12.5px; color: rgba(240,240,245,0.58); margin: 0; }
+.ol-clisvc-spec-v { font-size: 12.5px; font-weight: 600; color: rgba(240,240,245,0.85); margin: 0; text-align: right; }
+
+/* Chips de modelos incluidos */
+.ol-clisvc-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0 0 1.6rem; }
+.ol-clisvc-chip { font-size: 11.5px; font-weight: 600; color: rgba(240,240,245,0.72);
+  padding: 0.32rem 0.7rem; border: 1px solid rgba(255,255,255,0.12); border-radius: 999px;
+  background: rgba(255,255,255,0.03); }
+
+.ol-clisvc-link { margin-top: auto; display: inline-flex; align-items: center; gap: 0.45rem;
+  font-size: 13px; font-weight: 700; color: var(--case-accent, #C9A84C); text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--case-accent, #C9A84C) 40%, transparent);
+  padding-bottom: 0.2rem; align-self: flex-start; }
+.ol-clisvc-link:hover { border-bottom-color: var(--case-accent, #C9A84C); }
+
+/* Pie de sección: qué incluye siempre + salida al catálogo */
+.ol-clisvc-foot { margin-top: 1.1rem; background: linear-gradient(120deg, var(--case-accent-soft, rgba(201,168,76,0.12)), transparent 62%);
+  border: 1px solid var(--case-accent-line, rgba(201,168,76,0.28)); border-radius: 16px;
+  padding: 1.6rem 1.9rem; display: grid; grid-template-columns: 1fr auto; gap: 1.5rem; align-items: center; }
+@media (max-width: 860px) { .ol-clisvc-foot { grid-template-columns: 1fr; } }
+.ol-clisvc-foot-k { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--case-accent, #C9A84C); margin: 0 0 0.6rem; }
+.ol-clisvc-foot-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.ol-clisvc-foot-tag { font-size: 12px; font-weight: 600; color: #F4F4F8; padding: 0.4rem 0.85rem;
+  border: 1px solid rgba(255,255,255,0.14); border-radius: 999px; background: rgba(255,255,255,0.04);
+  display: inline-flex; align-items: center; gap: 0.4rem; }
+.ol-clisvc-foot-tag svg { color: var(--case-accent, #C9A84C); flex-shrink: 0; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   CHROME COMPACTO — el CSS que nunca se escribió                 2026-07-17
+   ══════════════════════════════════════════════════════════════════════════
+   El sitio arrastra DOS marcados para las mismas piezas. Uno tiene CSS aquí;
+   el otro se generó con clases cuyas reglas no se escribieron NUNCA — ni en
+   este repo ni en ORIGENLAB-ASTRO (comprobado: 0 coincidencias en su src/).
+
+   Efecto en producción, durante meses:
+     · 154 páginas con el footer apilado a ancho completo, sin columnas
+     · 130 con el breadcrumb como lista vertical con viñetas
+     · 124 con el artículo de borde a borde y el sidebar debajo, no al lado
+
+   Medido en navegador, no deducido del HTML: se comprobó clase por clase
+   cuáles daban un defecto real. De 99 clases sin regla, solo estas producen
+   uno. El resto hereda estilos aceptables y NO se tocan.
+     · `.ol-cta-hero-section` salió como falso positivo: es una banda
+       full-bleed a propósito y su contenedor ya va centrado con estilo inline.
+     · `.ol-container` también: lleva max-width inline en cada uso.
+
+   Los valores NO se inventan: replican `.ol-case-*` y `.ol-footer-top`, que
+   resuelven este mismo layout.
+
+   ALCANCE REAL (medido con coincidencia exacta de token de clase; un regex con
+   \b NO sirve: el guion es límite de palabra y `ol-logo` casa con `ol-logo-img`,
+   que fue justo el falso positivo que me hizo creer que tocaba la home):
+
+     · `.ol-footer-*`, `.ol-logo*`  → 124 páginas .mx + 30 más. Esas 30 tienen
+       el mismo marcado y el mismo defecto: no son daño colateral, son parte
+       del problema. La home y las otras 124 del footer bueno usan
+       `.ol-footer-top`/`.ol-footer-logo` y NO las alcanza ninguna regla nueva
+       (verificado en vivo: 0 elementos).
+     · `.ol-footer-col-list li a` → sí toca a las 125 buenas, a propósito: es
+       el arreglo de contraste de abajo.
+
+   La migración a Astro unificará ambos marcados; hasta entonces, esto es lo
+   que hace que la mitad del sitio se vea como se diseñó.
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* ── Footer compacto (154 páginas) ────────────────────────────────────── */
+.ol-footer-inner {
+  width: 90%; max-width: 1600px; margin: 0 auto;
+  padding: 2.75rem 0 2rem;
+  display: grid; grid-template-columns: minmax(240px, 1fr) 2fr; gap: 3rem;
+  align-items: start;
+  border-bottom: 1px solid rgba(201,168,76,0.08);
+}
+@media (max-width: 900px) { .ol-footer-inner { grid-template-columns: 1fr; gap: 2rem; } }
+.ol-footer-brand { display: flex; flex-direction: column; gap: 0.8rem; }
+.ol-footer-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+@media (max-width: 640px) { .ol-footer-nav { grid-template-columns: 1fr 1fr; gap: 1.5rem; } }
+.ol-footer-col { display: flex; flex-direction: column; gap: 0.4rem; }
+/* alpha .58 y no .42: a .42 el ratio es 3.74:1 y no pasa AA (ver nota abajo) */
+.ol-footer-link {
+  font-size: 13.5px; color: rgba(240,240,245,0.58);
+  text-decoration: none; line-height: 1.5;
+}
+.ol-footer-link:hover { color: #C9A84C; }
+.ol-footer-link:focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; border-radius: 3px; }
+
+/* Logotipo del footer compacto */
+.ol-logo { display: inline-flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+.ol-logo-mark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 9px; flex-shrink: 0;
+  background: linear-gradient(135deg, #C9A84C, #8B7236);
+  color: #08080E; font-size: 13px; font-weight: 800;
+}
+.ol-logo-text { font-size: 1.15rem; font-weight: 800; color: #F0F0F5; letter-spacing: -0.03em; }
+
+/* ── Breadcrumb compacto (130 páginas) ────────────────────────────────── */
+/* El contenedor ya viene acotado por su padre; lo que falta es que la lista
+   deje de ser un <ol> con viñetas apilado en vertical. */
+.ol-breadcrumb-list {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; align-items: center; flex-wrap: wrap;
+  gap: 0.5rem; font-size: 12.5px;
+}
+.ol-breadcrumb-item { display: inline-flex; align-items: center; color: rgba(240,240,245,0.58); }
+.ol-breadcrumb-item + .ol-breadcrumb-item::before {
+  content: '\203A'; margin-right: 0.5rem; color: rgba(240,240,245,0.58);
+}
+.ol-breadcrumb-item a { color: rgba(240,240,245,0.58); text-decoration: none; }
+.ol-breadcrumb-item a:hover { color: #C9A84C; }
+.ol-breadcrumb-item a:focus-visible { outline: 2px solid #C9A84C; outline-offset: 2px; border-radius: 3px; }
+.ol-breadcrumb-item[aria-current="page"] { color: #F0F0F5; font-weight: 500; }
+
+/* ── Artículo: cuerpo + sidebar (124 páginas) ─────────────────────────── */
+/* Espejo exacto de .ol-case-shell / .ol-case-grid / .ol-case-sidebar. */
+.ol-art-shell { background: #04040A; padding: 3.5rem 0 5rem; position: relative; }
+.ol-art-grid {
+  width: 90%; max-width: 1600px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 320px; gap: 3.5rem; align-items: start;
+}
+@media (max-width: 1080px) { .ol-art-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
+.ol-art-grid > .ol-art-body { min-width: 0; }
+@media (max-width: 1080px) { .ol-art-grid > .ol-art-sidebar { position: static; } }
+
+/* Índice del sidebar */
+.ol-art-toc { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.ol-art-toc li a { font-size: 13px; color: rgba(240,240,245,0.58); text-decoration: none; line-height: 1.45; }
+.ol-art-toc li a:hover { color: var(--case-accent, #C9A84C); }
+.ol-art-toc li a:focus-visible { outline: 2px solid var(--case-accent, #C9A84C); outline-offset: 2px; border-radius: 3px; }
+.ol-side-card-head {
+  font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--case-accent, #C9A84C); margin: 0 0 1rem;
+}
+
+/* ── Contraste AA que el pase de junio no vio ─────────────────────────── */
+/* .ol-footer-col-list li a iba a alpha .42 sobre el footer #0F0C07: 3.74:1,
+   por debajo del 4.5:1 de AA. Afecta a las 125 páginas del footer "bueno".
+   A .58 son 6.15:1. El pase de a11y de jun-2026 subió otros muted a .58 y
+   este se quedó fuera. Calculado, no estimado. */
+.ol-footer-col-list li a { color: rgba(240,240,245,0.58); }
